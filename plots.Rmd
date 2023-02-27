@@ -1,0 +1,25 @@
+---
+title: "plots"
+output: html_document
+date: "2023-02-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+data <- read.csv("data/data.csv")
+```
+
+## Leaflet
+
+```{r}
+
+library(leaflet)
+
+
+data |> 
+  leaflet::leaflet() |> 
+  leaflet::addTiles() |> 
+  leaflet::addCircles()
+
+```
+

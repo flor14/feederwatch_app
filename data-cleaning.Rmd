@@ -1,0 +1,146 @@
+---
+title: "Dataset preparation"
+output: html_document
+date: "2023-02-26"
+bibliography: references.bib
+---
+
+## Data 
+
+This dataset was extracted from  [Tidytuesday](https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-01-10/readme.md) and described in detail in @dataset-article.
+
+The species code data was extracted from the official webpage of [Feederwatch project ](https://feederwatch.org/explore/raw-dataset-requests/) (_accessed `r file.info("data/data.csv")$mtime`_)
+
+#### Variables of interest
+
+**_id**
+- `loc_id`
+- `project_period_id`
+- `obs_id` - should be unique
+- `sub_id`
+
+**geographical data**
+- `subnational1_code` - Canada provinces
+- `lat`
+- `long`
+
+**sps data**
+- `species_code`
+
+**data quality/description**
+- `valid`
+- `review`
+- `effort_hrs_atleast`
+- `day*_*`
+- `how_many`
+- `Data_Entry_Method`
+- `date`
+- `entry_technique`
+
+**climate**
+- `snow_dep_atleast`
+
+**location**
+- Habitat (`hab_*`)
+- population_atleast (`*_atleast`)
+- count_area_size_sq_m_atleast (`*_atleast`)
+- housing_density
+- minim number of tress and other vegetation (`*_atleast`)
+- `yard_`
+
+**feeders**
+- `nearby_feeders`
+- When are the birds feed? (`fed_*`) - (connected with `Date`)
+- Number of each type of feeders (`numfeeders-*`) - (connected with `fed_*`)
+- squirrels
+
+**Presence**
+- cats
+- dogs
+- humans
+
+
+
+```{r download-data}
+
+library(readr)
+
+feederwatch <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-10/PFW_2021_public.csv')
+
+site_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-10/PFW_count_site_data_public_2021.csv')
+
+species_code_data <- readr::read_csv('data/PFW-species-translation-table.csv')
+
+
+```
+
+## Data summary
+
+```{r summary}
+
+summary(data)
+
+```
+
+
+```{r sps-number}
+
+# I have too many species!
+unique(data$species_code)
+
+```
+
+
+
+## Data wrangling and saving the file
+
+
+```{r data-analysis}
+
+library(dplyr)
+library(tidyr)
+library(stringr)
+
+# issue: Joining, by = "loc_id"
+data <-  dplyr::left_join(feederwatch,
+                          site_data,
+                          by =c('loc_id' = 'loc_id',
+                                'PROJ_PERIOD_ID' = 'proj_period_id')) |> 
+         dplyr::left_join(species_code_data) |> # Joining, by = "species_code"
+         dplyr::filter(str_detect(subnational1_code,
+                                  "CA-")) |> # Remove US data
+         tidyr::unite("date", c('Month', 'Day', 'Year'),
+                      sep = "/") |> # Combine date information
+         dplyr::mutate(date = as.Date(date,
+                                      '%m/%d/%Y'))   # Change data format
+         
+
+write.csv(data, 'data/data.csv')
+
+
+```
+
+## Data validation
+
+```{r}
+
+## Point overlapping
+data |> 
+  count(loc_id, species_code, latitude) |> 
+  filter(species_code == 'norcar') |> 
+  arrange(desc(n))
+
+
+
+
+```
+
+
+
+## References
+
+
+
+
+
+

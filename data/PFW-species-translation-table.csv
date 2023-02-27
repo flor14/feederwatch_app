@@ -1,0 +1,1073 @@
+﻿"species_code","alt_full_spp_code","n_locations","scientific_name","american_english_name","nom_francais_canadien","nombre_espanol_mexicano","taxonomy_version","taxonomic_sort_order"
+"grerhe1",NA,"1","Rhea americana","Greater Rhea","Nandou d'Amérique","Ñandú Común",2021.01,8
+"gretin1",NA,"3","Tinamus major","Great Tinamou","Grand Tinamou","Tinamú Mayor",2021.01,39
+"wfwduc1",NA,"1","Dendrocygna viduata","White-faced Whistling-Duck","Dendrocygne veuf","Pijije Cariblanco",2021.01,219
+"bbwduc",NA,"65","Dendrocygna autumnalis","Black-bellied Whistling-Duck","Dendrocygne à ventre noir","Pijije Alas Blancas",2021.01,221
+"fuwduc",NA,"2","Dendrocygna bicolor","Fulvous Whistling-Duck","Dendrocygne fauve","Pijije Canelo",2021.01,226
+"snogoo",NA,"121","Anser caerulescens","Snow Goose","Oie des neiges","Ganso Blanco",2021.01,242
+"rosgoo",NA,"4","Anser rossii","Ross's Goose","Oie de Ross","Ganso de Ross",2021.01,245
+"swagoo1",NA,"1","Anser cygnoides","Swan Goose","Oie cygnoïde","Ganso Cisnal",2021.01,252
+"gwfgoo",NA,"13","Anser albifrons","Greater White-fronted Goose","Oie rieuse","Ganso Careto Mayor",2021.01,255
+"gwfgoo2","gwfgoo","1","Anser albifrons gambelli/sponsa","Greater White-fronted Goose (Western)","Oie rieuse (gambelli/sponsa)","Ganso Careto (Occidental)",2021.01,258
+"domgoo1",NA,"10","Anser sp. (Domestic type)","Domestic goose sp. (Domestic type)","Anser sp. (forme domestique)","Ganso sp. (Doméstico)",2021.01,277
+"brant",NA,"3","Branta bernicla","Brant","Bernache cravant","Ganso de Collar",2021.01,279
+"bargoo",NA,"1","Branta leucopsis","Barnacle Goose","Bernache nonnette","Ganso Cariblanco",2021.01,286
+"cacgoo1",NA,"8","Branta hutchinsii","Cackling Goose","Bernache de Hutchins","Ganso Canadiense Menor",2021.01,292
+"alcgoo1","cacgoo1","2","Branta hutchinsii leucopareia","Cackling Goose (Aleutian)","Bernache de Hutchins (leucopareia)","Ganso Canadiense Menor (leucopareia)",2021.01,293
+"ricgoo1","cacgoo1","2","Branta hutchinsii hutchinsii","Cackling Goose (Richardson's)","Bernache de Hutchins (hutchinsii)","Ganso Canadiense Menor (hutchinsii)",2021.01,294
+"cacgoo2","cacgoo1","1","Branta hutchinsii minima","Cackling Goose (minima)","Bernache de Hutchins (minima)","Ganso Canadiense Menor (minima)",2021.01,295
+"cangoo",NA,"2181","Branta canadensis","Canada Goose","Bernache du Canada","Ganso Canadiense Mayor",2021.01,303
+"cangoo4","cangoo","19","Branta canadensis moffitti/maxima","Canada Goose (moffitti/maxima)","Bernache du Canada (moffitti/maxima)","Ganso Canadiense Mayor (moffitti/maxima)",2021.01,304
+"cangoo1","cangoo","7","Branta canadensis [canadensis Group]","Canada Goose (canadensis Group)","Bernache du Canada (groupe canadensis)","Ganso Canadiense Mayor (grupo canadensis)",2021.01,310
+"x00415",NA,"9","Anser albifrons x Branta canadensis","Greater White-fronted x Canada Goose (hybrid)","Hybride Oie rieuse x Bernache du Canada","Ganso careto x Canadiense Mayor (híbrido)",2021.01,317
+"x00759",NA,"4","Anser sp. (Domestic type) x Branta canadensis","Domestic goose sp. (Domestic type) x Canada Goose (hybrid)","Hybride Anser sp. (forme domestique) x Bernache du Canada","Ganso sp. (Doméstico) x Ganso Canadiense Mayor (híbrido)",2021.01,320
+"x00197",NA,"1","Anser caerulescens x Branta canadensis","Snow x Canada Goose (hybrid)","Hybride Oie des neiges x Bernache du Canada","Ganso Blanco x Canadiense Mayor (híbrido)",2021.01,321
+"hawgoo",NA,"1","Branta sandvicensis","Hawaiian Goose","Bernache néné","Ganso Nené",2021.01,326
+"goose1",NA,"2","Anser/Branta sp.","goose sp.","Anserinae sp.","Ganso sp.",2021.01,331
+"mutswa",NA,"86","Cygnus olor","Mute Swan","Cygne tuberculé","Cisne Mudo",2021.01,337
+"truswa",NA,"30","Cygnus buccinator","Trumpeter Swan","Cygne trompette","Cisne Trompetero",2021.01,341
+"tunswa",NA,"41","Cygnus columbianus","Tundra Swan","Cygne siffleur","Cisne de Tundra",2021.01,343
+"tunswa1","tunswa","2","Cygnus columbianus columbianus","Tundra Swan (Whistling)","Cygne siffleur (columbianus)","Cisne de Tundra (columbianus)",2021.01,344
+"x00418",NA,"2","Cygnus buccinator x columbianus","Trumpeter x Tundra Swan (hybrid)","Hybride Cygne trompette x C. siffleur","Cisne Trompetero x de Tundra (híbrido)",2021.01,347
+"y00471",NA,"32","Cygnus buccinator/columbianus","Trumpeter/Tundra Swan","Cygne trompette ou C. siffleur","Cisne Trompetero/de Tundra",2021.01,348
+"swan1",NA,"4","Cygnus sp.","swan sp.","Cygne sp.","Cisne sp.",2021.01,352
+"egygoo",NA,"11","Alopochen aegyptiaca","Egyptian Goose","Ouette d'Égypte","Ganso Egipcio",2021.01,373
+"musduc",NA,"44","Cairina moschata","Muscovy Duck","Canard musqué","Pato Real",2021.01,397
+"musduc3","musduc","34","Cairina moschata (Established Feral)","Muscovy Duck (Established Feral)","Canard musqué (forme domestique établie)","Pato Real (Feral Establecido)",2021.01,398
+"musduc2",NA,"12","Cairina moschata (Domestic type)","Muscovy Duck (Domestic type)","Canard musqué (forme domestique)","Pato Real (Doméstico)",2021.01,399
+"wooduc",NA,"907","Aix sponsa","Wood Duck","Canard branchu","Pato Arcoíris",2021.01,406
+"manduc",NA,"3","Aix galericulata","Mandarin Duck","Canard mandarin","Pato Mandarín",2021.01,408
+"baitea",NA,"1","Sibirionetta formosa","Baikal Teal","Sarcelle élégante","Cerceta del Baikal",2021.01,424
+"buwtea",NA,"57","Spatula discors","Blue-winged Teal","Sarcelle à ailes bleues","Cerceta Alas Azules",2021.01,431
+"cintea",NA,"5","Spatula cyanoptera","Cinnamon Teal","Sarcelle cannelle","Cerceta Canela",2021.01,432
+"norsho",NA,"46","Spatula clypeata","Northern Shoveler","Canard souchet","Pato Cucharón Norteño",2021.01,443
+"gadwal",NA,"53","Mareca strepera","Gadwall","Canard chipeau","Pato Friso",2021.01,447
+"x00457",NA,"1","Spatula clypeata x Mareca strepera","Northern Shoveler x Gadwall (hybrid)","Hybride Canard souchet x C. chipeau","Cucharón Norteño x Pato Friso (híbrido)",2021.01,450
+"eurwig",NA,"1","Mareca penelope","Eurasian Wigeon","Canard siffleur","Pato Silbón",2021.01,454
+"amewig",NA,"92","Mareca americana","American Wigeon","Canard d'Amérique","Pato Chalcuán",2021.01,456
+"x00724",NA,"1","Mareca strepera x americana","Gadwall x American Wigeon (hybrid)","Hybride Canard chipeau x C. d'Amérique","Pato Friso x Chalcuán (híbrido)",2021.01,460
+"mallar3",NA,"3656","Anas platyrhynchos","Mallard","Canard colvert","Pato de Collar",2021.01,483
+"mallar2",NA,"151","Anas platyrhynchos (Domestic type)","Mallard (Domestic type)","Canard colvert (forme domestique)","Pato de Collar (Doméstico)",2021.01,486
+"mdxmal1",NA,"22","Cairina moschata x Anas platyrhynchos","Muscovy Duck x Mallard (hybrid)","Hybride Canard musqué x C. colvert","Pato Real x de Collar (híbrido)",2021.01,487
+"x00205",NA,"34","Aix sponsa x Anas platyrhynchos","Wood Duck x Mallard (hybrid)","Hybride Canard branchu x C. colvert","Pato Arcoíris x de Collar (híbrido)",2021.01,488
+"x00420",NA,"1","Mareca strepera x Anas platyrhynchos","Gadwall x Mallard (hybrid)","Hybride Canard chipeau x C. colvert","Pato Friso x de Collar (híbrido)",2021.01,490
+"x00423",NA,"1","Anas platyrhynchos x wyvilliana","Mallard x Hawaiian Duck (hybrid)","Hybride Canard colvert x C. des Hawaï","Ánade Azulón x Hawaiano (híbrido)",2021.01,495
+"mexduc",NA,"5","Anas diazi","Mexican Duck","Canard du Mexique","Pato Mexicano",2021.01,502
+"mallar",NA,"17","Anas platyrhynchos/diazi","Mallard/Mexican Duck","Canard colvert ou C. du Mexique","Pato de Collar/Mexicano",2021.01,504
+"ambduc",NA,"285","Anas rubripes","American Black Duck","Canard noir","Ánade Sombrío",2021.01,505
+"x00004",NA,"109","Anas platyrhynchos x rubripes","Mallard x American Black Duck (hybrid)","Hybride Canard colvert x C. noir","Ánade Azulón x Sombrío (híbrido)",2021.01,507
+"y00600",NA,"59","Anas platyrhynchos/rubripes","Mallard/American Black Duck","Canard colvert ou C. noir","Ánade Azulón/Sombrío",2021.01,508
+"motduc",NA,"59","Anas fulvigula","Mottled Duck","Canard brun","Pato Tejano",2021.01,509
+"x00422",NA,"19","Anas platyrhynchos x fulvigula","Mallard x Mottled Duck (hybrid)","Hybride Canard colvert x C. brun","Pato de Collar x Tejano (híbrido)",2021.01,512
+"whcpin",NA,"1","Anas bahamensis","White-cheeked Pintail","Canard des Bahamas","Ánade Gargantillo",2021.01,519
+"norpin",NA,"65","Anas acuta","Northern Pintail","Canard pilet","Pato Golondrino",2021.01,526
+"gnwtea",NA,"77","Anas crecca","Green-winged Teal","Sarcelle d'hiver","Cerceta Alas Verdes",2021.01,541
+"egwtea1","gnwtea","1","Anas crecca crecca","Green-winged Teal (Eurasian)","Sarcelle d'hiver (crecca)","Cerceta Alas Verdes (crecca)",2021.01,542
+"agwtea1","gnwtea","9","Anas crecca carolinensis","Green-winged Teal (American)","Sarcelle d'hiver (carolinensis)","Cerceta Alas Verdes (carolinensis)",2021.01,543
+"x00670",NA,"1","Anas platyrhynchos x crecca","Mallard x Green-winged Teal (hybrid)","Hybride Canard colvert x Sarcelle d'hiver","Pato de Collar x Cerceta Alas Verdes (híbrido)",2021.01,552
+"dabduc1",NA,"1","Anatidae sp. (dabbling duck sp.)","dabbling duck sp.","Anatidé sp. (Canard barboteur sp.)","Pato de Superficie sp.",2021.01,580
+"canvas",NA,"22","Aythya valisineria","Canvasback","Fuligule à dos blanc","Pato Coacoxtle",2021.01,591
+"redhea",NA,"28","Aythya americana","Redhead","Fuligule à tête rouge","Pato Cabeza Roja",2021.01,592
+"rinduc",NA,"133","Aythya collaris","Ring-necked Duck","Fuligule à collier","Pato Pico Anillado",2021.01,597
+"gresca",NA,"14","Aythya marila","Greater Scaup","Fuligule milouinan","Pato Boludo Mayor",2021.01,616
+"lessca",NA,"56","Aythya affinis","Lesser Scaup","Petit Fuligule","Pato Boludo Menor",2021.01,622
+"x00613",NA,"1","Aythya collaris x affinis","Ring-necked Duck x Lesser Scaup (hybrid)","Hybride Fuligule à collier x Petit Fuligule","Pato Pico Anillado x Boludo Menor (híbrido)",2021.01,624
+"scaup",NA,"3","Aythya marila/affinis","Greater/Lesser Scaup","Fuligule milouinan ou Petit Fuligule","Pato Boludo Mayor/Menor",2021.01,626
+"comeid",NA,"5","Somateria mollissima","Common Eider","Eider à duvet","Éider Común",2021.01,636
+"sursco",NA,"2","Melanitta perspicillata","Surf Scoter","Macreuse à front blanc","Negreta Nuca Blanca",2021.01,649
+"whwsco2",NA,"1","Melanitta deglandi","White-winged Scoter","Macreuse à ailes blanches","Negreta Alas Blancas Americana",2021.01,651
+"whwsco",NA,"3","Melanitta fusca/deglandi/stejnegeri","Velvet/White-winged/Stejneger's Scoter","Macreuse brune, M. à ailes blanches ou M. de Sibérie","Negreta Alas Blancas Euroasiática/Americana/de Stejneger",2021.01,654
+"blksco2",NA,"1","Melanitta americana","Black Scoter","Macreuse à bec jaune","Negreta Pico Amarillo",2021.01,657
+"lotduc",NA,"6","Clangula hyemalis","Long-tailed Duck","Harelde kakawi","Pato Cola Larga",2021.01,661
+"buffle",NA,"185","Bucephala albeola","Bufflehead","Petit Garrot","Pato Monja",2021.01,662
+"comgol",NA,"99","Bucephala clangula","Common Goldeneye","Garrot à oeil d'or","Pato Chillón",2021.01,663
+"bargol",NA,"9","Bucephala islandica","Barrow's Goldeneye","Garrot d'Islande","Pato Islándico",2021.01,668
+"y00004",NA,"3","Bucephala clangula/islandica","Common/Barrow's Goldeneye","Garrot à oeil d'or ou G. d'Islande","Pato Chillón/Islándico",2021.01,670
+"hoomer",NA,"337","Lophodytes cucullatus","Hooded Merganser","Harle couronné","Mergo Cresta Blanca",2021.01,673
+"x00202",NA,"1","Aix sponsa x Lophodytes cucullatus","Wood Duck x Hooded Merganser (hybrid)","Hybride Canard branchu x Harle couronné","Pato Arcoíris x Mergo Cresta Blanca (híbrido)",2021.01,674
+"x00424",NA,"1","Bucephala albeola x Lophodytes cucullatus","Bufflehead x Hooded Merganser (hybrid)","Hybride Petit Garrot x Harle couronné","Pato Monja x Mergo Cresta Blanca (híbrido)",2021.01,675
+"commer",NA,"173","Mergus merganser","Common Merganser","Grand Harle","Mergo Mayor",2021.01,681
+"commer1","commer","10","Mergus merganser americanus","Common Merganser (North American)","Grand Harle (americanus)","Mergo Mayor (americanus)",2021.01,685
+"rebmer",NA,"52","Mergus serrator","Red-breasted Merganser","Harle huppé","Mergo Copetón",2021.01,689
+"x00614",NA,"2","Aythya collaris x Mergus serrator","Ring-necked Duck x Red-breasted Merganser (hybrid)","Hybride Fuligule à collier x Harle huppé","Pato Pico Anillado x Mergo Copetón (híbrido)",2021.01,690
+"mergan1",NA,"2","Mergellus/Lophodytes/Mergus sp.","merganser sp.","Harle sp.","Mergo sp.",2021.01,694
+"rudduc",NA,"32","Oxyura jamaicensis","Ruddy Duck","Érismature rousse","Pato Tepalcate",2021.01,697
+"duck1",NA,"32","Anatinae sp.","duck sp.","Anatidé sp.","Pato sp.",2021.01,711
+"placha",NA,"14","Ortalis vetula","Plain Chachalaca","Ortalide chacamel","Chachalaca Oriental",2021.01,769
+"rubcha1",NA,"1","Ortalis wagleri","Rufous-bellied Chachalaca","Ortalide à ventre marron","Chachalaca Vientre Castaño",2021.01,780
+"colcha1",NA,"1","Ortalis columbiana","Colombian Chachalaca","Ortalide de Colombie","Chachalaca Colombiana",2021.01,786
+"helgui",NA,"13","Numida meleagris","Helmeted Guineafowl","Pintade de Numidie","Pintada Común",2021.01,885
+"mouqua",NA,"80","Oreortyx pictus","Mountain Quail","Colin des montagnes","Codorniz de Montaña",2021.01,920
+"norbob",NA,"760","Colinus virginianus","Northern Bobwhite","Colin de Virginie","Codorniz Cotuí",2021.01,933
+"norbob1","norbob","6","Colinus virginianus [virginianus Group]","Northern Bobwhite (Eastern)","Colin de Virginie (groupe virginianus)","Codorniz Cotuí (grupo virginianus)",2021.01,934
+"scaqua",NA,"151","Callipepla squamata","Scaled Quail","Colin écaillé","Codorniz Escamosa",2021.01,987
+"x00688",NA,"12","Colinus virginianus x Callipepla squamata","Northern Bobwhite x Scaled Quail (hybrid)","Hybride Colin de Virginie x C. écaillé","Codorniz Cotuí x Escamosa (híbrido)",2021.01,992
+"calqua",NA,"2524","Callipepla californica","California Quail","Colin de Californie","Codorniz Californiana",2021.01,999
+"gamqua",NA,"860","Callipepla gambelii","Gambel's Quail","Colin de Gambel","Codorniz de Gambel",2021.01,1009
+"x00689",NA,"1","Callipepla squamata x gambelii","Scaled x Gambel's Quail (hybrid)","Hybride Colin écaillé x C. de Gambel","Codorniz Escamosa x Chiquiri (híbrido)",2021.01,1017
+"y00315",NA,"1","Callipepla californica x gambelii","California x Gambel's Quail (hybrid)","Hybride Colin de Californie x C. de Gambel","Codorniz Californiana x de Gambel (híbrido)",2021.01,1018
+"monqua",NA,"10","Cyrtonyx montezumae","Montezuma Quail","Colin arlequin","Codorniz de Moctezuma",2021.01,1020
+"quail1",NA,"9","Odontophoridae sp.","new world quail sp.","Odontophoridé sp.","Codorniz del Nuevo Mundo sp.",2021.01,1083
+"wiltur",NA,"7251","Meleagris gallopavo","Wild Turkey","Dindon sauvage","Guajolote Norteño",2021.01,1180
+"rufgro",NA,"1913","Bonasa umbellus","Ruffed Grouse","Gélinotte huppée","Grévol Engolado",2021.01,1189
+"dusgro",NA,"11","Dendragapus obscurus","Dusky Grouse","Tétras sombre","Gallo Oscuro",2021.01,1221
+"soogro1",NA,"4","Dendragapus fuliginosus","Sooty Grouse","Tétras fuligineux","Gallo Fuliginoso",2021.01,1226
+"blugrs",NA,"7","Dendragapus obscurus/fuliginosus","Dusky/Sooty Grouse","Tétras sombre ou T. fuligineux","Gallo Oscuro/Fuliginoso",2021.01,1231
+"shtgro",NA,"79","Tympanuchus phasianellus","Sharp-tailed Grouse","Tétras à queue fine","Gallo de Las Praderas Rabudo",2021.01,1232
+"grpchi",NA,"1","Tympanuchus cupido","Greater Prairie-Chicken","Tétras des prairies","Gallo de Las Praderas Grande",2021.01,1241
+"greprc1","grpchi","1","Tympanuchus cupido pinnatus","Greater Prairie-Chicken (pinnatus)","Tétras des prairies (pinnatus)","Gallo de Las Praderas Grande (pinnatus)",2021.01,1242
+"wilpta",NA,"14","Lagopus lagopus","Willow Ptarmigan","Lagopède des saules","Lagópodo Común",2021.01,1255
+"rocpta1",NA,"1","Lagopus muta","Rock Ptarmigan","Lagopède alpin","Lagópodo Alpino",2021.01,1276
+"ptarmi1",NA,"1","Lagopus sp.","ptarmigan sp.","Lagopus sp.","Lagópodo sp.",2021.01,1307
+"sprgro",NA,"100","Canachites canadensis","Spruce Grouse","Tétras du Canada","Gallo Canadiense",2021.01,1309
+"frsgro1","sprgro","1","Canachites canadensis franklinii/isleibi","Spruce Grouse (Franklin's)","Tétras du Canada (franklinii/isleibi)","Gallo Canadiense (franklinii/isleibi)",2021.01,1316
+"grypar",NA,"211","Perdix perdix","Gray Partridge","Perdrix grise","Perdiz Pardilla",2021.01,1350
+"golphe",NA,"1","Chrysolophus pictus","Golden Pheasant","Faisan doré","Faisán Dorado",2021.01,1373
+"rinphe",NA,"2967","Phasianus colchicus","Ring-necked Pheasant","Faisan de Colchide","Faisán de Collar",2021.01,1375
+"rinphe1","rinphe","29","Phasianus colchicus [colchicus Group]","Ring-necked Pheasant (Ring-necked)","Faisan de Colchide (groupe colchicus)","Faisán de Collar (grupo colchicus)",2021.01,1376
+"rinphe2","rinphe","2","Phasianus colchicus [versicolor Group]","Ring-necked Pheasant (Green)","Faisan de Colchide (groupe versicolor)","Faisán de Collar (grupo versicolor)",2021.01,1408
+"kalphe",NA,"1","Lophura leucomelanos","Kalij Pheasant","Faisan leucomèle","Faisán Kálij",2021.01,1426
+"silphe",NA,"1","Lophura nycthemera","Silver Pheasant","Faisan argenté","Faisán Plateado",2021.01,1436
+"compea",NA,"16","Pavo cristatus","Indian Peafowl","Paon bleu","Pavo Real Común",2021.01,1471
+"pheasa1",NA,"4","Phasianidae sp. (pheasant sp.)","pheasant sp.","Faisan sp.","Faisán sp.",2021.01,1515
+"redjun",NA,"1","Gallus gallus","Red Junglefowl","Coq bankiva","Gallo Bankiva",2021.01,1522
+"redjun1",NA,"1","Gallus gallus (Domestic type)","Red Junglefowl (Domestic type)","Coq bankiva (forme domestique)","Gallo Bankiva (doméstico)",2021.01,1528
+"gryfra",NA,"7","Ortygornis pondicerianus","Gray Francolin","Francolin gris","Francolín Gris",2021.01,1541
+"relpar1",NA,"2","Alectoris rufa","Red-legged Partridge","Perdrix rouge","Perdiz Roja",2021.01,1655
+"chukar",NA,"69","Alectoris chukar","Chukar","Perdrix choukar","Perdiz Chukar",2021.01,1659
+"ercfra",NA,"1","Pternistis erckelii","Erckel's Francolin","Francolin d'Erckel","Francolín de Erckel",2021.01,1707
+"leagre",NA,"4","Tachybaptus dominicus","Least Grebe","Grèbe minime","Zambullidor Menor",2021.01,1779
+"pibgre",NA,"108","Podilymbus podiceps","Pied-billed Grebe","Grèbe à bec bigarré","Zambullidor Pico Grueso",2021.01,1785
+"horgre",NA,"13","Podiceps auritus","Horned Grebe","Grèbe esclavon","Zambullidor Cornudo",2021.01,1796
+"rengre",NA,"6","Podiceps grisegena","Red-necked Grebe","Grèbe jougris","Zambullidor Cuello Rojo",2021.01,1799
+"eargre",NA,"4","Podiceps nigricollis","Eared Grebe","Grèbe à cou noir","Zambullidor Orejón",2021.01,1806
+"y00229",NA,"1","Podiceps auritus/nigricollis","Horned/Eared Grebe","Grèbe esclavon ou G. à cou noir","Zambullidor Cornudo/Orejón",2021.01,1810
+"wesgre",NA,"4","Aechmophorus occidentalis","Western Grebe","Grèbe élégant","Achichilique Pico Amarillo",2021.01,1818
+"rocpig",NA,"10225","Columba livia","Rock Pigeon","Pigeon biset","Paloma Común",2021.01,1827
+"rocpig1","rocpig","1468","Columba livia (Feral Pigeon)","Rock Pigeon (Feral Pigeon)","Pigeon biset (forme domestique)","Paloma Común (Doméstica)",2021.01,1842
+"whcpig2",NA,"3","Patagioenas leucocephala","White-crowned Pigeon","Pigeon à couronne blanche","Paloma Corona Blanca",2021.01,1929
+"rebpig1",NA,"2","Patagioenas flavirostris","Red-billed Pigeon","Pigeon à bec rouge","Paloma Morada",2021.01,1930
+"batpig1",NA,"2075","Patagioenas fasciata","Band-tailed Pigeon","Pigeon à queue barrée","Paloma Encinera",2021.01,1939
+"batpig2","batpig1","1","Patagioenas fasciata [fasciata Group]","Band-tailed Pigeon (Northern)","Pigeon à queue barrée (groupe fasciata)","Paloma Encinera (grupo fasciata)",2021.01,1940
+"y00319",NA,"1","Columba livia/Patagioenas fasciata","Rock/Band-tailed Pigeon","Pigeon biset ou P. à queue barrée","Paloma Doméstica/Encinera",2021.01,1949
+"eutdov",NA,"2","Streptopelia turtur","European Turtle-Dove","Tourterelle des bois","Tórtola Europea",2021.01,1981
+"ortdov",NA,"1","Streptopelia orientalis","Oriental Turtle-Dove","Tourterelle orientale","Tórtola Oriental",2021.01,1988
+"eucdov",NA,"5208","Streptopelia decaocto","Eurasian Collared-Dove","Tourterelle turque","Paloma de Collar Turca",2021.01,1997
+"afcdov1",NA,"53","Streptopelia roseogrisea","African Collared-Dove","Tourterelle rieuse","Paloma de Collar Africana",2021.01,2001
+"afrcod1",NA,"193","Streptopelia roseogrisea (Domestic type)","African Collared-Dove (Domestic type or Ringed Turtle-Dove)","Tourterelle rieuse (forme domestique)","Paloma de Collar Africana (Doméstica)",2021.01,2004
+"rindov",NA,"23","Streptopelia capicola","Ring-necked Dove","Tourterelle du Cap","Tórtola de El Cabo",2021.01,2016
+"spodov",NA,"172","Streptopelia chinensis","Spotted Dove","Tourterelle tigrine","Paloma de Oriente",2021.01,2034
+"strept1",NA,"2","Streptopelia sp.","Streptopelia sp.","Streptopelia sp.","Streptopelia sp.",2021.01,2045
+"zebdov",NA,"22","Geopelia striata","Zebra Dove","Géopélie zébrée","Tortolita Estriada",2021.01,2195
+"incdov",NA,"1824","Columbina inca","Inca Dove","Colombe inca","Tortolita Cola Larga",2021.01,2205
+"cogdov",NA,"2891","Columbina passerina","Common Ground Dove","Colombe à queue noire","Tortolita Pico Rojo",2021.01,2206
+"rugdov",NA,"2","Columbina talpacoti","Ruddy Ground Dove","Colombe rousse","Tortolita Canela",2021.01,2230
+"y00320",NA,"1","Columbina sp.","ground dove/Inca Dove","Columbina sp.","Tortolita sp.",2021.01,2245
+"gfqdov",NA,"1","Geotrygon caniceps","Gray-fronted Quail-Dove","Colombe de Gundlach","Paloma Perdiz Camao",2021.01,2277
+"wfqdov",NA,"1","Geotrygon leucometopia","White-fronted Quail-Dove","Colombe d'Hispaniola","Paloma Perdiz Dominicana",2021.01,2278
+"whtdov",NA,"26","Leptotila verreauxi","White-tipped Dove","Colombe de Verreaux","Paloma Arroyera",2021.01,2282
+"whwdov",NA,"3159","Zenaida asiatica","White-winged Dove","Tourterelle à ailes blanches","Paloma Alas Blancas",2021.01,2346
+"moudov",NA,"67034","Zenaida macroura","Mourning Dove","Tourterelle triste","Huilota Común",2021.01,2369
+"dove1",NA,"31","Columbidae sp.","pigeon/dove sp.","Pigeon sp.","Columbidae sp.",2021.01,2799
+"grbani",NA,"2","Crotophaga sulcirostris","Groove-billed Ani","Ani à bec cannelé","Garrapatero Pijuy",2021.01,2965
+"greroa",NA,"957","Geococcyx californianus","Greater Roadrunner","Grand Géocoucou","Correcaminos Norteño",2021.01,2976
+"squcuc1",NA,"2","Piaya cayana","Squirrel Cuckoo","Piaye écureuil","Cuclillo Canelo",2021.01,3150
+"yebcuc",NA,"4","Coccyzus americanus","Yellow-billed Cuckoo","Coulicou à bec jaune","Cuclillo Pico Amarillo",2021.01,3169
+"bkbcuc",NA,"2","Coccyzus erythropthalmus","Black-billed Cuckoo","Coulicou à bec noir","Cuclillo Pico Negro",2021.01,3174
+"oricuc2",NA,"1","Cuculus optatus","Oriental Cuckoo","Coucou oriental","Cuco Oriental",2021.01,3365
+"lesnig",NA,"6","Chordeiles acutipennis","Lesser Nighthawk","Engoulevent minime","Chotacabras Menor",2021.01,3433
+"comnig",NA,"11","Chordeiles minor","Common Nighthawk","Engoulevent d'Amérique","Chotacabras Zumbón",2021.01,3441
+"nighth1",NA,"1","Chordeiles sp.","nighthawk sp.","Chordeiles sp.","Chordeiles sp.",2021.01,3454
+"compau",NA,"1","Nyctidromus albicollis","Common Pauraque","Engoulevent pauraqué","Chotacabras Pauraque",2021.01,3486
+"compoo",NA,"6","Phalaenoptilus nuttallii","Common Poorwill","Engoulevent de Nuttall","Tapacaminos Pandeagua",2021.01,3537
+"chwwid",NA,"14","Antrostomus carolinensis","Chuck-will's-widow","Engoulevent de Caroline","Tapacaminos de Carolina",2021.01,3543
+"bucnig",NA,"1","Antrostomus ridgwayi","Buff-collared Nightjar","Engoulevent de Ridgway","Tapacaminos Tucuchillo",2021.01,3561
+"whcswi",NA,"1","Streptoprocne zonaris","White-collared Swift","Martinet à collier blanc","Vencejo Collar Blanco",2021.01,3752
+"chiswi",NA,"28","Chaetura pelagica","Chimney Swift","Martinet ramoneur","Vencejo de Chimenea",2021.01,3788
+"vauswi",NA,"3","Chaetura vauxi","Vaux's Swift","Martinet de Vaux","Vencejo de Vaux",2021.01,3789
+"whtswi",NA,"7","Aeronautes saxatalis","White-throated Swift","Martinet à gorge blanche","Vencejo Pecho Blanco",2021.01,4063
+"ruthum1",NA,"2","Chrysolampis mosquitus","Ruby-topaz Hummingbird","Colibri rubis-topaze","Colibrí Rubí",2021.01,4284
+"peacoq1",NA,"1","Lophornis pavoninus","Peacock Coquette","Coquette paon","Coqueta Pavonina",2021.01,4353
+"maghum1",NA,"22","Eugenes fulgens","Rivoli's Hummingbird","Colibri de Rivoli","Colibrí Magnífico",2021.01,4612
+"plcsta",NA,"1","Heliomaster constantii","Plain-capped Starthroat","Colibri de Constant","Colibrí Picudo Occidental",2021.01,4618
+"buthum",NA,"6","Lampornis clemenciae","Blue-throated Mountain-gem","Colibri à gorge bleue","Colibrí Garganta Azul",2021.01,4640
+"luchum",NA,"7","Calothorax lucifer","Lucifer Hummingbird","Colibri lucifer","Colibrí Lucifer",2021.01,4685
+"rthhum",NA,"2702","Archilochus colubris","Ruby-throated Hummingbird","Colibri à gorge rubis","Colibrí Garganta Rubí",2021.01,4688
+"bkchum",NA,"1520","Archilochus alexandri","Black-chinned Hummingbird","Colibri à gorge noire","Colibrí Barba Negra",2021.01,4689
+"archil1",NA,"14","Archilochus colubris/alexandri","Ruby-throated/Black-chinned Hummingbird","Colibri à gorge rubis ou C. à gorge noire","Colibrí Garganta Rubí/Barba Negra",2021.01,4692
+"annhum",NA,"6500","Calypte anna","Anna's Hummingbird","Colibri d'Anna","Colibrí Cabeza Roja",2021.01,4699
+"coshum",NA,"611","Calypte costae","Costa's Hummingbird","Colibri de Costa","Colibrí Cabeza Violeta",2021.01,4702
+"x00618",NA,"2","Calypte anna x costae","Anna's x Costa's Hummingbird (hybrid)","Hybride Colibri d'Anna x C. de Costa","Colibrí Cabeza Roja x Cabeza Violeta (híbrido)",2021.01,4705
+"calypt",NA,"8","Calypte anna/costae","Anna's/Costa's Hummingbird","Colibri d'Anna ou C. de Costa","Colibrí Cabeza Roja/Cabeza Violeta",2021.01,4706
+"calhum",NA,"89","Selasphorus calliope","Calliope Hummingbird","Colibri calliope","Zumbador Garganta Rayada",2021.01,4707
+"x00619",NA,"2","Calypte anna x Selasphorus calliope","Anna's x Calliope Hummingbird (hybrid)","Hybride Colibri d'Anna x C. calliope","Colibrí Cabeza Roja x Zumbador Garganta Rayada (híbrido)",2021.01,4709
+"rufhum",NA,"3460","Selasphorus rufus","Rufous Hummingbird","Colibri roux","Zumbador Canelo",2021.01,4710
+"allhum",NA,"1127","Selasphorus sasin","Allen's Hummingbird","Colibri d'Allen","Zumbador de Allen",2021.01,4714
+"y00001",NA,"32","Selasphorus rufus/sasin","Rufous/Allen's Hummingbird","Colibri roux ou C. d'Allen","Zumbador Canelo/de Allen",2021.01,4719
+"brthum",NA,"225","Selasphorus platycercus","Broad-tailed Hummingbird","Colibri à queue large","Zumbador Cola Ancha",2021.01,4720
+"selasp",NA,"49","Selasphorus sp.","Selasphorus sp.","Selasphorus sp.","Selasphorus sp.",2021.01,4735
+"brbhum",NA,"128","Cynanthus latirostris","Broad-billed Hummingbird","Colibri circé","Colibrí Pico Ancho Norteño",2021.01,4745
+"goceme1",NA,"1","Cynanthus auriceps","Golden-crowned Emerald","Émeraude couronnée","Esmeralda Occidental",2021.01,4757
+"whehum",NA,"3","Basilinna leucotis","White-eared Hummingbird","Colibri à oreilles blanches","Colibrí Orejas Blancas",2021.01,4794
+"mexwoo1",NA,"1","Eupherusa ridgwayi","Mexican Woodnymph","Dryade du Mexique","Ninfa Mexicana",2021.01,4884
+"vichum",NA,"16","Leucolia violiceps","Violet-crowned Hummingbird","Ariane à couronne violette","Colibrí Corona Violeta",2021.01,4915
+"berhum",NA,"1","Saucerottia beryllina","Berylline Hummingbird","Ariane béryl","Colibrí Berilo",2021.01,4927
+"cinhum1",NA,"1","Amazilia rutila","Cinnamon Hummingbird","Ariane cannelle","Colibrí Canelo",2021.01,4970
+"bubhum",NA,"48","Amazilia yucatanensis","Buff-bellied Hummingbird","Ariane du Yucatan","Colibrí Vientre Canelo",2021.01,4976
+"rtlhum",NA,"1","Amazilia tzacatl","Rufous-tailed Hummingbird","Ariane à ventre gris","Colibrí Cola Canela",2021.01,4981
+"whthum2",NA,"2","Leucochloris albicollis","White-throated Hummingbird","Colibri à gorge blanche","Colibrí Gargantilla",2021.01,5037
+"hummin",NA,"87","Trochilidae sp.","hummingbird sp.","Colibri sp.","Colibrí sp.",2021.01,5085
+"clarai11",NA,"2","Rallus crepitans","Clapper Rail","Râle tapageur","Rascón Costero del Atlántico",2021.01,5134
+"rallus",NA,"1","Rallus elegans/crepitans","King/Clapper Rail","Râle élégant ou R. tapageur","Rascón Real/Costero del Atlántico",2021.01,5151
+"virrai",NA,"15","Rallus limicola","Virginia Rail","Râle de Virginie","Rascón Cara Gris",2021.01,5155
+"sora",NA,"4","Porzana carolina","Sora","Marouette de Caroline","Polluela Sora",2021.01,5313
+"comgal1",NA,"13","Gallinula galeata","Common Gallinule","Gallinule d'Amérique","Gallineta Frente Roja",2021.01,5327
+"commoo",NA,"16","Gallinula chloropus/galeata","Eurasian Moorhen/Common Gallinule","Gallinule poule-d'eau ou G. d'Amérique","Gallineta Euroasiática/Frente Roja",2021.01,5336
+"y00475",NA,"18","Fulica americana","American Coot","Foulque d'Amérique","Gallareta Americana",2021.01,5359
+"amecoo","y00475","95","Fulica americana (Red-shielded)","American Coot (Red-shielded)","Foulque d'Amérique (forme à cachet rouge)","Gallareta Americana (casco rojo)",2021.01,5362
+"coot1",NA,"1","Fulica sp.","coot sp.","Fulica sp.","Focha sp.",2021.01,5370
+"purgal2",NA,"1","Porphyrio martinica","Purple Gallinule","Talève violacée","Gallineta Morada",2021.01,5372
+"limpki",NA,"21","Aramus guarauna","Limpkin","Courlan brun","Carrao",2021.01,5534
+"sancra",NA,"254","Antigone canadensis","Sandhill Crane","Grue du Canada","Grulla Gris",2021.01,5561
+"sancra1","sancra","1","Antigone canadensis canadensis","Sandhill Crane (canadensis)","Grue du Canada (canadensis)","Grulla Gris (canadensis)",2021.01,5562
+"sancra2","sancra","1","Antigone canadensis tabida/rowani","Sandhill Crane (tabida/rowani)","Grue du Canada (tabida/rowani)","Grulla Gris (tabida/rowani)",2021.01,5563
+"sancra5","sancra","20","Antigone canadensis pratensis","Sandhill Crane (pratensis)","Grue du Canada (pratensis)","Grulla Gris (pratensis)",2021.01,5567
+"whocra",NA,"1","Grus americana","Whooping Crane","Grue blanche","Grulla Blanca",2021.01,5580
+"bknsti",NA,"2","Himantopus mexicanus","Black-necked Stilt","Échasse d'Amérique","Monjita Americana",2021.01,5626
+"pagplo",NA,"10","Pluvialis fulva","Pacific Golden-Plover","Pluvier fauve","Chorlo Dorado del Pacífico",2021.01,5669
+"semplo",NA,"2","Charadrius semipalmatus","Semipalmated Plover","Pluvier semipalmé","Chorlo Semipalmeado",2021.01,5770
+"killde",NA,"751","Charadrius vociferus","Killdeer","Pluvier kildir","Chorlo Tildío",2021.01,5793
+"plover2",NA,"1","Charadriidae sp.","plover sp.","Pluvier sp.","Chorlo sp.",2021.01,5810
+"lobcur",NA,"3","Numenius americanus","Long-billed Curlew","Courlis à long bec","Zarapito Pico Largo",2021.01,5864
+"leasan",NA,"9","Calidris minutilla","Least Sandpiper","Bécasseau minuscule","Playero Diminuto",2021.01,5948
+"pecsan",NA,"3","Calidris melanotos","Pectoral Sandpiper","Bécasseau à poitrine cendrée","Playero Pectoral",2021.01,5953
+"semsan",NA,"1","Calidris pusilla","Semipalmated Sandpiper","Bécasseau semipalmé","Playero Semipalmeado",2021.01,5956
+"wessan",NA,"1","Calidris mauri","Western Sandpiper","Bécasseau d'Alaska","Playero Occidental",2021.01,5957
+"lobdow",NA,"1","Limnodromus scolopaceus","Long-billed Dowitcher","Bécassin à long bec","Costurero Pico Largo",2021.01,5966
+"jacsni",NA,"1","Lymnocryptes minimus","Jack Snipe","Bécassine sourde","Agachadiza Chica",2021.01,5968
+"amewoo",NA,"210","Scolopax minor","American Woodcock","Bécasse d'Amérique","Chocha del Este",2021.01,5976
+"comsni",NA,"17","Gallinago gallinago","Common Snipe","Bécassine des marais","Agachadiza Común",2021.01,5994
+"wilsni1",NA,"37","Gallinago delicata","Wilson's Snipe","Bécassine de Wilson","Agachona Norteamericana",2021.01,5998
+"redpha1",NA,"1","Phalaropus fulicarius","Red Phalarope","Phalarope à bec large","Falaropo Pico Grueso",2021.01,6022
+"comsan",NA,"1","Actitis hypoleucos","Common Sandpiper","Chevalier guignette","Andarríos Chico",2021.01,6025
+"sposan",NA,"20","Actitis macularius","Spotted Sandpiper","Chevalier grivelé","Playero Alzacolita",2021.01,6026
+"solsan",NA,"1","Tringa solitaria","Solitary Sandpiper","Chevalier solitaire","Playero Solitario",2021.01,6029
+"wantat1",NA,"1","Tringa incana","Wandering Tattler","Chevalier errant","Playero Vagabundo",2021.01,6033
+"greyel",NA,"3","Tringa melanoleuca","Greater Yellowlegs","Grand Chevalier","Patamarilla Mayor",2021.01,6036
+"willet2","willet1","1","Tringa semipalmata semipalmata","Willet (Eastern)","Chevalier semipalmé (semipalmata)","Playero Pihuiuí (semipalmata)",2021.01,6041
+"lesyel",NA,"2","Tringa flavipes","Lesser Yellowlegs","Petit Chevalier","Patamarilla Menor",2021.01,6043
+"doveki",NA,"2","Alle alle","Dovekie","Mergule nain","Mérgulo Atlántico",2021.01,6186
+"parauk",NA,"1","Aethia psittacula","Parakeet Auklet","Starique perroquet","Alquita Perico",2021.01,6239
+"bklkit",NA,"2","Rissa tridactyla","Black-legged Kittiwake","Mouette tridactyle","Gaviota Patas Negras",2021.01,6254
+"bongul",NA,"9","Chroicocephalus philadelphia","Bonaparte's Gull","Mouette de Bonaparte","Gaviota de Bonaparte",2021.01,6267
+"blbgul1",NA,"1","Chroicocephalus bulleri","Black-billed Gull","Mouette de Buller","Gaviota Maorí",2021.01,6272
+"bkhgul",NA,"2","Chroicocephalus ridibundus","Black-headed Gull","Mouette rieuse","Gaviota Encapuchada",2021.01,6285
+"grygul",NA,"1","Leucophaeus modestus","Gray Gull","Goéland gris","Gaviota Gris",2021.01,6294
+"laugul",NA,"35","Leucophaeus atricilla","Laughing Gull","Mouette atricille","Gaviota Reidora",2021.01,6295
+"fragul",NA,"3","Leucophaeus pipixcan","Franklin's Gull","Mouette de Franklin","Gaviota de Franklin",2021.01,6299
+"heegul",NA,"1","Larus heermanni","Heermann's Gull","Goéland de Heermann","Gaviota Plomiza",2021.01,6317
+"mewgul2",NA,"3","Larus brachyrhynchus","Short-billed Gull","Goéland à bec court","Gaviota Pico Corto",2021.01,6324
+"ribgul",NA,"501","Larus delawarensis","Ring-billed Gull","Goéland à bec cerclé","Gaviota Pico Anillado",2021.01,6326
+"x00616",NA,"1","Leucophaeus atricilla x Larus delawarensis","Laughing x Ring-billed Gull (hybrid)","Hybride Mouette atricille x Goéland à bec cerclé","Gaviota Reidora x Pico Anillado (híbrido)",2021.01,6328
+"wesgul",NA,"42","Larus occidentalis","Western Gull","Goéland d'Audubon","Gaviota Occidental",2021.01,6331
+"calgul",NA,"48","Larus californicus","California Gull","Goéland de Californie","Gaviota Californiana",2021.01,6336
+"hergul",NA,"597","Larus argentatus","Herring Gull","Goéland argenté","Gaviota Plateada",2021.01,6339
+"amhgul1","hergul","40","Larus argentatus smithsonianus","Herring Gull (American)","Goéland argenté (smithsonianus)","Gaviota Plateada (smithsonianus)",2021.01,6340
+"y00478",NA,"1","Larus glaucoides","Iceland Gull","Goéland arctique","Gaviota de Groenlandia",2021.01,6359
+"thagul","y00478","4","Larus glaucoides thayeri","Iceland Gull (Thayer's)","Goéland arctique (thayeri)","Gaviota de Groenlandia (de Thayer)",2021.01,6360
+"icegul1","y00478","1","Larus glaucoides glaucoides","Iceland Gull (glaucoides)","Goéland arctique (glaucoides)","Gaviota de Groenlandia (glaucoides)",2021.01,6363
+"icegul","y00478","6","Larus glaucoides glaucoides/kumlieni","Iceland Gull (glaucoides/kumlieni)","Goéland arctique (glaucoides/kumlieni)","Gaviota de Groenlandia (glaucoides/kumlieni)",2021.01,6364
+"x00617",NA,"2","Larus argentatus x glaucoides","Herring x Iceland Gull (hybrid)","Hybride Goéland argenté x G. arctique","Gaviota Plateada x de Groenlandia (híbrido)",2021.01,6366
+"lbbgul",NA,"2","Larus fuscus","Lesser Black-backed Gull","Goéland brun","Gaviota Sombría",2021.01,6368
+"glwgul",NA,"73","Larus glaucescens","Glaucous-winged Gull","Goéland à ailes grises","Gaviota Alas Blancas",2021.01,6382
+"x00051",NA,"10","Larus occidentalis x glaucescens","Western x Glaucous-winged Gull (hybrid)","Hybride Goéland d'Audubon x G. à ailes grises","Gaviota Occidental x Alas Blancas (híbrido)",2021.01,6383
+"x00050",NA,"2","Larus argentatus x glaucescens","Herring x Glaucous-winged Gull (hybrid)","Hybride Goéland argenté x G. à ailes grises","Gaviota Plateada x Alas Blancas (híbrido)",2021.01,6384
+"glagul",NA,"23","Larus hyperboreus","Glaucous Gull","Goéland bourgmestre","Gaviota Blanca",2021.01,6388
+"gbbgul",NA,"52","Larus marinus","Great Black-backed Gull","Goéland marin","Gaviota Mayor",2021.01,6397
+"larus1",NA,"5","Larus sp.","Larus sp.","Goéland sp. (Larus sp.)","Larus sp.",2021.01,6408
+"larus",NA,"56","Larinae sp.","gull sp.","Mouette ou Goéland sp. (Larinae sp.)","Gaviota sp.",2021.01,6409
+"leater1",NA,"1","Sternula antillarum","Least Tern","Petite Sterne","Charrán Mínimo",2021.01,6472
+"gubter1",NA,"1","Gelochelidon nilotica","Gull-billed Tern","Sterne hansel","Charrán Pico Grueso",2021.01,6493
+"comter",NA,"7","Sterna hirundo","Common Tern","Sterne pierregarin","Charrán Común",2021.01,6526
+"forter",NA,"8","Sterna forsteri","Forster's Tern","Sterne de Forster","Charrán de Forster",2021.01,6546
+"royter1",NA,"1","Thalasseus maximus","Royal Tern","Sterne royale","Charrán Real",2021.01,6555
+"santer1",NA,"1","Thalasseus sandvicensis","Sandwich Tern","Sterne caugek","Charrán de Sandwich",2021.01,6561
+"tern1",NA,"1","Sterninae sp.","tern sp.","Sterne sp.","Charrán sp.",2021.01,6579
+"retloo",NA,"1","Gavia stellata","Red-throated Loon","Plongeon catmarin","Colimbo Menor",2021.01,6610
+"comloo",NA,"69","Gavia immer","Common Loon","Plongeon huard","Colimbo Común",2021.01,6616
+"loon",NA,"1","Gavia sp.","loon sp.","Gavia sp.","Colimbo sp.",2021.01,6619
+"woosto",NA,"63","Mycteria americana","Wood Stork","Tantale d'Amérique","Cigüeña Americana",2021.01,6963
+"magfri",NA,"1","Fregata magnificens","Magnificent Frigatebird","Frégate superbe","Fragata Tijereta",2021.01,6976
+"norgan",NA,"1","Morus bassanus","Northern Gannet","Fou de Bassan","Bobo Norteño",2021.01,7011
+"anhing",NA,"58","Anhinga anhinga","Anhinga","Anhinga d'Amérique","Anhinga Americana",2021.01,7015
+"doccor",NA,"142","Nannopterum auritum","Double-crested Cormorant","Cormoran à aigrettes","Cormorán Orejón",2021.01,7071
+"neocor",NA,"8","Nannopterum brasilianum","Neotropic Cormorant","Cormoran vigua","Cormorán Neotropical",2021.01,7077
+"cormor1",NA,"1","Phalacrocoracidae sp.","cormorant sp.","Phalacrocorax sp.","Cormorán sp.",2021.01,7103
+"amwpel",NA,"23","Pelecanus erythrorhynchos","American White Pelican","Pélican d'Amérique","Pelícano Blanco Americano",2021.01,7104
+"brnpel",NA,"26","Pelecanus occidentalis","Brown Pelican","Pélican brun","Pelícano Café",2021.01,7105
+"grwpel1",NA,"2","Pelecanus onocrotalus","Great White Pelican","Pélican blanc","Pelícano Común",2021.01,7113
+"amebit",NA,"3","Botaurus lentiginosus","American Bittern","Butor d'Amérique","Avetoro Norteño",2021.01,7127
+"leabit",NA,"1","Ixobrychus exilis","Least Bittern","Petit Blongios","Avetoro Menor",2021.01,7149
+"grbher3",NA,"1075","Ardea herodias","Great Blue Heron","Grand Héron","Garza Morena",2021.01,7168
+"grbher","grbher3","541","Ardea herodias [herodias Group]","Great Blue Heron (Great Blue)","Grand Héron (groupe herodias)","Garza Morena (grupo herodias)",2021.01,7169
+"grwher","grbher3","26","Ardea herodias occidentalis","Great Blue Heron (Great White)","Grand Héron (occidentalis)","Garza Morena (occidentalis)",2021.01,7174
+"wurher","grbher3","6","Ardea herodias wardi x occidentalis","Great Blue Heron (Wurdemann's)","Grand Héron (forme de Wurdemann)","Garza Morena (de Wurdemann)",2021.01,7175
+"graher1",NA,"1","Ardea cinerea","Gray Heron","Héron cendré","Garza Real",2021.01,7176
+"greegr",NA,"249","Ardea alba","Great Egret","Grande Aigrette","Garza Blanca",2021.01,7200
+"greegr2","greegr","36","Ardea alba egretta","Great Egret (American)","Grande Aigrette (egretta)","Garza Blanca (egretta)",2021.01,7203
+"litegr",NA,"4","Egretta garzetta","Little Egret","Aigrette garzette","Garceta Común",2021.01,7217
+"snoegr",NA,"107","Egretta thula","Snowy Egret","Aigrette neigeuse","Garza Dedos Dorados",2021.01,7229
+"libher",NA,"98","Egretta caerulea","Little Blue Heron","Aigrette bleue","Garza Azul",2021.01,7233
+"x00615",NA,"2","Egretta thula x caerulea","Snowy Egret x Little Blue Heron (hybrid)","Hybride Aigrette neigeuse x A. bleue","Garza Dedos Dorados x Azul (híbrido)",2021.01,7234
+"triher",NA,"38","Egretta tricolor","Tricolored Heron","Aigrette tricolore","Garza Tricolor",2021.01,7235
+"redegr",NA,"1","Egretta rufescens","Reddish Egret","Aigrette roussâtre","Garza Rojiza",2021.01,7240
+"categr",NA,"89","Bubulcus ibis","Cattle Egret","Héron garde-boeufs","Garza Ganadera",2021.01,7247
+"whiegr1",NA,"4","Ardea/Egretta/Bubulcus sp.","white egret sp.","Aigrette sp.","Garza blanca sp.",2021.01,7251
+"grnher",NA,"76","Butorides virescens","Green Heron","Héron vert","Garcita Verde",2021.01,7261
+"grnher1","grnher","1","Butorides virescens virescens/bahamensis","Green Heron (virescens/bahamensis)","Héron vert (virescens/bahamensis)","Garcita Verde (virescens/bahamensis)",2021.01,7262
+"bcnher",NA,"25","Nycticorax nycticorax","Black-crowned Night-Heron","Bihoreau gris","Garza Nocturna Corona Negra",2021.01,7305
+"bkcnih2","bcnher","1","Nycticorax nycticorax hoactli","Black-crowned Night-Heron (American)","Bihoreau gris (hoactli)","Garza Nocturna Corona Negra (hoactli)",2021.01,7307
+"ycnher",NA,"18","Nyctanassa violacea","Yellow-crowned Night-Heron","Bihoreau violacé","Garza Nocturna Corona Clara",2021.01,7318
+"y00610",NA,"1","Nycticorax nycticorax/Nyctanassa violacea","Black-crowned/Yellow-crowned Night-Heron","Bihoreau gris ou B. violacé","Garza Nocturna Corona Negra/Corona Clara",2021.01,7327
+"heron1",NA,"1","Ardeidae sp.","heron sp.","Héron ou Aigrette sp.","Garza sp.",2021.01,7342
+"whiibi",NA,"221","Eudocimus albus","White Ibis","Ibis blanc","Ibis Blanco",2021.01,7343
+"gloibi",NA,"24","Plegadis falcinellus","Glossy Ibis","Ibis falcinelle","Ibis Cara Oscura",2021.01,7346
+"whfibi",NA,"2","Plegadis chihi","White-faced Ibis","Ibis à face blanche","Ibis Ojos Rojos",2021.01,7347
+"rosspo1",NA,"10","Platalea ajaja","Roseate Spoonbill","Spatule rosée","Espátula Rosada",2021.01,7407
+"blkvul",NA,"698","Coragyps atratus","Black Vulture","Urubu noir","Zopilote Común",2021.01,7412
+"turvul",NA,"2508","Cathartes aura","Turkey Vulture","Urubu à tête rouge","Zopilote Aura",2021.01,7416
+"turvul2","turvul","26","Cathartes aura aura/septentrionalis","Turkey Vulture (Northern)","Urubu à tête rouge (aura/septentrionalis)","Zopilote Aura (aura/septentrionalis)",2021.01,7417
+"vultur1",NA,"55","Cathartidae sp.","new world vulture sp.","Urubu sp.","Cathartidae sp.",2021.01,7427
+"osprey",NA,"221","Pandion haliaetus","Osprey","Balbuzard pêcheur","Águila Pescadora",2021.01,7429
+"osprey1","osprey","5","Pandion haliaetus carolinensis","Osprey (carolinensis)","Balbuzard pêcheur (carolinensis)","Águila Pescadora (carolinensis)",2021.01,7431
+"bkskit1",NA,"1","Elanus caeruleus","Black-winged Kite","Élanion blanc","Elanio Común",2021.01,7438
+"whtkit",NA,"50","Elanus leucurus","White-tailed Kite","Élanion à queue blanche","Milano Cola Blanca",2021.01,7445
+"hobkit",NA,"1","Chondrohierax uncinatus","Hook-billed Kite","Bec-en-croc de Temminck","Gavilán Pico de Gancho",2021.01,7463
+"swtkit",NA,"33","Elanoides forficatus","Swallow-tailed Kite","Naucler à queue fourchue","Milano Tijereta",2021.01,7486
+"blheag1",NA,"1","Spizaetus tyrannus","Black Hawk-Eagle","Aigle tyran","Águila Tirana",2021.01,7627
+"goleag",NA,"130","Aquila chrysaetos","Golden Eagle","Aigle royal","Águila Real",2021.01,7662
+"miskit",NA,"7","Ictinia mississippiensis","Mississippi Kite","Milan du Mississippi","Milano de Mississippi",2021.01,7709
+"wemhar1",NA,"1","Circus aeruginosus","Eurasian Marsh-Harrier","Busard des roseaux","Aguilucho Lagunero Occidental",2021.01,7716
+"swahar1",NA,"1","Circus approximans","Swamp Harrier","Busard de Gould","Aguilucho Lagunero del Pacífico",2021.01,7724
+"norhar2",NA,"1587","Circus hudsonius","Northern Harrier","Busard des marais","Gavilán Rastrero",2021.01,7732
+"norhar",NA,"33","Circus cyaneus/hudsonius","Hen/Northern Harrier","Busard Saint-Martin d'Eurasie ou B. des marais","Gavilán Pecho Gris/Rastrero",2021.01,7733
+"shshaw",NA,"22983","Accipiter striatus","Sharp-shinned Hawk","Épervier brun","Gavilán Pecho Canela",2021.01,7896
+"shshaw2","shshaw","3","Accipiter striatus [velox Group]","Sharp-shinned Hawk (Northern)","Épervier brun (groupe velox)","Gavilán Pecho Canela (grupo velox)",2021.01,7901
+"coohaw",NA,"23781","Accipiter cooperii","Cooper's Hawk","Épervier de Cooper","Gavilán de Cooper",2021.01,7909
+"y00612",NA,"8","Accipiter striatus/cooperii","Sharp-shinned/Cooper's Hawk","Épervier brun ou É. de Cooper","Gavilán Pecho Canela/de Cooper",2021.01,7910
+"norgos",NA,"1293","Accipiter gentilis","Northern Goshawk","Autour des palombes","Gavilán Azor",2021.01,7926
+"norgos2","norgos","3","Accipiter gentilis atricapillus/laingi","Northern Goshawk (American)","Autour des palombes (atricapillus/laingi)","Gavilán Azor (atricapillus/laingi)",2021.01,7934
+"y00666",NA,"3","Accipiter cooperii/gentilis","Cooper's Hawk/Northern Goshawk","Épervier de Cooper ou Autour des palombes","Gavilán de Cooper/Azor",2021.01,7938
+"accipi",NA,"666","Accipiter sp.","Accipiter sp.","Accipiter sp.","Accipiter sp.",2021.01,7940
+"baleag",NA,"1561","Haliaeetus leucocephalus","Bald Eagle","Pygargue à tête blanche","Águila Cabeza Blanca",2021.01,7967
+"whteag",NA,"1","Haliaeetus albicilla","White-tailed Eagle","Pygargue à queue blanche","Pigargo Europeo",2021.01,7971
+"crahaw",NA,"1","Geranospiza caerulescens","Crane Hawk","Buse échasse","Gavilán Zancón",2021.01,7984
+"comblh1",NA,"4","Buteogallus anthracinus","Common Black Hawk","Buse noire","Aguililla Negra Menor",2021.01,7995
+"hrshaw",NA,"79","Parabuteo unicinctus","Harris's Hawk","Buse de Harris","Aguililla Rojinegra",2021.01,8032
+"whthaw",NA,"1","Geranoaetus albicaudatus","White-tailed Hawk","Buse à queue blanche","Aguililla Cola Blanca",2021.01,8036
+"gryhaw2",NA,"10","Buteo plagiatus","Gray Hawk","Buse grise","Aguililla Gris",2021.01,8060
+"reshaw",NA,"4718","Buteo lineatus","Red-shouldered Hawk","Buse à épaulettes","Aguililla Pecho Rojo",2021.01,8066
+"reshaw5","reshaw","262","Buteo lineatus [lineatus Group]","Red-shouldered Hawk (lineatus Group)","Buse à épaulettes (groupe lineatus)","Aguililla Pecho Rojo (grupo lineatus)",2021.01,8067
+"reshaw2","reshaw","20","Buteo lineatus extimus","Red-shouldered Hawk (extimus)","Buse à épaulettes (extimus)","Aguililla Pecho Rojo (extimus)",2021.01,8071
+"reshaw4","reshaw","51","Buteo lineatus elegans","Red-shouldered Hawk (elegans)","Buse à épaulettes (elegans)","Aguililla Pecho Rojo (elegans)",2021.01,8072
+"brwhaw",NA,"400","Buteo platypterus","Broad-winged Hawk","Petite Buse","Aguililla Alas Anchas",2021.01,8075
+"brwhaw1","brwhaw","3","Buteo platypterus platypterus","Broad-winged Hawk (Northern)","Petite Buse (platypterus)","Aguililla Alas Anchas (platypterus)",2021.01,8076
+"shthaw",NA,"12","Buteo brachyurus","Short-tailed Hawk","Buse à queue courte","Aguililla Cola Corta",2021.01,8086
+"swahaw",NA,"70","Buteo swainsoni","Swainson's Hawk","Buse de Swainson","Aguililla de Swainson",2021.01,8090
+"zothaw",NA,"5","Buteo albonotatus","Zone-tailed Hawk","Buse à queue barrée","Aguililla Aura",2021.01,8092
+"rethaw",NA,"12237","Buteo jamaicensis","Red-tailed Hawk","Buse à queue rousse","Aguililla Cola Roja",2021.01,8094
+"wrthaw1","rethaw","113","Buteo jamaicensis calurus/alascensis","Red-tailed Hawk (calurus/alascensis)","Buse à queue rousse (calurus/alascensis)","Aguililla Cola Roja (calurus/alascensis)",2021.01,8095
+"erthaw1","rethaw","281","Buteo jamaicensis borealis","Red-tailed Hawk (borealis)","Buse à queue rousse (borealis)","Aguililla Cola Roja (borealis)",2021.01,8098
+"rethaw4","rethaw","16","Buteo jamaicensis abieticola","Red-tailed Hawk (abieticola)","Buse à queue rousse (abieticola)","Aguililla Cola Roja (abieticola)",2021.01,8099
+"hrthaw1","rethaw","2","Buteo jamaicensis harlani","Red-tailed Hawk (Harlan's)","Buse à queue rousse (harlani)","Aguililla Cola Roja (harlani)",2021.01,8101
+"krthaw1","rethaw","5","Buteo jamaicensis kriderii","Red-tailed Hawk (Krider's)","Buse à queue rousse (kriderii)","Aguililla Cola Roja (kriderii)",2021.01,8102
+"rethaw2","rethaw","3","Buteo jamaicensis jamaicensis","Red-tailed Hawk (jamaicensis)","Buse à queue rousse (jamaicensis)","Aguililla Cola Roja (jamaicensis)",2021.01,8111
+"rethaw3","rethaw","1","Buteo jamaicensis solitudinis","Red-tailed Hawk (solitudinis)","Buse à queue rousse (solitudinis)","Aguililla Cola Roja (solitudinis)",2021.01,8112
+"rolhaw",NA,"302","Buteo lagopus","Rough-legged Hawk","Buse pattue","Aguililla Ártica",2021.01,8114
+"ferhaw",NA,"49","Buteo regalis","Ferruginous Hawk","Buse rouilleuse","Aguililla Real",2021.01,8121
+"combuz1",NA,"12","Buteo buteo","Common Buzzard","Buse variable","Busardo Ratonero",2021.01,8123
+"buteo",NA,"7","Buteo sp.","Buteo sp.","Buteo sp.","Buteo sp.",2021.01,8157
+"y00221",NA,"1","Buteo/eagle sp.","Buteo/eagle sp.","Buse ou Aigle sp.","Aguililla/Águila sp.",2021.01,8159
+"hawk",NA,"278","Accipitridae sp. (hawk sp.)","hawk sp.","Rapace sp.","Accipitridae sp. (tipo aguililla)",2021.01,8160
+"eagle1",NA,"6","Accipitridae sp. (eagle sp.)","eagle sp.","Aigle ou Pygargue sp.","Accipitridae sp. (tipo águila)",2021.01,8161
+"brnowl",NA,"93","Tyto alba","Barn Owl","Effraie des clochers","Lechuza de Campanario",2021.01,8193
+"wesowl1",NA,"83","Megascops kennicottii","Western Screech-Owl","Petit-duc des montagnes","Tecolote del Oeste",2021.01,8430
+"easowl1",NA,"535","Megascops asio","Eastern Screech-Owl","Petit-duc maculé","Tecolote del Este",2021.01,8440
+"eassco1","easowl1","6","Megascops asio [asio Group]","Eastern Screech-Owl (Northern)","Petit-duc maculé (groupe asio)","Tecolote del Este (grupo asio)",2021.01,8441
+"screec1",NA,"14","Megascops sp.","screech-owl sp.","Megascops sp.","Megascops/Psiloscops sp.",2021.01,8457
+"grhowl",NA,"1252","Bubo virginianus","Great Horned Owl","Grand-duc d'Amérique","Búho Cornudo",2021.01,8481
+"grhowl1","grhowl","12","Bubo virginianus [virginianus Group]","Great Horned Owl (Great Horned)","Grand-duc d'Amérique (groupe virginianus)","Búho Cornudo (grupo virginianus)",2021.01,8482
+"snoowl1",NA,"83","Bubo scandiacus","Snowy Owl","Harfang des neiges","Búho Nival",2021.01,8542
+"nohowl",NA,"38","Surnia ulula","Northern Hawk Owl","Épervière boréale","Lechuza Gavilana",2021.01,8565
+"nopowl",NA,"282","Glaucidium gnoma","Northern Pygmy-Owl","Chevêchette naine","Tecolote Serrano",2021.01,8576
+"moupyo1","nopowl","3","Glaucidium gnoma gnoma","Northern Pygmy-Owl (Mountain)","Chevêchette naine (gnoma)","Tecolote Serrano (gnoma)",2021.01,8577
+"norpyo1","nopowl","3","Glaucidium gnoma [californicum Group]","Northern Pygmy-Owl (Pacific)","Chevêchette naine (groupe californicum)","Tecolote Serrano (grupo californicum)",2021.01,8578
+"norpyo2","nopowl","4","Glaucidium gnoma pinicola","Northern Pygmy-Owl (Rocky Mts.)","Chevêchette naine (pinicola)","Tecolote Serrano (pinicola)",2021.01,8582
+"fepowl",NA,"1","Glaucidium brasilianum","Ferruginous Pygmy-Owl","Chevêchette brune","Tecolote Bajeño",2021.01,8602
+"burowl",NA,"3","Athene cunicularia","Burrowing Owl","Chevêche des terriers","Tecolote Llanero",2021.01,8688
+"motowl",NA,"1","Ciccaba virgata","Mottled Owl","Chouette mouchetée","Búho Café",2021.01,8712
+"spoowl",NA,"1","Strix occidentalis","Spotted Owl","Chouette tachetée","Búho Moteado",2021.01,8769
+"brdowl",NA,"1469","Strix varia","Barred Owl","Chouette rayée","Búho Barrado Norteño",2021.01,8773
+"x00439",NA,"4","Strix occidentalis x varia","Spotted x Barred Owl (hybrid)","Hybride Chouette tachetée x C. rayée","Búho Moteado x Barrado Americano (híbrido)",2021.01,8777
+"grgowl",NA,"79","Strix nebulosa","Great Gray Owl","Chouette lapone","Cárabo Lapón",2021.01,8796
+"loeowl",NA,"31","Asio otus","Long-eared Owl","Hibou moyen-duc","Búho Cara Canela",2021.01,8806
+"sheowl",NA,"22","Asio flammeus","Short-eared Owl","Hibou des marais","Búho Sabanero",2021.01,8829
+"borowl",NA,"31","Aegolius funereus","Boreal Owl","Nyctale de Tengmalm","Mochuelo Boreal",2021.01,8849
+"nswowl",NA,"148","Aegolius acadicus","Northern Saw-whet Owl","Petite Nyctale","Tecolote Oyamelero Norteño",2021.01,8857
+"owl1",NA,"7","Strigiformes sp.","owl sp.","Strigiformes sp.","Lechuza/Tecolote/Búho sp.",2021.01,8963
+"cittro1",NA,"1","Trogon citreolus","Citreoline Trogon","Trogon citrin","Coa Citrina",2021.01,9039
+"eletro",NA,"1","Trogon elegans","Elegant Trogon","Trogon élégant","Coa Elegante",2021.01,9071
+"rucmot1",NA,"1","Momotus mexicanus","Russet-crowned Motmot","Motmot à tête rousse","Momoto Corona Canela",2021.01,9331
+"rinkin1",NA,"6","Megaceryle torquata","Ringed Kingfisher","Martin-pêcheur à ventre roux","Martín Pescador de Collar",2021.01,9777
+"belkin1",NA,"639","Megaceryle alcyon","Belted Kingfisher","Martin-pêcheur d'Amérique","Martín Pescador Norteño",2021.01,9782
+"grnkin",NA,"3","Chloroceryle americana","Green Kingfisher","Martin-pêcheur vert","Martín Pescador Verde",2021.01,9792
+"kingfi1",NA,"3","Alcedinidae sp.","kingfisher sp.","Martin-pêcheur sp.","Martín Pescador sp.",2021.01,9800
+"wilsap",NA,"84","Sphyrapicus thyroideus","Williamson's Sapsucker","Pic de Williamson","Carpintero Elegante",2021.01,10633
+"yebsap",NA,"10807","Sphyrapicus varius","Yellow-bellied Sapsucker","Pic maculé","Carpintero Moteado",2021.01,10636
+"rensap",NA,"293","Sphyrapicus nuchalis","Red-naped Sapsucker","Pic à nuque rouge","Carpintero Nuca Roja",2021.01,10637
+"y00019",NA,"12","Sphyrapicus varius/nuchalis","Yellow-bellied/Red-naped Sapsucker","Pic maculé ou P. à nuque rouge","Carpintero Moteado/Nuca Roja",2021.01,10639
+"rebsap",NA,"1233","Sphyrapicus ruber","Red-breasted Sapsucker","Pic à poitrine rouge","Carpintero Pecho Rojo",2021.01,10640
+"x00712",NA,"2","Sphyrapicus varius x ruber","Yellow-bellied x Red-breasted Sapsucker (hybrid)","Hybride Pic maculé x P. à poitrine rouge","Carpintero Moteado x Pecho Rojo (híbrido)",2021.01,10643
+"rnxsap1",NA,"1","Sphyrapicus nuchalis x ruber","Red-naped x Red-breasted Sapsucker (hybrid)","Hybride Pic à nuque rouge x P. à poitrine rouge","Carpintero Nuca Roja x Pecho Rojo (híbrido)",2021.01,10644
+"sapsuc",NA,"5","Sphyrapicus sp.","sapsucker sp.","Sphyrapicus sp.","Sphyrapicus sp.",2021.01,10646
+"lewwoo",NA,"117","Melanerpes lewis","Lewis's Woodpecker","Pic de Lewis","Carpintero de Lewis",2021.01,10651
+"rehwoo",NA,"7246","Melanerpes erythrocephalus","Red-headed Woodpecker","Pic à tête rouge","Carpintero Cabecirrojo",2021.01,10654
+"acowoo",NA,"1262","Melanerpes formicivorus","Acorn Woodpecker","Pic glandivore","Carpintero Bellotero",2021.01,10655
+"yefwoo1",NA,"1","Melanerpes flavifrons","Yellow-fronted Woodpecker","Pic à front jaune","Carpintero Arcoiris",2021.01,10666
+"gocwoo1",NA,"1","Melanerpes chrysogenys","Golden-cheeked Woodpecker","Pic élégant","Carpintero Enmascarado",2021.01,10672
+"gilwoo",NA,"499","Melanerpes uropygialis","Gila Woodpecker","Pic des saguaros","Carpintero del Desierto",2021.01,10685
+"gofwoo",NA,"416","Melanerpes aurifrons","Golden-fronted Woodpecker","Pic à front doré","Carpintero Cheje",2021.01,10691
+"rebwoo",NA,"42182","Melanerpes carolinus","Red-bellied Woodpecker","Pic à ventre roux","Carpintero de Carolina",2021.01,10707
+"attwoo1",NA,"75","Picoides dorsalis","American Three-toed Woodpecker","Pic à dos rayé","Pico Tridáctilo Americano",2021.01,10724
+"attwoo2","attwoo1","1","Picoides dorsalis dorsalis","American Three-toed Woodpecker (Rocky Mts.)","Pic à dos rayé (dorsalis)","Pico Tridáctilo Americano (Montañas Rocosas)",2021.01,10725
+"attwoo3","attwoo1","1","Picoides dorsalis fasciatus","American Three-toed Woodpecker (Northwest)","Pic à dos rayé (fasciatus)","Pico Tridáctilo Americano (fasciatus)",2021.01,10726
+"attwoo4","attwoo1","2","Picoides dorsalis bacatus","American Three-toed Woodpecker (Eastern)","Pic à dos rayé (bacatus)","Pico Tridáctilo Americano (bacatus)",2021.01,10727
+"bkbwoo",NA,"61","Picoides arcticus","Black-backed Woodpecker","Pic à dos noir","Pico Ártico",2021.01,10728
+"y00617",NA,"2","Picoides dorsalis/arcticus","American Three-toed/Black-backed Woodpecker","Pic à dos rayé ou P. à dos noir","Pico Tridáctilo Americano/Ártico",2021.01,10729
+"dowwoo",NA,"64726","Dryobates pubescens","Downy Woodpecker","Pic mineur","Carpintero Albinegro Menor",2021.01,10892
+"nutwoo",NA,"1173","Dryobates nuttallii","Nuttall's Woodpecker","Pic de Nuttall","Carpintero Californiano",2021.01,10902
+"labwoo",NA,"1203","Dryobates scalaris","Ladder-backed Woodpecker","Pic arlequin","Carpintero Mexicano",2021.01,10904
+"x00620",NA,"1","Dryobates nuttallii x scalaris","Nuttall's x Ladder-backed Woodpecker (hybrid)","Hybride Pic de Nuttall x P. arlequin","Carpintero Californiano x Mexicano (híbrido)",2021.01,10915
+"recwoo",NA,"26","Dryobates borealis","Red-cockaded Woodpecker","Pic à face blanche","Pico de Florida",2021.01,10917
+"haiwoo",NA,"41922","Dryobates villosus","Hairy Woodpecker","Pic chevelu","Carpintero Albinegro Mayor",2021.01,10918
+"y00322",NA,"18","Dryobates pubescens/villosus","Downy/Hairy Woodpecker","Pic mineur ou P. chevelu","Carpintero Albinegro Menor/Albinegro Mayor",2021.01,10939
+"whhwoo",NA,"154","Dryobates albolarvatus","White-headed Woodpecker","Pic à tête blanche","Pico Cabeciblanco",2021.01,10942
+"strwoo",NA,"2","Dryobates stricklandi","Strickland's Woodpecker","Pic de Strickland","Carpintero Transvolcánico",2021.01,10951
+"ariwoo",NA,"3","Dryobates arizonae","Arizona Woodpecker","Pic d'Arizona","Carpintero de Arizona",2021.01,10952
+"pabwoo1",NA,"1","Campephilus guatemalensis","Pale-billed Woodpecker","Pic à bec clair","Carpintero Pico Plateado",2021.01,11045
+"pilwoo",NA,"15408","Dryocopus pileatus","Pileated Woodpecker","Grand Pic","Picamaderos Norteamericano",2021.01,11237
+"norfli",NA,"32364","Colaptes auratus","Northern Flicker","Pic flamboyant","Carpintero de Pechera Común",2021.01,11371
+"yesfli","norfli","317","Colaptes auratus auratus/luteus","Northern Flicker (Yellow-shafted)","Pic flamboyant (auratus/luteus)","Carpintero de Pechera Común (auratus/luteus)",2021.01,11374
+"resfli","norfli","201","Colaptes auratus [cafer Group]","Northern Flicker (Red-shafted)","Pic flamboyant (groupe cafer)","Carpintero de Pechera Común (grupo cafer)",2021.01,11377
+"rxyfli","norfli","43","Colaptes auratus luteus x cafer","Northern Flicker (Yellow-shafted x Red-shafted)","Pic flamboyant (hybride forme dorée x rosée)","Carpintero de Pechera Común (luteus x cafer)",2021.01,11382
+"gilfli",NA,"116","Colaptes chrysoides","Gilded Flicker","Pic chrysoïde","Carpintero de Pechera del Noroeste",2021.01,11384
+"y00323",NA,"6","Colaptes auratus/chrysoides","Northern/Gilded Flicker","Pic flamboyant ou P. chrysoïde","Carpintero de Pechera Común/del Noroeste",2021.01,11390
+"woodpe1",NA,"6","Picidae sp.","woodpecker sp.","Pic sp.","Carpintero sp.",2021.01,11403
+"baffal1",NA,"1","Micrastur ruficollis","Barred Forest-Falcon","Carnifex barré","Halcón Selvático Barrado",2021.01,11406
+"crecar1","y00678","51","Caracara plancus [cheriway Group]","Crested Caracara (Northern)","Caracara huppé (groupe cheriway)","Caracara Quebrantahuesos (grupo cheriway)",2021.01,11431
+"leskes1",NA,"1","Falco naumanni","Lesser Kestrel","Faucon crécerellette","Cernícalo Primilla",2021.01,11462
+"amekes",NA,"3233","Falco sparverius","American Kestrel","Crécerelle d'Amérique","Cernícalo Americano",2021.01,11494
+"amekes1","amekes","82","Falco sparverius [sparverius Group]","American Kestrel (Northern)","Crécerelle d'Amérique (groupe sparverius)","Cernícalo Americano (grupo sparverius)",2021.01,11495
+"merlin",NA,"1954","Falco columbarius","Merlin","Faucon émerillon","Halcón Esmerejón",2021.01,11528
+"merlin1","merlin","1","Falco columbarius [aesalon Group]","Merlin (Eurasian)","Faucon émerillon (groupe aesalon)","Halcón Esmerejón (grupo aesalon)",2021.01,11529
+"taimer1","merlin","3","Falco columbarius columbarius","Merlin (Taiga)","Faucon émerillon (columbarius)","Halcón Esmerejón (columbarius)",2021.01,11536
+"pramer1","merlin","43","Falco columbarius richardsonii","Merlin (Prairie)","Faucon émerillon (richardsonii)","Halcón Esmerejón (richardsonii)",2021.01,11537
+"blkmer1","merlin","31","Falco columbarius suckleyi","Merlin (Black)","Faucon émerillon (suckleyi)","Halcón Esmerejón (suckleyi)",2021.01,11538
+"aplfal",NA,"1","Falco femoralis","Aplomado Falcon","Faucon aplomado","Halcón Fajado",2021.01,11555
+"gyrfal",NA,"26","Falco rusticolus","Gyrfalcon","Faucon gerfaut","Halcón Gerifalte",2021.01,11574
+"perfal",NA,"457","Falco peregrinus","Peregrine Falcon","Faucon pèlerin","Halcón Peregrino",2021.01,11575
+"perfal1","perfal","5","Falco peregrinus anatum","Peregrine Falcon (North American)","Faucon pèlerin (anatum)","Halcón Peregrino (anatum)",2021.01,11576
+"tupfal1","perfal","1","Falco peregrinus calidus/tundrius","Peregrine Falcon (Tundra)","Faucon pèlerin (calidus/tundrius)","Halcón Peregrino (calidus/tundrius)",2021.01,11577
+"prafal",NA,"135","Falco mexicanus","Prairie Falcon","Faucon des prairies","Halcón Mexicano",2021.01,11599
+"smafal",NA,"5","Falco sp. (small falcon sp.)","small falcon sp.","Petit Faucon sp.","Halcón pequeño sp.",2021.01,11603
+"falcon",NA,"8","Falco sp.","falcon sp.","Falco sp.","Halcón sp.",2021.01,11604
+"diurap1",NA,"91","Accipitriformes/Falconiformes sp.","diurnal raptor sp.","Rapace diurne sp.","Rapaz Diurna sp.",2021.01,11605
+"cockat",NA,"4","Nymphicus hollandicus","Cockatiel","Calopsitte élégante","Cacatúa Ninfa",2021.01,11675
+"eclpar",NA,"1","Eclectus roratus","Eclectus Parrot","Grand Éclectus","Loro Ecléctico",2021.01,11758
+"rorpar",NA,"2","Psittacula krameri","Rose-ringed Parakeet","Perruche à collier","Cotorra de Kramer",2021.01,11807
+"budger",NA,"88","Melopsittacus undulatus","Budgerigar","Perruche ondulée","Periquito Australiano",2021.01,12003
+"peflov",NA,"52","Agapornis roseicollis","Rosy-faced Lovebird","Inséparable rosegorge","Inseparable de Namibia",2021.01,12189
+"yeclov",NA,"2","Agapornis personatus","Yellow-collared Lovebird","Inséparable masqué","Inseparable Cabecinegro",2021.01,12193
+"lovebi1",NA,"5","Agapornis sp.","lovebird sp.","Agapornis sp.","Inseparable sp.",2021.01,12198
+"monpar",NA,"198","Myiopsitta monachus","Monk Parakeet","Perriche veuve","Perico Monje Argentino",2021.01,12258
+"monpar1","monpar","3","Myiopsitta monachus [monachus Group]","Monk Parakeet (Monk)","Perriche veuve (groupe monachus)","Perico Monje Argentino (grupo monachus)",2021.01,12259
+"whwpar",NA,"7","Brotogeris versicolurus","White-winged Parakeet","Toui à ailes variées","Catita Versicolor",2021.01,12268
+"yecpar",NA,"9","Brotogeris chiriri","Yellow-chevroned Parakeet","Toui à ailes jaunes","Catita Chirirí",2021.01,12269
+"recpar",NA,"23","Amazona viridigenalis","Red-crowned Parrot","Amazone à joues vertes","Loro Tamaulipeco",2021.01,12344
+"yehpar",NA,"2","Amazona oratrix","Yellow-headed Parrot","Amazone à tête jaune","Loro Cabeza Amarilla",2021.01,12363
+"ywcpar",NA,"1","Amazona ochrocephala","Yellow-crowned Parrot","Amazone à front jaune","Amazona Real",2021.01,12369
+"orwpar",NA,"1","Amazona amazonica","Orange-winged Parrot","Amazone aourou","Amazona Alinaranja",2021.01,12406
+"orfpar",NA,"1","Eupsittula canicularis","Orange-fronted Parakeet","Conure à front rouge","Perico Frente Naranja",2021.01,12529
+"bkhpar",NA,"30","Aratinga nenday","Nanday Parakeet","Conure nanday","Perico Ñanday",2021.01,12555
+"chfmac1",NA,"1","Ara severus","Chestnut-fronted Macaw","Ara vert","Guacamayo Severo",2021.01,12569
+"bucpar",NA,"12","Thectocercus acuticaudatus","Blue-crowned Parakeet","Conure à tête bleue","Aratinga Cabeciazul",2021.01,12591
+"grnpar",NA,"9","Psittacara holochlorus","Green Parakeet","Conure verte","Perico Mexicano",2021.01,12605
+"mitpar",NA,"6","Psittacara mitratus","Mitred Parakeet","Conure mitrée","Perico Mitrado",2021.01,12622
+"rempar",NA,"4","Psittacara erythrogenys","Red-masked Parakeet","Conure à tête rouge","Aratinga de Guayaquil",2021.01,12629
+"whepar2",NA,"1","Psittacara leucophthalmus","White-eyed Parakeet","Conure pavouane","Aratinga Ojiblanca",2021.01,12631
+"hispar",NA,"1","Psittacara chloropterus","Hispaniolan Parakeet","Conure maîtresse","Aratinga de La Española",2021.01,12636
+"parake",NA,"17","Psittaciformes sp. (parakeet sp.)","parakeet sp.","Perruche sp.","Perico/Periquito sp.",2021.01,12641
+"parrot",NA,"9","Psittaciformes sp. (parrot sp.)","parrot sp.","Perroquet sp.","Loro sp.",2021.01,12642
+"ivbwoo1",NA,"1","Xiphorhynchus flavigaster","Ivory-billed Woodcreeper","Grimpar à bec ivoire","Trepatroncos Pico Marfil",2021.01,14215
+"mastit1",NA,"1","Tityra semifasciata","Masked Tityra","Tityre masqué","Titira Puerquito",2021.01,15315
+"secfly1",NA,"1","Leptopogon amaurocephalus","Sepia-capped Flycatcher","Pipromorphe à tête brune","Mosquerito Gorra Café",2021.01,15578
+"cotfly1",NA,"1","Todirostrum cinereum","Common Tody-Flycatcher","Todirostre familier","Mosquerito Espatulilla Común",2021.01,15770
+"nobtyr",NA,"1","Camptostoma imberbe","Northern Beardless-Tyrannulet","Tyranneau imberbe","Mosquerito Chillón",2021.01,15889
+"olsfly",NA,"11","Contopus cooperi","Olive-sided Flycatcher","Moucherolle à côtés olive","Papamoscas Boreal",2021.01,16223
+"grepew",NA,"3","Contopus pertinax","Greater Pewee","Moucherolle de Coues","Papamoscas José María",2021.01,16224
+"wewpew",NA,"19","Contopus sordidulus","Western Wood-Pewee","Pioui de l'Ouest","Papamoscas del Oeste",2021.01,16236
+"eawpew",NA,"115","Contopus virens","Eastern Wood-Pewee","Pioui de l'Est","Papamoscas del Este",2021.01,16241
+"yebfly",NA,"28","Empidonax flaviventris","Yellow-bellied Flycatcher","Moucherolle à ventre jaune","Papamoscas Vientre Amarillo",2021.01,16282
+"acafly",NA,"19","Empidonax virescens","Acadian Flycatcher","Moucherolle vert","Papamoscas Verdoso",2021.01,16283
+"aldfly",NA,"3","Empidonax alnorum","Alder Flycatcher","Moucherolle des aulnes","Papamoscas Ailero",2021.01,16284
+"wilfly",NA,"8","Empidonax traillii","Willow Flycatcher","Moucherolle des saules","Papamoscas Saucero",2021.01,16285
+"wilfly1","wilfly","1","Empidonax traillii traillii","Willow Flycatcher (Eastern)","Moucherolle des saules (traillii)","Papamoscas Saucero (traillii)",2021.01,16286
+"y00324",NA,"1","Empidonax alnorum/traillii","Alder/Willow Flycatcher (Traill's Flycatcher)","Moucherolle des aulnes ou M. des saules","Papamoscas Ailero/Saucero",2021.01,16291
+"leafly",NA,"52","Empidonax minimus","Least Flycatcher","Moucherolle tchébec","Papamoscas Chico",2021.01,16296
+"hamfly",NA,"6","Empidonax hammondii","Hammond's Flycatcher","Moucherolle de Hammond","Papamoscas de Hammond",2021.01,16297
+"gryfly",NA,"12","Empidonax wrightii","Gray Flycatcher","Moucherolle gris","Papamoscas Bajacolita",2021.01,16298
+"dusfly",NA,"8","Empidonax oberholseri","Dusky Flycatcher","Moucherolle sombre","Papamoscas Matorralero",2021.01,16299
+"pasfly",NA,"57","Empidonax difficilis","Pacific-slope Flycatcher","Moucherolle côtier","Papamoscas Amarillo del Pacífico",2021.01,16308
+"corfly",NA,"2","Empidonax occidentalis","Cordilleran Flycatcher","Moucherolle des ravins","Papamoscas Amarillo Barranqueño",2021.01,16312
+"wesfly",NA,"17","Empidonax difficilis/occidentalis","Pacific-slope/Cordilleran Flycatcher (Western Flycatcher)","Moucherolle côtier ou M. des ravins","Papamoscas Amarillo del Pacífico/Barranqueño",2021.01,16316
+"empido",NA,"2","Empidonax sp.","Empidonax sp.","Empidonax sp.","Empidonax sp.",2021.01,16329
+"blkpho",NA,"1657","Sayornis nigricans","Black Phoebe","Moucherolle noir","Papamoscas Negro",2021.01,16330
+"easpho",NA,"5312","Sayornis phoebe","Eastern Phoebe","Moucherolle phébi","Papamoscas Fibí",2021.01,16339
+"x00621",NA,"1","Sayornis nigricans x phoebe","Black x Eastern Phoebe (hybrid)","Hybride Moucherolle noir x M. phébi","Papamoscas Negro x Fibí (híbrido)",2021.01,16340
+"saypho",NA,"528","Sayornis saya","Say's Phoebe","Moucherolle à ventre roux","Papamoscas Llanero",2021.01,16341
+"phoebe1",NA,"7","Sayornis sp.","phoebe sp.","Sayornis sp.","Sayornis sp.",2021.01,16345
+"verfly",NA,"63","Pyrocephalus rubinus","Vermilion Flycatcher","Moucherolle vermillon","Papamoscas Cardenalito",2021.01,16360
+"ducfly",NA,"3","Myiarchus tuberculifer","Dusky-capped Flycatcher","Tyran olivâtre","Papamoscas Triste",2021.01,16617
+"astfly",NA,"60","Myiarchus cinerascens","Ash-throated Flycatcher","Tyran à gorge cendrée","Papamoscas Garganta Ceniza",2021.01,16656
+"nutfly",NA,"1","Myiarchus nuttingi","Nutting's Flycatcher","Tyran de Nutting","Papamoscas Huí",2021.01,16659
+"grcfly",NA,"160","Myiarchus crinitus","Great Crested Flycatcher","Tyran huppé","Papamoscas Viajero",2021.01,16665
+"bncfly",NA,"2","Myiarchus tyrannulus","Brown-crested Flycatcher","Tyran de Wied","Papamoscas Gritón",2021.01,16666
+"grekis",NA,"34","Pitangus sulphuratus","Great Kiskadee","Tyran quiquivi","Luis Bienteveo",2021.01,16699
+"socfly1",NA,"1","Myiozetetes similis","Social Flycatcher","Tyran sociable","Luisito Común",2021.01,16723
+"trokin",NA,"4","Tyrannus melancholicus","Tropical Kingbird","Tyran mélancolique","Tirano Pirirí",2021.01,16783
+"coukin",NA,"14","Tyrannus couchii","Couch's Kingbird","Tyran de Couch","Tirano Cuír",2021.01,16788
+"caskin",NA,"103","Tyrannus vociferans","Cassin's Kingbird","Tyran de Cassin","Tirano Chibiú",2021.01,16790
+"weskin",NA,"106","Tyrannus verticalis","Western Kingbird","Tyran de l'Ouest","Tirano Pálido",2021.01,16796
+"y00619",NA,"16","Tyrannus vociferans/verticalis","Cassin's/Western Kingbird","Tyran de Cassin ou T. de l'Ouest","Tirano Chibiú/Pálido",2021.01,16797
+"easkin",NA,"159","Tyrannus tyrannus","Eastern Kingbird","Tyran tritri","Tirano Dorso Negro",2021.01,16800
+"grykin",NA,"7","Tyrannus dominicensis","Gray Kingbird","Tyran gris","Tirano Gris",2021.01,16802
+"sctfly",NA,"45","Tyrannus forficatus","Scissor-tailed Flycatcher","Tyran à longue queue","Tirano Tijereta Rosado",2021.01,16816
+"flycat1",NA,"35","Tyrannidae sp.","flycatcher sp. (Tyrannidae sp.)","Moucherolle sp.","Tyrannidae sp.",2021.01,16825
+"golvir1",NA,"1","Vireo hypochryseus","Golden Vireo","Viréo doré","Vireo Amarillo",2021.01,18431
+"bkcvir1",NA,"2","Vireo atricapilla","Black-capped Vireo","Viréo à tête noire","Vireo Gorra Negra",2021.01,18437
+"whevir",NA,"264","Vireo griseus","White-eyed Vireo","Viréo aux yeux blancs","Vireo Ojos Blancos",2021.01,18439
+"belvir",NA,"47","Vireo bellii","Bell's Vireo","Viréo de Bell","Vireo de Bell",2021.01,18466
+"belvir1","belvir","1","Vireo bellii bellii/medius","Bell's Vireo (Eastern)","Viréo de Bell (bellii/medius)","Vireo de Bell (bellii/medius)",2021.01,18467
+"belvir2","belvir","1","Vireo bellii arizonae","Bell's Vireo (Arizona)","Viréo de Bell (arizonae)","Vireo de Bell (arizonae)",2021.01,18470
+"gryvir",NA,"29","Vireo vicinior","Gray Vireo","Viréo gris","Vireo Gris",2021.01,18472
+"hutvir",NA,"292","Vireo huttoni","Hutton's Vireo","Viréo de Hutton","Vireo Reyezuelo",2021.01,18473
+"hutvir1","hutvir","9","Vireo huttoni [huttoni Group]","Hutton's Vireo (Pacific)","Viréo de Hutton (groupe huttoni)","Vireo Reyezuelo (grupo huttoni)",2021.01,18474
+"yetvir",NA,"99","Vireo flavifrons","Yellow-throated Vireo","Viréo à gorge jaune","Vireo Garganta Amarilla",2021.01,18489
+"casvir",NA,"34","Vireo cassinii","Cassin's Vireo","Viréo de Cassin","Vireo de Cassin",2021.01,18492
+"buhvir",NA,"299","Vireo solitarius","Blue-headed Vireo","Viréo à tête bleue","Vireo Anteojillo",2021.01,18495
+"plsvir",NA,"12","Vireo plumbeus","Plumbeous Vireo","Viréo plombé","Vireo Plomizo",2021.01,18500
+"y00484",NA,"1","Vireo cassinii/plumbeus","Cassin's/Plumbeous Vireo","Viréo de Cassin ou V. plombé","Vireo Plomizo/de Cassin",2021.01,18509
+"solvir1",NA,"27","Vireo cassinii/solitarius/plumbeus","solitary vireo sp.","Viréo à tête bleue, V. de Cassin ou V. plombé","Vireo Plomizo/de Cassin/Anteojillo",2021.01,18510
+"phivir",NA,"10","Vireo philadelphicus","Philadelphia Vireo","Viréo de Philadelphie","Vireo de Filadelfia",2021.01,18512
+"warvir",NA,"43","Vireo gilvus","Warbling Vireo","Viréo mélodieux","Vireo Gorjeador",2021.01,18513
+"eawvir1","warvir","1","Vireo gilvus gilvus","Warbling Vireo (Eastern)","Viréo mélodieux (gilvus)","Vireo Gorjeador (gilvus)",2021.01,18514
+"reevir1",NA,"59","Vireo olivaceus","Red-eyed Vireo","Viréo aux yeux rouges","Vireo Ojos Rojos",2021.01,18533
+"reevir",NA,"1","Vireo olivaceus/chivi","Red-eyed/Chivi Vireo","Viréo aux yeux rouges ou V. chivi","Vireo Ojos Rojos/Vireo Chiví",2021.01,18549
+"yegvir",NA,"3","Vireo flavoviridis","Yellow-green Vireo","Viréo jaune-verdâtre","Vireo Verdeamarillo",2021.01,18551
+"bkwvir",NA,"1","Vireo altiloquus","Black-whiskered Vireo","Viréo à moustaches","Vireo Bigotudo",2021.01,18556
+"vireo1",NA,"7","Vireo sp.","vireo sp.","Vireo sp.","Vireo sp.",2021.01,18568
+"brnshr",NA,"1","Lanius cristatus","Brown Shrike","Pie-grièche brune","Alcaudón Pardo",2021.01,20246
+"logshr",NA,"620","Lanius ludovicianus","Loggerhead Shrike","Pie-grièche migratrice","Verdugo Americano",2021.01,20282
+"norshr4",NA,"2579","Lanius borealis","Northern Shrike","Pie-grièche boréale","Alcaudón Norteño Americano",2021.01,20294
+"norshr3","norshr4","1","Lanius borealis borealis","Northern Shrike (American)","Pie-grièche boréale (borealis)","Alcaudón Norteño Americano (borealis)",2021.01,20300
+"y00620",NA,"57","Lanius ludovicianus/borealis","Loggerhead/Northern Shrike","Pie-grièche migratrice ou P.-g. boréale","Verdugo Americano/Norteño Americano",2021.01,20301
+"norshr",NA,"85","Lanius borealis/excubitor","Northern/Great Gray Shrike","Pie-grièche boréale ou P.-g. grise d'Eurasie","Alcaudón Norteño Americano/Norteño Euroasiático",2021.01,20319
+"shrike",NA,"29","Lanius sp.","shrike sp.","Lanius sp.","Alcaudón sp.",2021.01,20365
+"gryjay",NA,"3087","Perisoreus canadensis","Canada Jay","Mésangeai du Canada","Arrendajo Canadiense",2021.01,20384
+"gryjay1","gryjay","1","Perisoreus canadensis [canadensis Group]","Canada Jay (Boreal)","Mésangeai du Canada (groupe canadensis)","Arrendajo Canadiense (grupo canadensis)",2021.01,20385
+"gryjay3","gryjay","2","Perisoreus canadensis obscurus/griseus","Canada Jay (Pacific)","Mésangeai du Canada (obscurus/griseus)","Arrendajo Canadiense (obscurus/griseus)",2021.01,20393
+"btmjay",NA,"7","Calocitta colliei","Black-throated Magpie-Jay","Geai à face noire","Urraca Cara Negra",2021.01,20418
+"wtmjay1",NA,"1","Calocitta formosa","White-throated Magpie-Jay","Geai à face blanche","Urraca Cara Blanca",2021.01,20419
+"brnjay",NA,"3","Psilorhinus morio","Brown Jay","Geai enfumé","Chara Pea",2021.01,20425
+"grnjay",NA,"84","Cyanocorax yncas","Green Jay","Geai vert","Chara Verde",2021.01,20434
+"pinjay",NA,"635","Gymnorhinus cyanocephalus","Pinyon Jay","Geai des pinèdes","Chara Piñonera",2021.01,20475
+"stejay",NA,"7233","Cyanocitta stelleri","Steller's Jay","Geai de Steller","Chara Copetona",2021.01,20476
+"blujay",NA,"62018","Cyanocitta cristata","Blue Jay","Geai bleu","Chara Azul",2021.01,20496
+"x00622",NA,"4","Cyanocitta stelleri x cristata","Steller's x Blue Jay (hybrid)","Hybride Geai de Steller x G. bleu","Chara Copetona x Azul (híbrido)",2021.01,20502
+"flsjay",NA,"151","Aphelocoma coerulescens","Florida Scrub-Jay","Geai à gorge blanche","Chara Floridana",2021.01,20503
+"issjay",NA,"1","Aphelocoma insularis","Island Scrub-Jay","Geai de Santa Cruz","Chara de Santa Cruz",2021.01,20504
+"cowscj1",NA,"3348","Aphelocoma californica","California Scrub-Jay","Geai buissonnier","Chara Californiana",2021.01,20505
+"wooscj2",NA,"1208","Aphelocoma woodhouseii","Woodhouse's Scrub-Jay","Geai de Woodhouse","Chara de Collar",2021.01,20515
+"wooscj1","wooscj2","2","Aphelocoma woodhouseii [woodhouseii Group]","Woodhouse's Scrub-Jay (Woodhouse's)","Geai de Woodhouse (groupe woodhouseii)","Chara de Collar (grupo woodhouseii)",2021.01,20516
+"wesjay",NA,"26","Aphelocoma californica/woodhouseii","California/Woodhouse's Scrub-Jay","Geai buissonnier ou G. de Woodhouse","Chara Californiana/de Collar",2021.01,20526
+"mexjay4",NA,"63","Aphelocoma wollweberi","Mexican Jay","Geai du Mexique","Chara Pecho Gris",2021.01,20527
+"mexjay",NA,"45","Aphelocoma wollweberi/ultramarina","Mexican/Transvolcanic Jay","Geai du Mexique ou G. des volcans","Chara Transvolcánica/Pecho Gris",2021.01,20537
+"scrjay",NA,"2889","Aphelocoma sp.","Aphelocoma sp.","Aphelocoma sp.","Aphelocoma sp.",2021.01,20544
+"bkbmag1",NA,"4290","Pica hudsonia","Black-billed Magpie","Pie d'Amérique","Urraca de Hudson",2021.01,20682
+"yebmag",NA,"187","Pica nuttalli","Yellow-billed Magpie","Pie à bec jaune","Urraca de Nuttall",2021.01,20683
+"clanut",NA,"783","Nucifraga columbiana","Clark's Nutcracker","Cassenoix d'Amérique","Cascanueces Americano",2021.01,20690
+"houcro1",NA,"1","Corvus splendens","House Crow","Corbeau familier","Cuervo Indio",2021.01,20725
+"amecro",NA,"43700","Corvus brachyrhynchos","American Crow","Corneille d'Amérique","Cuervo Norteamericano",2021.01,20762
+"fiscro",NA,"607","Corvus ossifragus","Fish Crow","Corneille de rivage","Cuervo Pescador",2021.01,20776
+"chirav",NA,"39","Corvus cryptoleucus","Chihuahuan Raven","Corbeau à cou blanc","Cuervo Llanero",2021.01,20780
+"crow",NA,"48","Corvus sp. (crow sp.)","crow sp.","Corneille sp.","Cuervo mediano/chico sp.",2021.01,20813
+"comrav",NA,"7042","Corvus corax","Common Raven","Grand Corbeau","Cuervo Común",2021.01,20829
+"raven",NA,"11","Corvus sp. (raven sp.)","raven sp.","Corbeau sp.","Cuervo grande sp.",2021.01,20838
+"carchi",NA,"19819","Poecile carolinensis","Carolina Chickadee","Mésange de Caroline","Carbonero de Carolina",2021.01,21254
+"bkcchi",NA,"56617","Poecile atricapillus","Black-capped Chickadee","Mésange à tête noire","Carbonero Cabecinegro",2021.01,21259
+"x00195",NA,"8","Poecile carolinensis x atricapillus","Carolina x Black-capped Chickadee (hybrid)","Hybride Mésange de Caroline x M. à tête noire","Carbonero de Carolina x Cabecinegro (híbrido)",2021.01,21269
+"y00033",NA,"13077","Poecile carolinensis/atricapillus","Carolina/Black-capped Chickadee","Mésange de Caroline ou M. à tête noire","Carbonero de Carolina/Cabecinegro",2021.01,21270
+"mouchi",NA,"4592","Poecile gambeli","Mountain Chickadee","Mésange de Gambel","Carbonero Cejas Blancas",2021.01,21271
+"x00623",NA,"4","Poecile atricapillus x gambeli","Black-capped x Mountain Chickadee (hybrid)","Hybride Mésange à tête noire x M. de Gambel","Carbonero Cabecinegro x Montañés (híbrido)",2021.01,21280
+"chbchi",NA,"5238","Poecile rufescens","Chestnut-backed Chickadee","Mésange à dos marron","Carbonero Dorsicastaño",2021.01,21287
+"borchi2",NA,"3684","Poecile hudsonicus","Boreal Chickadee","Mésange à tête brune","Carbonero Boreal",2021.01,21291
+"gyhchi",NA,"2","Poecile cinctus","Gray-headed Chickadee","Mésange lapone","Carbonero Lapón",2021.01,21299
+"chicka1",NA,"3","Poecile sp.","chickadee sp.","Poecile sp.","Poecile sp.",2021.01,21305
+"britit",NA,"178","Baeolophus wollweberi","Bridled Titmouse","Mésange arlequin","Carbonero Embridado",2021.01,21337
+"oaktit",NA,"2011","Baeolophus inornatus","Oak Titmouse","Mésange unicolore","Carbonero Encinero",2021.01,21342
+"juntit1",NA,"834","Baeolophus ridgwayi","Juniper Titmouse","Mésange des genévriers","Carbonero de Juníperos",2021.01,21347
+"y00326",NA,"855","Baeolophus inornatus/ridgwayi","Oak/Juniper Titmouse (Plain Titmouse)","Mésange unicolore ou M. des genévriers","Carbonero Encinero/de Juníperos",2021.01,21351
+"tuftit",NA,"44856","Baeolophus bicolor","Tufted Titmouse","Mésange bicolore","Herrerillo Bicolor",2021.01,21352
+"blctit4",NA,"775","Baeolophus atricristatus","Black-crested Titmouse","Mésange à plumet noir","Carbonero Cresta Negra",2021.01,21355
+"bcxtit1",NA,"11","Baeolophus bicolor x atricristatus","Tufted x Black-crested Titmouse (hybrid)","Hybride Mésange bicolore x M. à plumet noir","Herrerillo Bicolor x Crestinegro (híbrido)",2021.01,21359
+"y00327",NA,"20","Baeolophus bicolor/atricristatus","Tufted/Black-crested Titmouse","Mésange bicolore ou M. à plumet noir","Herrerillo Bicolor/Crestinegro",2021.01,21360
+"gretit3","gretit1","1","Parus major [major Group]","Great Tit (Great)","Mésange charbonnière (groupe major)","Carbonero Común (común)",2021.01,21368
+"verdin",NA,"505","Auriparus flaviceps","Verdin","Auripare verdin","Baloncillo",2021.01,21456
+"horlar",NA,"228","Eremophila alpestris","Horned Lark","Alouette hausse-col","Alondra Cornuda",2021.01,21754
+"horlar3","horlar","2","Eremophila alpestris [alpestris Group]","Horned Lark (Eastern dark Group)","Alouette hausse-col (groupe alpestris)","Alondra Cornuda (grupo alpestris)",2021.01,21772
+"horlar1","horlar","2","Eremophila alpestris [strigata Group]","Horned Lark (Western rufous Group)","Alouette hausse-col (groupe strigata)","Alondra Cornuda (grupo strigata)",2021.01,21788
+"skylar",NA,"2","Alauda arvensis","Eurasian Skylark","Alouette des champs","Alondra Común",2021.01,21905
+"nrwswa",NA,"28","Stelgidopteryx serripennis","Northern Rough-winged Swallow","Hirondelle à ailes hérissées","Golondrina Alas Aserradas",2021.01,23172
+"purmar",NA,"205","Progne subis","Purple Martin","Hirondelle noire","Golondrina Azulnegra",2021.01,23187
+"purmar1","purmar","2","Progne subis subis/arboricola","Purple Martin (subis/arboricola)","Hirondelle noire (subis/arboricola)","Golondrina Azulnegra (subis/arboricola)",2021.01,23188
+"martin1",NA,"1","Progne sp.","new world martin sp. (Progne sp.)","Progne sp.","Progne sp.",2021.01,23210
+"treswa",NA,"492","Tachycineta bicolor","Tree Swallow","Hirondelle bicolore","Golondrina Bicolor",2021.01,23211
+"manswa1",NA,"1","Tachycineta albilinea","Mangrove Swallow","Hirondelle des mangroves","Golondrina Manglera",2021.01,23217
+"vigswa",NA,"136","Tachycineta thalassina","Violet-green Swallow","Hirondelle à face blanche","Golondrina Verdemar",2021.01,23221
+"banswa",NA,"5","Riparia riparia","Bank Swallow","Hirondelle de rivage","Golondrina Ribereña",2021.01,23242
+"barswa",NA,"156","Hirundo rustica","Barn Swallow","Hirondelle rustique","Golondrina Tijereta",2021.01,23291
+"barswa2","barswa","1","Hirundo rustica rustica","Barn Swallow (White-bellied)","Hirondelle rustique (rustica)","Golondrina Tijereta (rustica)",2021.01,23292
+"barswa5","barswa","1","Hirundo rustica erythrogaster","Barn Swallow (American)","Hirondelle rustique (erythrogaster)","Golondrina Tijereta (erythrogaster)",2021.01,23299
+"cliswa",NA,"28","Petrochelidon pyrrhonota","Cliff Swallow","Hirondelle à front blanc","Golondrina Risquera",2021.01,23383
+"cavswa",NA,"4","Petrochelidon fulva","Cave Swallow","Hirondelle à front brun","Golondrina Pueblera",2021.01,23391
+"cavswa3","cavswa","1","Petrochelidon fulva pallida","Cave Swallow (Texas)","Hirondelle à front brun (pallida)","Golondrina Pueblera (pallida)",2021.01,23397
+"swallo",NA,"5","Hirundinidae sp.","swallow sp.","Hirondelle sp.","Golondrina sp.",2021.01,23450
+"revbul",NA,"13","Pycnonotus cafer","Red-vented Bulbul","Bulbul à ventre rouge","Bulbul Cafre",2021.01,23648
+"rewbul",NA,"23","Pycnonotus jocosus","Red-whiskered Bulbul","Bulbul orphée","Bulbul Orfeo",2021.01,23658
+"woowar",NA,"1","Phylloscopus sibilatrix","Wood Warbler","Pouillot siffleur","Mosquitero Silbador",2021.01,23933
+"palwar5",NA,"2","Phylloscopus proregulus","Pallas's Leaf Warbler","Pouillot de Pallas","Mosquitero de Pallas",2021.01,23950
+"bushti",NA,"4844","Psaltriparus minimus","Bushtit","Orite buissonnière","Sastrecillo",2021.01,24372
+"bushti1","bushti","1","Psaltriparus minimus [minimus Group]","Bushtit (Pacific)","Orite buissonnière (groupe minimus)","Sastrecillo (grupo minimus)",2021.01,24373
+"bushti2","bushti","2","Psaltriparus minimus plumbeus","Bushtit (Interior)","Orite buissonnière (plumbeus)","Sastrecillo (grupo plumbeus)",2021.01,24379
+"wrenti",NA,"163","Chamaea fasciata","Wrentit","Cama brune","Camea",2021.01,24546
+"swiwhe1",NA,"4","Zosterops simplex","Swinhoe's White-eye","Zostérops de Swinhoe","Anteojitos de Swinhoe",2021.01,24735
+"warwhe1",NA,"15","Zosterops japonicus","Warbling White-eye","Zostérops du Japon","Anteojitos Japonés",2021.01,24746
+"reblei",NA,"2","Leiothrix lutea","Red-billed Leiothrix","Léiothrix jaune","Leiótrix Piquirrojo",2021.01,25661
+"ruckin",NA,"9174","Corthylio calendula","Ruby-crowned Kinglet","Roitelet à couronne rubis","Reyezuelo Matraquita",2021.01,25942
+"gockin",NA,"4615","Regulus satrapa","Golden-crowned Kinglet","Roitelet à couronne dorée","Reyezuelo Corona Amarilla",2021.01,25946
+"rebnut",NA,"35228","Sitta canadensis","Red-breasted Nuthatch","Sittelle à poitrine rousse","Bajapalos Pecho Canela",2021.01,26022
+"whbnut",NA,"54437","Sitta carolinensis","White-breasted Nuthatch","Sittelle à poitrine blanche","Bajapalos Pecho Blanco",2021.01,26025
+"whbnut2","whbnut","10","Sitta carolinensis carolinensis","White-breasted Nuthatch (Eastern)","Sittelle à poitrine blanche (carolinensis)","Bajapalos Pecho Blanco (carolinensis)",2021.01,26026
+"pygnut",NA,"1585","Sitta pygmaea","Pygmy Nuthatch","Sittelle pygmée","Bajapalos Enano",2021.01,26037
+"bnhnut",NA,"4347","Sitta pusilla","Brown-headed Nuthatch","Sittelle à tête brune","Bajapalos Cabeza Café",2021.01,26045
+"nuthat1",NA,"2","Sitta sp.","nuthatch sp.","Sitta sp.","Bajapalos sp.",2021.01,26092
+"brncre",NA,"15020","Certhia americana","Brown Creeper","Grimpereau brun","Trepadorcito Americano",2021.01,26109
+"buggna",NA,"826","Polioptila caerulea","Blue-gray Gnatcatcher","Gobemoucheron gris-bleu","Perlita Azulgris",2021.01,26211
+"buggna1","buggna","13","Polioptila caerulea caerulea","Blue-gray Gnatcatcher (caerulea)","Gobemoucheron gris-bleu (caerulea)","Perlita Azulgris (caerulea)",2021.01,26219
+"bktgna",NA,"55","Polioptila melanura","Black-tailed Gnatcatcher","Gobemoucheron à queue noire","Perlita del Desierto",2021.01,26221
+"calgna",NA,"5","Polioptila californica","California Gnatcatcher","Gobemoucheron de Californie","Perlita Californiana",2021.01,26225
+"bkcgna",NA,"1","Polioptila nigriceps","Black-capped Gnatcatcher","Gobemoucheron à coiffe noire","Perlita Sinaloense",2021.01,26229
+"rocwre",NA,"103","Salpinctes obsoletus","Rock Wren","Troglodyte des rochers","Saltapared de Rocas",2021.01,26237
+"rocwre1","rocwre","1","Salpinctes obsoletus [obsoletus Group]","Rock Wren (Northern)","Troglodyte des rochers (groupe obsoletus)","Saltapared de Rocas (grupo obsoletus)",2021.01,26238
+"canwre",NA,"80","Catherpes mexicanus","Canyon Wren","Troglodyte des canyons","Saltapared Barranqueño",2021.01,26271
+"houwre",NA,"1812","Troglodytes aedon","House Wren","Troglodyte familier","Saltapared Común",2021.01,26278
+"houwre1","houwre","14","Troglodytes aedon [aedon Group]","House Wren (Northern)","Troglodyte familier (groupe aedon)","Saltapared Común (grupo aedon)",2021.01,26279
+"houwre4","houwre","3","Troglodytes aedon [musculus Group]","House Wren (Southern)","Troglodyte familier (groupe musculus)","Saltapared Común (grupo musculus)",2021.01,26295
+"pacwre1",NA,"665","Troglodytes pacificus","Pacific Wren","Troglodyte de Baird","Saltapared Cholino del Oeste",2021.01,26369
+"winwre2","pacwre1","5","Troglodytes pacificus [pacificus Group]","Pacific Wren (pacificus Group)","Troglodyte de Baird (groupe pacificus)","Saltapared Cholino del Oeste [grupo pacificus]",2021.01,26379
+"winwre3",NA,"1272","Troglodytes hiemalis","Winter Wren","Troglodyte des forêts","Saltapared Cholino del Este",2021.01,26385
+"winwre",NA,"143","Troglodytes pacificus/hiemalis","Pacific/Winter Wren","Troglodyte de Baird ou T. des forêts","Saltapared Cholino del Oeste/Cholino del Este",2021.01,26388
+"sedwre1",NA,"1","Cistothorus stellaris","Sedge Wren","Troglodyte à bec court","Saltapared Carrizalero",2021.01,26393
+"sedwre",NA,"2","Cistothorus platensis","Grass Wren","Troglodyte de Latham","Saltapared Sabanero",2021.01,26394
+"marwre",NA,"27","Cistothorus palustris","Marsh Wren","Troglodyte des marais","Saltapared Pantanero",2021.01,26419
+"marwre1","marwre","1","Cistothorus palustris [paludicola Group]","Marsh Wren (paludicola Group)","Troglodyte des marais (groupe paludicola)","Saltapared Pantanero (grupo paludicola)",2021.01,26420
+"marwre2","marwre","1","Cistothorus palustris [plesius Group]","Marsh Wren (plesius Group)","Troglodyte des marais (groupe plesius)","Saltapared Pantanero (grupo plesius)",2021.01,26425
+"marwre3","marwre","2","Cistothorus palustris [palustris Group]","Marsh Wren (palustris Group)","Troglodyte des marais (groupe palustris)","Saltapared Pantanero (grupo palustris)",2021.01,26429
+"carwre",NA,"31253","Thryothorus ludovicianus","Carolina Wren","Troglodyte de Caroline","Saltapared de Carolina",2021.01,26438
+"carwre1","carwre","1","Thryothorus ludovicianus [ludovicianus Group]","Carolina Wren (Northern)","Troglodyte de Caroline (groupe ludovicianus)","Saltapared de Carolina (grupo ludovicianus)",2021.01,26439
+"bewwre",NA,"4360","Thryomanes bewickii","Bewick's Wren","Troglodyte de Bewick","Saltapared Cola Larga",2021.01,26451
+"bewwre3","bewwre","1","Thryomanes bewickii bewickii","Bewick's Wren (bewickii)","Troglodyte de Bewick (bewickii)","Saltapared Cola Larga (bewickii)",2021.01,26452
+"bewwre1","bewwre","2","Thryomanes bewickii [spilurus Group]","Bewick's Wren (spilurus Group)","Troglodyte de Bewick (groupe spilurus)","Saltapared Cola Larga (grupo spilurus)",2021.01,26459
+"spowre1",NA,"1","Campylorhynchus gularis","Spotted Wren","Troglodyte tacheté","Matraca Serrana",2021.01,26494
+"cacwre",NA,"1023","Campylorhynchus brunneicapillus","Cactus Wren","Troglodyte des cactus","Matraca del Desierto",2021.01,26497
+"hapwre1",NA,"1","Pheugopedius felix","Happy Wren","Troglodyte joyeux","Saltapared Feliz",2021.01,26586
+"sinwre1",NA,"1","Thryophilus sinaloa","Sinaloa Wren","Troglodyte du Sinaloa","Saltapared Sinaloense",2021.01,26595
+"wren1",NA,"21","Troglodytidae sp.","wren sp.","Troglodyte sp.","Saltapared/Matraca sp.",2021.01,26731
+"amedip",NA,"17","Cinclus mexicanus","American Dipper","Cincle d'Amérique","Mirlo Acuático Norteamericano",2021.01,26751
+"hilmyn",NA,"1","Gracula religiosa","Common Hill Myna","Mainate religieux","Miná Religioso",2021.01,26878
+"eursta",NA,"49853","Sturnus vulgaris","European Starling","Étourneau sansonnet","Estornino Pinto",2021.01,26890
+"commyn",NA,"22","Acridotheres tristis","Common Myna","Martin triste","Miná Común",2021.01,26935
+"supsta1",NA,"1","Lamprotornis superbus","Superb Starling","Choucador superbe","Estornino Soberbio",2021.01,27032
+"blumoc",NA,"2","Melanotis caerulescens","Blue Mockingbird","Moqueur bleu","Mulato Azul",2021.01,27060
+"grycat",NA,"2080","Dumetella carolinensis","Gray Catbird","Moqueur chat","Maullador Gris",2021.01,27065
+"cubthr",NA,"1026","Toxostoma curvirostre","Curve-billed Thrasher","Moqueur à bec courbe","Cuicacoche Pico Curvo",2021.01,27090
+"brnthr",NA,"7558","Toxostoma rufum","Brown Thrasher","Moqueur roux","Cuicacoche Castaño",2021.01,27103
+"lobthr",NA,"32","Toxostoma longirostre","Long-billed Thrasher","Moqueur à long bec","Cuicacoche Pico Largo",2021.01,27106
+"benthr",NA,"55","Toxostoma bendirei","Bendire's Thrasher","Moqueur de Bendire","Cuicacoche Pico Corto",2021.01,27112
+"y00330",NA,"1","Toxostoma curvirostre/bendirei","Curve-billed/Bendire's Thrasher","Moqueur à bec courbe ou M. de Bendire","Cuicacoche Pico Curvo/Pico Corto",2021.01,27116
+"calthr",NA,"411","Toxostoma redivivum","California Thrasher","Moqueur de Californie","Cuicacoche Californiano",2021.01,27120
+"lecthr",NA,"8","Toxostoma lecontei","LeConte's Thrasher","Moqueur de LeConte","Cuicacoche Pálido",2021.01,27123
+"crithr",NA,"96","Toxostoma crissale","Crissal Thrasher","Moqueur cul-roux","Cuicacoche Crisal",2021.01,27128
+"sagthr",NA,"64","Oreoscoptes montanus","Sage Thrasher","Moqueur des armoises","Cuicacoche Chato",2021.01,27135
+"bahmoc",NA,"1","Mimus gundlachii","Bahama Mockingbird","Moqueur des Bahamas","Sinsonte de Bahamas",2021.01,27145
+"lotmoc1",NA,"1","Mimus longicaudatus","Long-tailed Mockingbird","Moqueur à longue queue","Sinsonte Colilargo",2021.01,27158
+"normoc",NA,"22266","Mimus polyglottos","Northern Mockingbird","Moqueur polyglotte","Centzontle Norteño",2021.01,27176
+"easblu",NA,"15995","Sialia sialis","Eastern Bluebird","Merlebleu de l'Est","Azulejo Garganta Canela",2021.01,27185
+"easblu1","easblu","2","Sialia sialis sialis/bermudensis","Eastern Bluebird (Eastern)","Merlebleu de l'Est (sialis/bermudensis)","Azulejo Garganta Canela (grupo sialis)",2021.01,27186
+"wesblu",NA,"1314","Sialia mexicana","Western Bluebird","Merlebleu de l'Ouest","Azulejo Garganta Azul",2021.01,27195
+"moublu",NA,"390","Sialia currucoides","Mountain Bluebird","Merlebleu azuré","Azulejo Pálido",2021.01,27203
+"bluebi",NA,"14","Sialia sp.","bluebird sp.","Sialia sp.","Azulejo sp.",2021.01,27206
+"towsol",NA,"1257","Myadestes townsendi","Townsend's Solitaire","Solitaire de Townsend","Clarín Norteño",2021.01,27221
+"varthr",NA,"4463","Ixoreus naevius","Varied Thrush","Grive à collier","Mirlo Cinchado",2021.01,27311
+"veery",NA,"38","Catharus fuscescens","Veery","Grive fauve","Zorzal Canelo",2021.01,27369
+"gycthr",NA,"9","Catharus minimus","Gray-cheeked Thrush","Grive à joues grises","Zorzal Cara Gris",2021.01,27374
+"bicthr",NA,"2","Catharus bicknelli","Bicknell's Thrush","Grive de Bicknell","Zorzalito de Bicknell",2021.01,27377
+"swathr",NA,"150","Catharus ustulatus","Swainson's Thrush","Grive à dos olive","Zorzal de Anteojos",2021.01,27380
+"swathr2","swathr","1","Catharus ustulatus [swainsoni Group]","Swainson's Thrush (Olive-backed)","Grive à dos olive (groupe swainsoni)","Zorzal de Anteojos (swainsoni)",2021.01,27385
+"herthr",NA,"6116","Catharus guttatus","Hermit Thrush","Grive solitaire","Zorzal Cola Canela",2021.01,27389
+"herthr3","herthr","30","Catharus guttatus faxoni/crymophilus","Hermit Thrush (faxoni/crymophilus)","Grive solitaire (faxoni/crymophilus)","Zorzal Cola Canela (faxoni/crymophilus)",2021.01,27399
+"cathus",NA,"4","Catharus sp.","Catharus sp.","Catharus sp.","Zorzal sp.",2021.01,27402
+"woothr",NA,"383","Hylocichla mustelina","Wood Thrush","Grive des bois","Zorzal Moteado Americano",2021.01,27403
+"misthr1",NA,"1","Turdus viscivorus","Mistle Thrush","Grive draine","Zorzal Charlo",2021.01,27486
+"redwin",NA,"2","Turdus iliacus","Redwing","Grive mauvis","Zorzal Alirrojo",2021.01,27505
+"eurbla",NA,"3","Turdus merula","Eurasian Blackbird","Merle noir","Mirlo Común",2021.01,27511
+"whtrob1",NA,"1","Turdus assimilis","White-throated Thrush","Merle à gorge blanche","Mirlo Garganta Blanca",2021.01,27540
+"clcrob",NA,"17","Turdus grayi","Clay-colored Thrush","Merle fauve","Mirlo Café",2021.01,27566
+"amerob",NA,"51948","Turdus migratorius","American Robin","Merle d'Amérique","Mirlo Primavera",2021.01,27616
+"amerob3","amerob","2","Turdus migratorius nigrideus","American Robin (nigrideus)","Merle d'Amérique (nigrideus)","Mirlo Primavera (nigrideus)",2021.01,27617
+"amerob1","amerob","26","Turdus migratorius [migratorius Group]","American Robin (migratorius Group)","Merle d'Amérique (groupe migratorius)","Mirlo Primavera (grupo migratorius)",2021.01,27618
+"rubrob",NA,"6","Turdus rufopalliatus","Rufous-backed Robin","Merle à dos roux","Mirlo Dorso Canela",2021.01,27626
+"rubrob1","rubrob","2","Turdus rufopalliatus rufopalliatus","Rufous-backed Robin (Rufous-backed)","Merle à dos roux (rufopalliatus)","Mirlo Dorso Canela (rufopalliatus)",2021.01,27627
+"fieldf",NA,"4","Turdus pilaris","Fieldfare","Grive litorne","Zorzal Real",2021.01,27790
+"dusthr2",NA,"1","Turdus eunomus","Dusky Thrush","Grive à ailes rousses","Zorzal Eunomo",2021.01,27802
+"thrush1",NA,"25","Turdidae sp.","thrush sp.","Turdidé sp.","Zorzal/Mirlo sp.",2021.01,27807
+"whrsha",NA,"3","Copsychus malabaricus","White-rumped Shama","Shama à croupion blanc","Shama Malabar",2021.01,28031
+"eurrob1",NA,"3","Erithacus rubecula","European Robin","Rougegorge familier","Petirrojo Europeo",2021.01,28274
+"bohwax",NA,"2409","Bombycilla garrulus","Bohemian Waxwing","Jaseur boréal","Ampelis Europeo",2021.01,28886
+"cedwax",NA,"14867","Bombycilla cedrorum","Cedar Waxwing","Jaseur d'Amérique","Chinito",2021.01,28890
+"waxwin",NA,"7","Bombycilla garrulus/cedrorum","Bohemian/Cedar Waxwing","Jaseur boréal ou J. d'Amérique","Ampelis Europeo/Americano",2021.01,28891
+"grsfly1",NA,"3","Ptiliogonys cinereus","Gray Silky-flycatcher","Ptilogon cendré","Capulinero Gris",2021.01,28902
+"phaino",NA,"216","Phainopepla nitens","Phainopepla","Phénopèple luisant","Capulinero Negro",2021.01,28908
+"oliwar",NA,"1","Peucedramus taeniatus","Olive Warbler","Fauvine des pins","Ocotero Enmascarado",2021.01,29673
+"orabis1",NA,"7","Euplectes franciscanus","Northern Red Bishop","Euplecte franciscain","Obispo Anaranjado",2021.01,29916
+"redbis",NA,"1","Euplectes orix","Southern Red Bishop","Euplecte ignicolore","Obispo Rojo",2021.01,29917
+"zebfin1","zebfin2","1","Taeniopygia guttata guttata","Zebra Finch (Lesser Sundas)","Diamant mandarin (guttata)","Diamante Cebra (de Timor)",2021.01,30007
+"broman1",NA,"6","Spermestes cucullata","Bronze Mannikin","Capucin nonnette","Capuchino Bronceado",2021.01,30019
+"afrsil1",NA,"2","Euodice cantans","African Silverbill","Capucin bec-d'argent","Capuchino Picoplata Africano",2021.01,30031
+"javspa",NA,"18","Padda oryzivora","Java Sparrow","Padda de Java","Capuchino Arrocero de Java",2021.01,30035
+"nutman",NA,"157","Lonchura punctulata","Scaly-breasted Munia","Capucin damier","Capuchino Pecho Escamoso",2021.01,30045
+"chemun",NA,"2","Lonchura atricapilla","Chestnut Munia","Capucin à tête noire","Capuchino Castaño",2021.01,30083
+"orcwax",NA,"1","Estrilda melpoda","Orange-cheeked Waxbill","Astrild à joues orange","Estrilda Carinaranja",2021.01,30255
+"comwax",NA,"5","Estrilda astrild","Common Waxbill","Astrild ondulé","Estrilda Común",2021.01,30265
+"redava",NA,"2","Amandava amandava","Red Avadavat","Bengali rouge","Bengalí Rojo",2021.01,30318
+"bubcor1",NA,"1","Uraeginthus angolensis","Southern Cordonbleu","Cordonbleu d'Angola","Azulito Angoleño",2021.01,30325
+"rebfir2",NA,"1","Lagonosticta senegala","Red-billed Firefinch","Amarante du Sénégal","Amaranta Senegalesa",2021.01,30373
+"pitwhy",NA,"7","Vidua macroura","Pin-tailed Whydah","Veuve dominicaine","Viuda Colicinta",2021.01,30406
+"houspa",NA,"53885","Passer domesticus","House Sparrow","Moineau domestique","Gorrión Doméstico",2021.01,30494
+"eutspa",NA,"525","Passer montanus","Eurasian Tree Sparrow","Moineau friquet","Gorrión Molinero",2021.01,30560
+"x00754",NA,"2","Passer domesticus x montanus","House x Eurasian Tree Sparrow (hybrid)","Hybride Moineau domestique x M. friquet","Gorrión Común x Molinero (híbrido)",2021.01,30570
+"y00597",NA,"1","Motacilla flava/tschutschensis","Western/Eastern Yellow Wagtail","Bergeronnette printanière ou B. de Béringie","Lavandera Amarilla Occidental/Oriental",2021.01,30661
+"watpip1",NA,"1","Anthus spinoletta","Water Pipit","Pipit spioncelle","Bisbita Alpino",2021.01,30825
+"amepip",NA,"75","Anthus rubescens","American Pipit","Pipit d'Amérique","Bisbita Norteamericana",2021.01,30836
+"amepip2","amepip","2","Anthus rubescens [rubescens Group]","American Pipit (rubescens Group)","Pipit d'Amérique (groupe rubescens)","Bisbita Norteamericana (grupo rubescens)",2021.01,30838
+"sprpip",NA,"1","Anthus spragueii","Sprague's Pipit","Pipit de Sprague","Bisbita Llanera",2021.01,30843
+"pipit1",NA,"1","Anthus sp.","pipit sp.","Anthus sp.","Bisbita sp.",2021.01,30881
+"comcha",NA,"4","Fringilla coelebs","Common Chaffinch","Pinson des arbres","Pinzón Vulgar",2021.01,30901
+"brambl",NA,"7","Fringilla montifringilla","Brambling","Pinson du Nord","Pinzón Real",2021.01,30923
+"evegro",NA,"11145","Coccothraustes vespertinus","Evening Grosbeak","Gros-bec errant","Picogrueso Norteño",2021.01,31032
+"comros",NA,"2","Carpodacus erythrinus","Common Rosefinch","Roselin cramoisi","Camachuelo Carminoso",2021.01,31096
+"pingro",NA,"4856","Pinicola enucleator","Pine Grosbeak","Durbec des sapins","Camachuelo Picogrueso",2021.01,31167
+"gcrfin",NA,"263","Leucosticte tephrocotis","Gray-crowned Rosy-Finch","Roselin à tête grise","Pinzón Montano Nuquigrís",2021.01,31240
+"gycrof4","gcrfin","2","Leucosticte tephrocotis [tephrocotis Group]","Gray-crowned Rosy-Finch (Gray-crowned)","Roselin à tête grise (groupe tephrocotis)","Pinzón Montano Nuquigrís (grupo tephrocotis)",2021.01,31244
+"bkrfin",NA,"70","Leucosticte atrata","Black Rosy-Finch","Roselin noir","Pinzón Montano Negro",2021.01,31250
+"bcrfin",NA,"31","Leucosticte australis","Brown-capped Rosy-Finch","Roselin à tête brune","Pinzón Montano Coronipardo",2021.01,31251
+"rosfin",NA,"845","Leucosticte sp.","rosy-finch sp.","Leucosticte sp.","Pinzón montano sp.",2021.01,31252
+"houfin",NA,"64169","Haemorhous mexicanus","House Finch","Roselin familier","Pinzón Mexicano",2021.01,31253
+"purfin",NA,"37714","Haemorhous purpureus","Purple Finch","Roselin pourpré","Pinzón Colorado",2021.01,31267
+"purfin1","purfin","1","Haemorhous purpureus purpureus","Purple Finch (Eastern)","Roselin pourpré (purpureus)","Pinzón Colorado (purpureus)",2021.01,31268
+"purfin2","purfin","4","Haemorhous purpureus californicus","Purple Finch (Western)","Roselin pourpré (californicus)","Pinzón Colorado (californicus)",2021.01,31269
+"y00338",NA,"26","Haemorhous mexicanus/purpureus","House/Purple Finch","Roselin familier ou R. pourpré","Pinzón Mexicano/Colorado",2021.01,31270
+"casfin",NA,"3153","Haemorhous cassinii","Cassin's Finch","Roselin de Cassin","Pinzón Serrano",2021.01,31271
+"eurgre1",NA,"2","Chloris chloris","European Greenfinch","Verdier d'Europe","Verderón Común",2021.01,31278
+"yefcan",NA,"9","Crithagra mozambica","Yellow-fronted Canary","Serin du Mozambique","Serín Frentiamarillo",2021.01,31307
+"comred",NA,"17117","Acanthis flammea","Common Redpoll","Sizerin flammé","Pardillo Norteño",2021.01,31423
+"comred3","comred","2","Acanthis flammea flammea","Common Redpoll (flammea)","Sizerin flammé (flammea)","Pardillo Norteño (flammea)",2021.01,31424
+"hoared",NA,"3102","Acanthis hornemanni","Hoary Redpoll","Sizerin blanchâtre","Pardillo Ártico",2021.01,31430
+"x00625",NA,"3","Acanthis flammea x hornemanni","Common x Hoary Redpoll (hybrid)","Hybride Sizerin flammé x S. blanchâtre","Pardillo Norteño x Ártico (híbrido)",2021.01,31433
+"redpol",NA,"28","Acanthis flammea/hornemanni","Common/Hoary Redpoll","Sizerin flammé ou S. blanchâtre","Pardillo Norteño/Ártico",2021.01,31434
+"redcro",NA,"1444","Loxia curvirostra","Red Crossbill","Bec-croisé des sapins","Picotuerto Rojo",2021.01,31438
+"redcro1","redcro","1","Loxia curvirostra (type 1)","Red Crossbill (Appalachian or type 1)","Bec-croisé des sapins (type 1)","Picotuerto Rojo (tipo 1)",2021.01,31466
+"whwcro",NA,"1132","Loxia leucoptera","White-winged Crossbill","Bec-croisé bifascié","Piquituerto Aliblanco",2021.01,31480
+"crossb",NA,"9","Loxia sp.","crossbill sp.","Loxia sp.","Piquituerto sp.",2021.01,31483
+"eurgol",NA,"68","Carduelis carduelis","European Goldfinch","Chardonneret élégant","Jilguero Europeo",2021.01,31491
+"comcan",NA,"1","Serinus canaria","Island Canary","Serin des Canaries","Serín Canario",2021.01,31510
+"islcan1",NA,"1","Serinus canaria (Domestic type)","Island Canary (Domestic type)","Serin des Canaries (forme domestique)","Serín Canario (doméstico)",2021.01,31511
+"canary1",NA,"1","Serinus sp.","Serinus sp.","Serinus sp.","Serín sp.",2021.01,31527
+"pinsis",NA,"30656","Spinus pinus","Pine Siskin","Tarin des pins","Jilguerito Pinero",2021.01,31530
+"blhsis1",NA,"1","Spinus notatus","Black-headed Siskin","Tarin à tête noire","Jilguerito Encapuchado",2021.01,31539
+"lesgol",NA,"5910","Spinus psaltria","Lesser Goldfinch","Chardonneret mineur","Jilguerito Dominico",2021.01,31544
+"lawgol",NA,"320","Spinus lawrencei","Lawrence's Goldfinch","Chardonneret gris","Jilguerito Cara Negra",2021.01,31550
+"amegfi",NA,"63796","Spinus tristis","American Goldfinch","Chardonneret jaune","Jilguerito Canario",2021.01,31551
+"goldfi",NA,"23","Spinus sp. (goldfinch sp.)","new world goldfinch sp.","Carduelis sp.","Spinus sp. (Jilguerito de colores sp.)",2021.01,31558
+"spinus1",NA,"1","Spinus sp.","Spinus sp.","Spinus sp.","Spinus sp.",2021.01,31589
+"y00631",NA,"1","Acanthis/Spinus sp.","Acanthis/Spinus sp.","Acanthis ou Spinus sp.","Acanthis/Spinus sp.",2021.01,31590
+"finch1",NA,"7","Fringillidae sp.","finch sp.","Fringillidé sp.","Pinzón sp.",2021.01,31591
+"laplon",NA,"95","Calcarius lapponicus","Lapland Longspur","Plectrophane lapon","Escribano Ártico",2021.01,31592
+"chclon",NA,"3","Calcarius ornatus","Chestnut-collared Longspur","Plectrophane à ventre noir","Escribano Collar Castaño",2021.01,31596
+"smilon",NA,"4","Calcarius pictus","Smith's Longspur","Plectrophane de Smith","Escribano de Smith",2021.01,31597
+"mcclon",NA,"3","Rhynchophanes mccownii","Thick-billed Longspur","Plectrophane à ventre gris","Escribano Pico Grueso",2021.01,31598
+"snobun",NA,"2645","Plectrophenax nivalis","Snow Bunting","Plectrophane des neiges","Escribano Nival",2021.01,31600
+"mckbun",NA,"2","Plectrophenax hyperboreus","McKay's Bunting","Plectrophane blanc","Escribano de Mckay",2021.01,31606
+"yebbun",NA,"1","Emberiza aureola","Yellow-breasted Bunting","Bruant auréole","Escribano Aureolado",2021.01,31742
+"rusbun",NA,"5","Emberiza rustica","Rustic Bunting","Bruant rustique","Escribano Rústico",2021.01,31746
+"grybun",NA,"1","Emberiza variabilis","Gray Bunting","Bruant gris","Escribano Gris",2021.01,31758
+"ruwspa",NA,"33","Peucaea carpalis","Rufous-winged Sparrow","Bruant à épaulettes","Zacatonero Hombros Canela",2021.01,31823
+"botspa",NA,"2","Peucaea botterii","Botteri's Sparrow","Bruant de Botteri","Zacatonero de Botteri",2021.01,31836
+"casspa",NA,"14","Peucaea cassinii","Cassin's Sparrow","Bruant de Cassin","Zacatonero de Cassin",2021.01,31848
+"bacspa",NA,"18","Peucaea aestivalis","Bachman's Sparrow","Bruant des pinèdes","Chingolo de Bachman",2021.01,31850
+"graspa",NA,"40","Ammodramus savannarum","Grasshopper Sparrow","Bruant sauterelle","Gorrión Chapulín",2021.01,31855
+"olispa",NA,"16","Arremonops rufivirgatus","Olive Sparrow","Tohi olive","Rascador Oliváceo",2021.01,31878
+"chispa",NA,"21748","Spizella passerina","Chipping Sparrow","Bruant familier","Gorrión Cejas Blancas",2021.01,31905
+"clcspa",NA,"174","Spizella pallida","Clay-colored Sparrow","Bruant des plaines","Gorrión Pálido",2021.01,31911
+"x00198",NA,"1","Spizella passerina x pallida","Chipping x Clay-colored Sparrow (hybrid)","Hybride Bruant familier x B. des plaines","Gorrión Cejas Blancas x Pálido (híbrido)",2021.01,31912
+"bkcspa",NA,"42","Spizella atrogularis","Black-chinned Sparrow","Bruant à menton noir","Gorrión Barba Negra",2021.01,31913
+"fiespa",NA,"6891","Spizella pusilla","Field Sparrow","Bruant des champs","Gorrión Llanero",2021.01,31918
+"brespa",NA,"110","Spizella breweri","Brewer's Sparrow","Bruant de Brewer","Gorrión de Brewer",2021.01,31923
+"x00201",NA,"1","Spizella atrogularis x breweri","Black-chinned x Brewer's Sparrow (hybrid)","Hybride Bruant à menton noir x B. de Brewer","Gorrión Barba Negra x de Brewer (híbrido)",2021.01,31926
+"bktspa",NA,"671","Amphispiza bilineata","Black-throated Sparrow","Bruant à gorge noire","Zacatonero Garganta Negra",2021.01,31930
+"larspa",NA,"582","Chondestes grammacus","Lark Sparrow","Bruant à joues marron","Gorrión Arlequín",2021.01,31941
+"larbun",NA,"78","Calamospiza melanocorys","Lark Bunting","Bruant noir et blanc","Gorrión Alas Blancas",2021.01,31944
+"amtspa",NA,"25986","Spizelloides arborea","American Tree Sparrow","Bruant hudsonien","Chingolo Arbóreo",2021.01,32008
+"foxspa",NA,"17100","Passerella iliaca","Fox Sparrow","Bruant fauve","Gorrión Rascador",2021.01,32012
+"foxsp2","foxspa","33","Passerella iliaca [unalaschcensis Group]","Fox Sparrow (Sooty)","Bruant fauve (groupe unalaschcensis)","Gorrión Rascador (grupo unalaschcensis)",2021.01,32013
+"foxsp4","foxspa","1","Passerella iliaca [megarhyncha Group]","Fox Sparrow (Thick-billed)","Bruant fauve (groupe megarhyncha)","Gorrión Rascador (grupo megarhyncha)",2021.01,32021
+"foxsp3","foxspa","18","Passerella iliaca [schistacea Group]","Fox Sparrow (Slate-colored)","Bruant fauve (groupe schistacea)","Gorrión Rascador (grupo schistacea)",2021.01,32027
+"foxsp1","foxspa","49","Passerella iliaca iliaca/zaboria","Fox Sparrow (Red)","Bruant fauve (iliaca/zaboria)","Gorrión Rascador (iliaca/zaboria)",2021.01,32033
+"daejun",NA,"71962","Junco hyemalis","Dark-eyed Junco","Junco ardoisé","Junco Ojos Negros",2021.01,32036
+"slcjun","daejun","1005","Junco hyemalis hyemalis/carolinensis","Dark-eyed Junco (Slate-colored)","Junco ardoisé (hyemalis/carolinensis)","Junco Ojos Negros (hyemalis/carolinensis)",2021.01,32038
+"daejun1","daejun","58","Junco hyemalis cismontanus","Dark-eyed Junco (cismontanus)","Junco ardoisé (cismontanus)","Junco Ojos Negros (cismontanus)",2021.01,32041
+"orejun","daejun","813","Junco hyemalis [oreganus Group]","Dark-eyed Junco (Oregon)","Junco ardoisé (groupe oreganus)","Junco Ojos Negros (grupo oreganus)",2021.01,32042
+"pisjun","daejun","212","Junco hyemalis mearnsi","Dark-eyed Junco (Pink-sided)","Junco ardoisé (mearnsi)","Junco Ojos Negros (mearnsi)",2021.01,32050
+"whwjun","daejun","44","Junco hyemalis aikeni","Dark-eyed Junco (White-winged)","Junco ardoisé (aikeni)","Junco Ojos Negros (aikeni)",2021.01,32052
+"gyhjun","daejun","129","Junco hyemalis caniceps","Dark-eyed Junco (Gray-headed)","Junco ardoisé (caniceps)","Junco Ojos Negros (caniceps)",2021.01,32054
+"daejun8","daejun","25","Junco hyemalis oreganus x caniceps","Dark-eyed Junco (Oregon x Gray-headed)","Junco ardoisé (oreganus x caniceps)","Junco Ojos Negros (oreganus x caniceps)",2021.01,32055
+"daejun4","daejun","21","Junco hyemalis mearnsi x caniceps","Dark-eyed Junco (Pink-sided x Gray-headed)","Junco ardoisé (mearnsi x caniceps)","Junco Ojos Negros (mearnsi x caniceps)",2021.01,32056
+"rebjun1","daejun","11","Junco hyemalis dorsalis","Dark-eyed Junco (Red-backed)","Junco ardoisé (dorsalis)","Junco Ojos Negros (dorsalis)",2021.01,32057
+"yeejun",NA,"30","Junco phaeonotus","Yellow-eyed Junco","Junco aux yeux jaunes","Junco Ojos de Lumbre",2021.01,32060
+"y00333",NA,"4","Junco hyemalis/phaeonotus","Dark-eyed/Yellow-eyed Junco","Junco ardoisé ou J. aux yeux jaunes","Junco Ojos Negros/Ojos de Lumbre",2021.01,32067
+"whcspa",NA,"19670","Zonotrichia leucophrys","White-crowned Sparrow","Bruant à couronne blanche","Gorrión Corona Blanca",2021.01,32099
+"ewcspa1","whcspa","1","Zonotrichia leucophrys leucophrys","White-crowned Sparrow (leucophrys)","Bruant à couronne blanche (leucophrys)","Gorrión Corona Blanca (leucophrys)",2021.01,32101
+"gwcspa","whcspa","8","Zonotrichia leucophrys gambelii","White-crowned Sparrow (Gambel's)","Bruant à couronne blanche (gambelii)","Gorrión Corona Blanca (gambelii)",2021.01,32103
+"whcspa3","whcspa","1","Zonotrichia leucophrys nuttalli/pugetensis","White-crowned Sparrow (Yellow-billed)","Bruant à couronne blanche (nuttalli/pugetensis)","Gorrión Corona Blanca (nuttalli/pugetensis)",2021.01,32104
+"nwcspa","whcspa","1","Zonotrichia leucophrys nuttalli","White-crowned Sparrow (nuttalli)","Bruant à couronne blanche (nuttalli)","Gorrión Corona Blanca (nuttalli)",2021.01,32105
+"pswspa1","whcspa","1","Zonotrichia leucophrys pugetensis","White-crowned Sparrow (pugetensis)","Bruant à couronne blanche (pugetensis)","Gorrión Corona Blanca (pugetensis)",2021.01,32106
+"gocspa",NA,"4549","Zonotrichia atricapilla","Golden-crowned Sparrow","Bruant à couronne dorée","Gorrión Corona Amarilla",2021.01,32107
+"x00053",NA,"1","Zonotrichia leucophrys x atricapilla","White-crowned x Golden-crowned Sparrow (hybrid)","Hybride Bruant à couronne blanche x B. à couronne dorée","Gorrión Corona Blanca x Corona Amarilla (híbrido)",2021.01,32108
+"harspa",NA,"2142","Zonotrichia querula","Harris's Sparrow","Bruant à face noire","Gorrión de Harris",2021.01,32109
+"whtspa",NA,"33865","Zonotrichia albicollis","White-throated Sparrow","Bruant à gorge blanche","Gorrión Garganta Blanca",2021.01,32112
+"y00332",NA,"4","Zonotrichia leucophrys/albicollis","White-crowned/White-throated Sparrow","Bruant à couronne blanche ou B. à gorge blanche","Gorrión Corona Blanca/Garganta Blanca",2021.01,32114
+"x00720",NA,"2","Zonotrichia atricapilla x albicollis","Golden-crowned x White-throated Sparrow (hybrid)","Hybride Bruant à couronne dorée x B. à gorge blanche","Gorrión Corona Amarilla x Garganta Blanca (híbrido)",2021.01,32115
+"x00039",NA,"14","Junco hyemalis x Zonotrichia albicollis","Dark-eyed Junco x White-throated Sparrow (hybrid)","Hybride Junco ardoisé x Bruant à gorge blanche","Junco Ojos Negros x Gorrión Garganta Blanca (híbrido)",2021.01,32117
+"sagspa1",NA,"16","Artemisiospiza nevadensis","Sagebrush Sparrow","Bruant des armoises","Zacatonero de Artemisas",2021.01,32118
+"belspa2",NA,"1","Artemisiospiza belli","Bell's Sparrow","Bruant de Bell","Zacatonero Californiano",2021.01,32119
+"sagspa",NA,"19","Artemisiospiza nevadensis/belli","Sagebrush/Bell's Sparrow (Sage Sparrow)","Bruant des armoises ou B. de Bell","Zacatonero de Artemisas/Californiano",2021.01,32124
+"vesspa",NA,"202","Pooecetes gramineus","Vesper Sparrow","Bruant vespéral","Gorrión Cola Blanca",2021.01,32128
+"lecspa",NA,"9","Ammospiza leconteii","LeConte's Sparrow","Bruant de LeConte","Gorrión de LeConte",2021.01,32132
+"seaspa",NA,"12","Ammospiza maritima","Seaside Sparrow","Bruant maritime","Gorrión Costero",2021.01,32133
+"nstspa",NA,"2","Ammospiza nelsoni","Nelson's Sparrow","Bruant de Nelson","Gorrión de Nelson",2021.01,32143
+"nstspa2","nstspa","1","Ammospiza nelsoni subvirgata","Nelson's Sparrow (Atlantic Coast)","Bruant de Nelson (subvirgata)","Gorrión de Nelson (subvirgata)",2021.01,32147
+"shtspa",NA,"3","Ammospiza nelsoni/caudacuta","Nelson's/Saltmarsh Sparrow (Sharp-tailed Sparrow)","Bruant de Nelson ou B. à queue aiguë","Gorrión de Nelson/Cola Aguda",2021.01,32153
+"savspa",NA,"991","Passerculus sandwichensis","Savannah Sparrow","Bruant des prés","Gorrión Sabanero",2021.01,32155
+"savspa4","savspa","21","Passerculus sandwichensis [sandwichensis Group]","Savannah Sparrow (Savannah)","Bruant des prés (groupe sandwichensis)","Gorrión Sabanero (grupo sandwichensis)",2021.01,32156
+"ipsspa","savspa","14","Passerculus sandwichensis princeps","Savannah Sparrow (Ipswich)","Bruant des prés (princeps)","Gorrión Sabanero (princeps)",2021.01,32170
+"bldspa","savspa","13","Passerculus sandwichensis [guttatus Group]","Savannah Sparrow (Belding's)","Bruant des prés (groupe guttatus)","Gorrión Sabanero (grupo guttatus)",2021.01,32171
+"savspa3","savspa","1","Passerculus sandwichensis sanctorum","Savannah Sparrow (San Benito)","Bruant des prés (sanctorum)","Gorrión Sabanero (sanctorum)",2021.01,32176
+"labspa","savspa","3","Passerculus sandwichensis rostratus/atratus","Savannah Sparrow (Large-billed)","Bruant des prés (rostratus/atratus)","Gorrión Sabanero (rostratus/atratus)",2021.01,32177
+"baispa",NA,"2","Centronyx bairdii","Baird's Sparrow","Bruant de Baird","Gorrión de Baird",2021.01,32180
+"henspa",NA,"5","Centronyx henslowii","Henslow's Sparrow","Bruant de Henslow","Chingolo de Henslow",2021.01,32181
+"sonspa",NA,"39449","Melospiza melodia","Song Sparrow","Bruant chanteur","Gorrión Cantor",2021.01,32187
+"linspa",NA,"1196","Melospiza lincolnii","Lincoln's Sparrow","Bruant de Lincoln","Gorrión de Lincoln",2021.01,32220
+"swaspa",NA,"595","Melospiza georgiana","Swamp Sparrow","Bruant des marais","Gorrión Pantanero",2021.01,32225
+"rcgspa1",NA,"1","Melozone kieneri","Rusty-crowned Ground-Sparrow","Tohi de Kiener","Rascador Nuca Canela",2021.01,32236
+"cantow",NA,"790","Melozone fusca","Canyon Towhee","Tohi des canyons","Rascador Viejita",2021.01,32240
+"whttow1",NA,"1","Melozone albicollis","White-throated Towhee","Tohi à gorge blanche","Rascador Oaxaqueño",2021.01,32251
+"abetow",NA,"380","Melozone aberti","Abert's Towhee","Tohi d'Abert","Rascador Enmascarado",2021.01,32254
+"y00331",NA,"92","Melozone fusca/aberti","Canyon/Abert's Towhee","Tohi des canyons ou T. d'Abert","Rascador Viejita/Enmascarado",2021.01,32259
+"caltow",NA,"3034","Melozone crissalis","California Towhee","Tohi de Californie","Rascador Californiano",2021.01,32260
+"rucspa",NA,"237","Aimophila ruficeps","Rufous-crowned Sparrow","Tohi à calotte fauve","Zacatonero Corona Canela",2021.01,32284
+"gnttow",NA,"144","Pipilo chlorurus","Green-tailed Towhee","Tohi à queue verte","Rascador Cola Verde",2021.01,32298
+"spotow",NA,"8301","Pipilo maculatus","Spotted Towhee","Tohi tacheté","Rascador Moteado",2021.01,32299
+"spotow1","spotow","6","Pipilo maculatus [oregonus Group]","Spotted Towhee (oregonus Group)","Tohi tacheté (groupe oregonus)","Rascador Moteado (grupo oregonus)",2021.01,32300
+"spotow2","spotow","3","Pipilo maculatus [maculatus Group]","Spotted Towhee (maculatus Group)","Tohi tacheté (groupe maculatus)","Rascador Moteado (grupo maculatus)",2021.01,32309
+"eastow",NA,"11459","Pipilo erythrophthalmus","Eastern Towhee","Tohi à flancs roux","Rascador Espalda Negra",2021.01,32327
+"eastow1","eastow","50","Pipilo erythrophthalmus erythrophthalmus/canaster","Eastern Towhee (Red-eyed)","Tohi à flancs roux (erythrophthalmus/canaster)","Rascador Espalda Negra (erythrophthalmus/canaster)",2021.01,32328
+"y00226",NA,"253","Pipilo maculatus/erythrophthalmus","Spotted/Eastern Towhee (Rufous-sided Towhee)","Tohi tacheté ou T. à flancs roux","Rascador Moteado/Espalda Negra",2021.01,32335
+"towhee1",NA,"7","Melozone/Pipilo sp.","towhee sp.","Pipilo sp.","Melozone/Pipilo sp.",2021.01,32344
+"yegfin1",NA,"1","Atlapetes luteoviridis","Yellow-green Brushfinch","Tohi jaune-vert","Cerquero Verdiamarillo",2021.01,32359
+"sparro1",NA,"111","Passerellidae sp. (sparrow sp.)","sparrow sp.","Bruant sp.","Gorrión/Rascador sp. (Passerellidae sp.)",2021.01,32433
+"yebcha",NA,"57","Icteria virens","Yellow-breasted Chat","Ictérie polyglotte","Chipe Grande",2021.01,32466
+"yebcha1","yebcha","3","Icteria virens virens","Yellow-breasted Chat (virens)","Ictérie polyglotte (virens)","Chipe Grande (virens)",2021.01,32467
+"yehbla",NA,"210","Xanthocephalus xanthocephalus","Yellow-headed Blackbird","Carouge à tête jaune","Tordo Cabeza Amarilla",2021.01,32469
+"boboli",NA,"7","Dolichonyx oryzivorus","Bobolink","Goglu des prés","Tordo Arrocero",2021.01,32470
+"wesmea",NA,"506","Sturnella neglecta","Western Meadowlark","Sturnelle de l'Ouest","Pradero del Oeste",2021.01,32471
+"easmea",NA,"959","Sturnella magna","Eastern Meadowlark","Sturnelle des prés","Pradero Tortillaconchile",2021.01,32474
+"easmea2","easmea","8","Sturnella magna [magna Group]","Eastern Meadowlark (Eastern)","Sturnelle des prés (groupe magna)","Pradero Tortillaconchile (grupo magna)",2021.01,32476
+"meadow",NA,"39","Sturnella neglecta/magna","Western/Eastern Meadowlark","Sturnelle de l'Ouest ou S. des prés","Pradero Tortillaconchile/del Oeste",2021.01,32495
+"yewcac1",NA,"2","Cassiculus melanicterus","Yellow-winged Cacique","Cassique à ailes jaunes","Cacique Mexicano",2021.01,32511
+"bkvori",NA,"1","Icterus wagleri","Black-vented Oriole","Oriole cul-noir","Calandria de Wagler",2021.01,32571
+"orcori",NA,"117","Icterus spurius","Orchard Oriole","Oriole des vergers","Calandria Castaña",2021.01,32578
+"orcori2","orcori","1","Icterus spurius spurius","Orchard Oriole (Orchard)","Oriole des vergers (spurius)","Calandria Castaña (spurius)",2021.01,32579
+"hooori",NA,"552","Icterus cucullatus","Hooded Oriole","Oriole masqué","Calandria Dorso Negro Menor",2021.01,32581
+"hooori1","hooori","1","Icterus cucullatus [nelsoni Group]","Hooded Oriole (nelsoni Group)","Oriole masqué (groupe nelsoni)","Calandria Dorso Negro Menor (grupo nelsoni)",2021.01,32585
+"y00488",NA,"2","Icterus spurius/cucullatus","Orchard/Hooded Oriole","Oriole des vergers ou O. masqué","Calandria Castaña/Dorso Negro Menor",2021.01,32590
+"stbori",NA,"5","Icterus pustulatus","Streak-backed Oriole","Oriole à dos rayé","Calandria Dorso Rayado",2021.01,32623
+"bulori",NA,"276","Icterus bullockii","Bullock's Oriole","Oriole de Bullock","Calandria Cejas Naranjas",2021.01,32635
+"spbori",NA,"40","Icterus pectoralis","Spot-breasted Oriole","Oriole maculé","Calandria Pecho Moteado",2021.01,32648
+"altori",NA,"13","Icterus gularis","Altamira Oriole","Oriole à gros bec","Calandria Dorso Negro Mayor",2021.01,32651
+"audori",NA,"14","Icterus graduacauda","Audubon's Oriole","Oriole d'Audubon","Calandria Capucha Negra",2021.01,32658
+"audori1","audori","1","Icterus graduacauda graduacauda/audubonii","Audubon's Oriole (Audubon's)","Oriole d'Audubon (graduacauda/audubonii)","Calandria Capucha Negra (graduacauda/audubonii)",2021.01,32659
+"balori",NA,"1105","Icterus galbula","Baltimore Oriole","Oriole de Baltimore","Calandria de Baltimore",2021.01,32666
+"x00013",NA,"3","Icterus bullockii x galbula","Bullock's x Baltimore Oriole (hybrid)","Hybride Oriole de Bullock x O. de Baltimore","Calandria Cejas Naranjas x de Baltimore (híbrido)",2021.01,32667
+"y00022",NA,"167","Icterus bullockii/galbula","Bullock's/Baltimore Oriole","Oriole de Bullock ou O. de Baltimore","Calandria Cejas Naranjas/de Baltimore",2021.01,32668
+"scoori",NA,"91","Icterus parisorum","Scott's Oriole","Oriole jaune-verdâtre","Calandria Tunera",2021.01,32672
+"oriole",NA,"9","Icterus sp.","new world oriole sp.","Icterus sp.","Calandria sp.",2021.01,32674
+"rewbla",NA,"36613","Agelaius phoeniceus","Red-winged Blackbird","Carouge à épaulettes","Tordo Sargento",2021.01,32676
+"rewbla1","rewbla","36","Agelaius phoeniceus [phoeniceus Group]","Red-winged Blackbird (Red-winged)","Carouge à épaulettes (groupe phoeniceus)","Tordo Sargento (grupo phoeniceus)",2021.01,32677
+"rewbla2","rewbla","1","Agelaius phoeniceus californicus/mailliardorum","Red-winged Blackbird (California Bicolored)","Carouge à épaulettes (californicus/mailliardorum)","Tordo Sargento (californicus/mailliardorum)",2021.01,32699
+"tribla",NA,"101","Agelaius tricolor","Tricolored Blackbird","Carouge de Californie","Tordo Tricolor",2021.01,32706
+"tasbla",NA,"1","Agelaius humeralis","Tawny-shouldered Blackbird","Petit Carouge","Sargento Humeral",2021.01,32708
+"shicow",NA,"16","Molothrus bonariensis","Shiny Cowbird","Vacher luisant","Tordo Sudamericano",2021.01,32716
+"brocow",NA,"131","Molothrus aeneus","Bronzed Cowbird","Vacher bronzé","Tordo Ojos Rojos",2021.01,32725
+"bnhcow",NA,"29185","Molothrus ater","Brown-headed Cowbird","Vacher à tête brune","Tordo Cabeza Café",2021.01,32732
+"y00336",NA,"12","Molothrus bonariensis/ater","Shiny/Brown-headed Cowbird","Vacher luisant ou V. à tête brune","Tordo Sudamericano/Cabeza Café",2021.01,32737
+"y00337",NA,"28","Molothrus aeneus/ater","Bronzed/Brown-headed Cowbird","Vacher bronzé ou V. à tête brune","Tordo Ojos Rojos/Cabeza Café",2021.01,32738
+"rusbla",NA,"1754","Euphagus carolinus","Rusty Blackbird","Quiscale rouilleux","Tordo Canadiense",2021.01,32747
+"brebla",NA,"3588","Euphagus cyanocephalus","Brewer's Blackbird","Quiscale de Brewer","Tordo Ojos Amarillos",2021.01,32750
+"y00227",NA,"37","Euphagus carolinus/cyanocephalus","Rusty/Brewer's Blackbird","Quiscale rouilleux ou Q. de Brewer","Tordo Canadiense/Ojos Amarillos",2021.01,32751
+"comgra",NA,"37156","Quiscalus quiscula","Common Grackle","Quiscale bronzé","Zanate Norteño",2021.01,32752
+"comgra1","comgra","5","Quiscalus quiscula quiscula/stonei","Common Grackle (Purple)","Quiscale bronzé (quiscula/stonei)","Zanate Norteño (quiscula/stonei)",2021.01,32753
+"comgra2","comgra","1","Quiscalus quiscula versicolor","Common Grackle (Bronzed)","Quiscale bronzé (versicolor)","Zanate Norteño (versicolor)",2021.01,32756
+"botgra",NA,"1879","Quiscalus major","Boat-tailed Grackle","Quiscale des marais","Zanate Marismeño",2021.01,32757
+"botgra1","botgra","1","Quiscalus major major","Boat-tailed Grackle (major)","Quiscale des marais (major)","Zanate Marismeño (major)",2021.01,32758
+"botgra2","botgra","3","Quiscalus major torreyi/alabamensis","Boat-tailed Grackle (torreyi/alabamensis)","Quiscale des marais (torreyi/alabamensis)","Zanate Marismeño (torreyi/alabamensis)",2021.01,32759
+"grtgra",NA,"1492","Quiscalus mexicanus","Great-tailed Grackle","Quiscale à longue queue","Zanate Mayor",2021.01,32763
+"grackl",NA,"14","Quiscalus sp.","grackle sp.","Quiscalus sp.","Zanate sp.",2021.01,32797
+"oribla1",NA,"1","Gymnomystax mexicanus","Oriole Blackbird","Carouge loriot","Chango Oriolino",2021.01,32805
+"yewbla2",NA,"1","Agelasticus thilius","Yellow-winged Blackbird","Carouge galonné","Varillero Aliamarillo",2021.01,32829
+"blackb",NA,"98","Icteridae sp.","blackbird sp.","Ictéridé sp.","Icteridae sp.",2021.01,32842
+"ovenbi1",NA,"176","Seiurus aurocapilla","Ovenbird","Paruline couronnée","Chipe Suelero",2021.01,32843
+"woewar1",NA,"23","Helmitheros vermivorum","Worm-eating Warbler","Paruline vermivore","Chipe Gusanero",2021.01,32847
+"louwat",NA,"29","Parkesia motacilla","Louisiana Waterthrush","Paruline hochequeue","Chipe Arroyero",2021.01,32849
+"norwat",NA,"14","Parkesia noveboracensis","Northern Waterthrush","Paruline des ruisseaux","Chipe Charquero",2021.01,32850
+"y00598",NA,"12","Parkesia motacilla/noveboracensis","Louisiana/Northern Waterthrush","Paruline hochequeue ou P. des ruisseaux","Chipe Arroyero/Charquero",2021.01,32851
+"gowwar",NA,"4","Vermivora chrysoptera","Golden-winged Warbler","Paruline à ailes dorées","Chipe Alas Amarillas",2021.01,32853
+"buwwar",NA,"23","Vermivora cyanoptera","Blue-winged Warbler","Paruline à ailes bleues","Chipe Alas Azules",2021.01,32854
+"brewar",NA,"1","Vermivora chrysoptera x cyanoptera (F1 hybrid)","Brewster's Warbler (hybrid)","Paruline de Brewster (hybride F1)","Chipe de Brewster (híbrido)",2021.01,32856
+"bawwar",NA,"656","Mniotilta varia","Black-and-white Warbler","Paruline noir et blanc","Chipe Trepador",2021.01,32859
+"prowar",NA,"73","Protonotaria citrea","Prothonotary Warbler","Paruline orangée","Chipe Dorado",2021.01,32860
+"swawar",NA,"7","Limnothlypis swainsonii","Swainson's Warbler","Paruline de Swainson","Chipe Corona Café",2021.01,32861
+"tenwar",NA,"49","Leiothlypis peregrina","Tennessee Warbler","Paruline obscure","Chipe Peregrino",2021.01,32869
+"orcwar",NA,"2166","Leiothlypis celata","Orange-crowned Warbler","Paruline verdâtre","Chipe Oliváceo",2021.01,32870
+"orcwar1","orcwar","15","Leiothlypis celata celata","Orange-crowned Warbler (celata)","Paruline verdâtre (celata)","Chipe Oliváceo (celata)",2021.01,32872
+"orcwar3","orcwar","1","Leiothlypis celata lutescens","Orange-crowned Warbler (lutescens)","Paruline verdâtre (lutescens)","Chipe Oliváceo (lutescens)",2021.01,32874
+"lucwar",NA,"46","Leiothlypis luciae","Lucy's Warbler","Paruline de Lucy","Chipe Rabadilla Castaña",2021.01,32877
+"naswar",NA,"152","Leiothlypis ruficapilla","Nashville Warbler","Paruline à joues grises","Chipe Cabeza Gris",2021.01,32878
+"naswar1","naswar","2","Leiothlypis ruficapilla ruficapilla","Nashville Warbler (ruficapilla)","Paruline à joues grises (ruficapilla)","Chipe Cabeza Gris (ruficapilla)",2021.01,32879
+"naswar2","naswar","1","Leiothlypis ruficapilla ridgwayi","Nashville Warbler (ridgwayi)","Paruline à joues grises (ridgwayi)","Chipe Cabeza Gris (ridgwayi)",2021.01,32880
+"virwar",NA,"7","Leiothlypis virginiae","Virginia's Warbler","Paruline de Virginia","Chipe de Virginia",2021.01,32882
+"conwar",NA,"4","Oporornis agilis","Connecticut Warbler","Paruline à gorge grise","Chipe de Connecticut",2021.01,32886
+"gycyel",NA,"1","Geothlypis poliocephala","Gray-crowned Yellowthroat","Paruline à calotte grise","Mascarita Pico Grueso",2021.01,32887
+"macwar",NA,"7","Geothlypis tolmiei","MacGillivray's Warbler","Paruline des buissons","Chipe Lores Negros",2021.01,32900
+"mouwar",NA,"1","Geothlypis philadelphia","Mourning Warbler","Paruline triste","Chipe de Pechera",2021.01,32901
+"kenwar",NA,"5","Geothlypis formosa","Kentucky Warbler","Paruline du Kentucky","Chipe Patilludo",2021.01,32906
+"comyel",NA,"377","Geothlypis trichas","Common Yellowthroat","Paruline masquée","Mascarita Común",2021.01,32921
+"hoowar",NA,"57","Setophaga citrina","Hooded Warbler","Paruline à capuchon","Chipe Encapuchado",2021.01,32949
+"amered",NA,"81","Setophaga ruticilla","American Redstart","Paruline flamboyante","Pavito Migratorio",2021.01,32950
+"kirwar",NA,"1","Setophaga kirtlandii","Kirtland's Warbler","Paruline de Kirtland","Reinita de Kirtland",2021.01,32951
+"camwar",NA,"38","Setophaga tigrina","Cape May Warbler","Paruline tigrée","Chipe Atigrado",2021.01,32952
+"cerwar",NA,"16","Setophaga cerulea","Cerulean Warbler","Paruline azurée","Chipe Celeste",2021.01,32953
+"norpar",NA,"300","Setophaga americana","Northern Parula","Paruline à collier","Chipe Pecho Manchado",2021.01,32955
+"magwar",NA,"21","Setophaga magnolia","Magnolia Warbler","Paruline à tête cendrée","Chipe de Magnolias",2021.01,32971
+"babwar",NA,"15","Setophaga castanea","Bay-breasted Warbler","Paruline à poitrine baie","Chipe Castaño",2021.01,32973
+"bkbwar",NA,"18","Setophaga fusca","Blackburnian Warbler","Paruline à gorge orangée","Chipe Garganta Naranja",2021.01,32974
+"yelwar",NA,"425","Setophaga petechia","Yellow Warbler","Paruline jaune","Chipe Amarillo",2021.01,32976
+"yelwar1","yelwar","3","Setophaga petechia [aestiva Group]","Yellow Warbler (Northern)","Paruline jaune (groupe aestiva)","Chipe Amarillo (grupo aestiva)",2021.01,32977
+"yelwar2","yelwar","2","Setophaga petechia [petechia Group]","Yellow Warbler (Golden)","Paruline jaune (groupe petechia)","Chipe Amarillo (Dorado)",2021.01,32997
+"chswar",NA,"9","Setophaga pensylvanica","Chestnut-sided Warbler","Paruline à flancs marron","Chipe Flancos Castaños",2021.01,33018
+"bkpwar",NA,"33","Setophaga striata","Blackpoll Warbler","Paruline rayée","Chipe Cabeza Negra",2021.01,33020
+"btbwar",NA,"71","Setophaga caerulescens","Black-throated Blue Warbler","Paruline bleue","Chipe Azulnegro",2021.01,33023
+"palwar",NA,"657","Setophaga palmarum","Palm Warbler","Paruline à couronne rousse","Chipe Playero",2021.01,33029
+"palwar3","palwar","11","Setophaga palmarum palmarum","Palm Warbler (Western)","Paruline à couronne rousse (palmarum)","Chipe Playero (palmarum)",2021.01,33030
+"palwar4","palwar","18","Setophaga palmarum hypochrysea","Palm Warbler (Yellow)","Paruline à couronne rousse (hypochrysea)","Chipe Playero (hypochrysea)",2021.01,33031
+"pinwar",NA,"6008","Setophaga pinus","Pine Warbler","Paruline des pins","Chipe Pinero",2021.01,33034
+"yerwar",NA,"11272","Setophaga coronata","Yellow-rumped Warbler","Paruline à croupion jaune","Chipe Rabadilla Amarilla",2021.01,33040
+"myrwar","yerwar","307","Setophaga coronata coronata","Yellow-rumped Warbler (Myrtle)","Paruline à croupion jaune (coronata)","Chipe Rabadilla Amarilla (coronata)",2021.01,33041
+"audwar","yerwar","129","Setophaga coronata auduboni","Yellow-rumped Warbler (Audubon's)","Paruline à croupion jaune (auduboni)","Chipe Rabadilla Amarilla (auduboni)",2021.01,33042
+"yerwar3","yerwar","19","Setophaga coronata coronata x auduboni","Yellow-rumped Warbler (Myrtle x Audubon's)","Paruline à croupion jaune (coronata x auduboni)","Chipe Rabadilla Amarilla (coronata x auduboni)",2021.01,33043
+"x00461",NA,"2","Setophaga palmarum x coronata","Palm x Yellow-rumped Warbler (hybrid)","Hybride Paruline à couronne rousse x P. à croupion jaune","Chipe Playero x Rabadilla Amarilla (híbrido)",2021.01,33048
+"yetwar",NA,"652","Setophaga dominica","Yellow-throated Warbler","Paruline à gorge jaune","Chipe Garganta Amarilla",2021.01,33049
+"yetwar1","yetwar","1","Setophaga dominica albilora","Yellow-throated Warbler (albilora)","Paruline à gorge jaune (albilora)","Chipe Garganta Amarilla (albilora)",2021.01,33050
+"yetwar2","yetwar","1","Setophaga dominica dominica/stoddardi","Yellow-throated Warbler (dominica/stoddardi)","Paruline à gorge jaune (dominica/stoddardi)","Chipe Garganta Amarilla (dominica/stoddardi)",2021.01,33051
+"prawar",NA,"141","Setophaga discolor","Prairie Warbler","Paruline des prés","Chipe de Pradera",2021.01,33061
+"barwar",NA,"1","Setophaga subita","Barbuda Warbler","Paruline de Barbuda","Reinita de Barbuda",2021.01,33067
+"grawar",NA,"3","Setophaga graciae","Grace's Warbler","Paruline de Grace","Chipe Cejas Amarillas",2021.01,33069
+"btywar",NA,"75","Setophaga nigrescens","Black-throated Gray Warbler","Paruline grise","Chipe Negrogris",2021.01,33075
+"towwar",NA,"1610","Setophaga townsendi","Townsend's Warbler","Paruline de Townsend","Chipe de Townsend",2021.01,33080
+"x00624",NA,"1","Setophaga coronata x townsendi","Yellow-rumped x Townsend's Warbler (hybrid)","Hybride Paruline à croupion jaune x P. de Townsend","Chipe Rabadilla Amarilla x de Townsend (híbrido)",2021.01,33081
+"herwar",NA,"16","Setophaga occidentalis","Hermit Warbler","Paruline à tête jaune","Chipe Cabeza Amarilla",2021.01,33084
+"x00059",NA,"5","Setophaga townsendi x occidentalis","Townsend's x Hermit Warbler (hybrid)","Hybride Paruline de Townsend x P. à tête jaune","Chipe de Townsend x Cabeza Amarilla (híbrido)",2021.01,33085
+"gchwar",NA,"14","Setophaga chrysoparia","Golden-cheeked Warbler","Paruline à dos noir","Chipe Cachetes Amarillos",2021.01,33089
+"btnwar",NA,"38","Setophaga virens","Black-throated Green Warbler","Paruline à gorge noire","Chipe Dorso Verde",2021.01,33090
+"rucwar",NA,"1","Basileuterus rufifrons","Rufous-capped Warbler","Paruline à calotte rousse","Chipe Gorra Canela Común",2021.01,33095
+"gcrwar",NA,"1","Basileuterus culicivorus","Golden-crowned Warbler","Paruline à couronne dorée","Chipe Cejas Negras",2021.01,33119
+"canwar",NA,"1","Cardellina canadensis","Canada Warbler","Paruline du Canada","Chipe de Collar",2021.01,33215
+"wlswar",NA,"214","Cardellina pusilla","Wilson's Warbler","Paruline à calotte noire","Chipe Corona Negra",2021.01,33216
+"wilwar1","wlswar","1","Cardellina pusilla pileolata","Wilson's Warbler (pileolata)","Paruline à calotte noire (pileolata)","Chipe Corona Negra (pileolata)",2021.01,33217
+"wilwar2","wlswar","2","Cardellina pusilla pusilla","Wilson's Warbler (pusilla)","Paruline à calotte noire (pusilla)","Chipe Corona Negra (pusilla)",2021.01,33218
+"wilwar3","wlswar","6","Cardellina pusilla chryseola","Wilson's Warbler (chryseola)","Paruline à calotte noire (chryseola)","Chipe Corona Negra (chryseola)",2021.01,33219
+"refwar",NA,"1","Cardellina rubrifrons","Red-faced Warbler","Paruline à face rouge","Chipe Cara Roja",2021.01,33220
+"paired",NA,"12","Myioborus pictus","Painted Redstart","Paruline à ailes blanches","Pavito Alas Blancas",2021.01,33227
+"warble",NA,"23","Parulidae sp.","warbler sp. (Parulidae sp.)","Paruline sp.","Chipe sp. (Parulidae sp.)",2021.01,33267
+"heptan",NA,"7","Piranga flava","Hepatic Tanager","Piranga orangé","Piranga Encinera",2021.01,33281
+"sumtan",NA,"206","Piranga rubra","Summer Tanager","Piranga vermillon","Piranga Roja",2021.01,33300
+"scatan",NA,"73","Piranga olivacea","Scarlet Tanager","Piranga écarlate","Piranga Escarlata",2021.01,33304
+"westan",NA,"118","Piranga ludoviciana","Western Tanager","Piranga à tête rouge","Piranga Capucha Roja",2021.01,33306
+"flctan",NA,"1","Piranga bidentata","Flame-colored Tanager","Piranga à dos rayé","Piranga Dorso Rayado",2021.01,33309
+"rehtan2",NA,"1","Piranga rubriceps","Red-hooded Tanager","Piranga à capuchon","Piranga Capuchirroja",2021.01,33324
+"norcar",NA,"59929","Cardinalis cardinalis","Northern Cardinal","Cardinal rouge","Cardenal Rojo",2021.01,33382
+"norcar1","norcar","55","Cardinalis cardinalis [cardinalis Group]","Northern Cardinal (Common)","Cardinal rouge (groupe cardinalis)","Cardenal Rojo (grupo cardinalis)",2021.01,33383
+"pyrrhu",NA,"884","Cardinalis sinuatus","Pyrrhuloxia","Cardinal pyrrhuloxia","Cardenal Desértico",2021.01,33402
+"yelgro",NA,"3","Pheucticus chrysopeplus","Yellow Grosbeak","Cardinal jaune","Picogordo Amarillo",2021.01,33408
+"robgro",NA,"835","Pheucticus ludovicianus","Rose-breasted Grosbeak","Cardinal à poitrine rose","Picogordo Degollado",2021.01,33424
+"bkhgro",NA,"551","Pheucticus melanocephalus","Black-headed Grosbeak","Cardinal à tête noire","Picogordo Tigrillo",2021.01,33425
+"y00334",NA,"39","Pheucticus ludovicianus/melanocephalus","Rose-breasted/Black-headed Grosbeak","Cardinal à poitrine rose ou C. à tête noire","Picogordo Degollado/Tigrillo",2021.01,33429
+"blubun",NA,"5","Cyanocompsa parellina","Blue Bunting","Évêque paré","Colorín Azulnegro",2021.01,33460
+"blugrb1",NA,"117","Passerina caerulea","Blue Grosbeak","Guiraca bleu","Picogordo Azul",2021.01,33465
+"lazbun",NA,"61","Passerina amoena","Lazuli Bunting","Passerin azuré","Colorín Pecho Canela",2021.01,33473
+"indbun",NA,"598","Passerina cyanea","Indigo Bunting","Passerin indigo","Colorín Azul",2021.01,33474
+"ixlbun",NA,"3","Passerina amoena x cyanea","Lazuli x Indigo Bunting (hybrid)","Hybride Passerin azuré x P. indigo","Colorín Pecho Canela x Azul (híbrido)",2021.01,33476
+"orbbun1",NA,"1","Passerina leclancherii","Orange-breasted Bunting","Passerin arc-en-ciel","Colorín Pecho Naranja",2021.01,33479
+"varbun",NA,"2","Passerina versicolor","Varied Bunting","Passerin varié","Colorín Morado",2021.01,33482
+"paibun",NA,"542","Passerina ciris","Painted Bunting","Passerin nonpareil","Colorín Sietecolores",2021.01,33487
+"dickci",NA,"123","Spiza americana","Dickcissel","Dickcissel d'Amérique","Arrocero Americano",2021.01,33493
+"reccar",NA,"27","Paroaria coronata","Red-crested Cardinal","Paroare huppé","Cardenilla Crestada",2021.01,33495
+"yebcar",NA,"5","Paroaria capitata","Yellow-billed Cardinal","Paroare à bec jaune","Cardenilla Piquigualda",2021.01,33508
+"tanage",NA,"3","Thraupidae sp. (tanager sp.)","tanager sp. (Thraupidae sp.)","Tangara sp. (Thraupidé)","Tangara sp. (Thraupidae sp.)",2021.01,34089
+"saffin",NA,"8","Sicalis flaveola","Saffron Finch","Sicale bouton-d'or","Chirigüe Azafranado",2021.01,34327
+"yellow4",NA,"1","Sicalis sp.","yellow-finch sp.","Sicalis sp.","Chirigüe sp.",2021.01,34345
+"blbgra1",NA,"1","Volatinia jacarina","Blue-black Grassquit","Jacarini noir","Semillero Brincador",2021.01,34360
+"whcsee1",NA,"1","Sporophila morelleti","Morelet's Seedeater","Sporophile de Morelet","Semillero de Collar",2021.01,34424
+"whcsee2",NA,"1","Sporophila torqueola","Cinnamon-rumped Seedeater","Sporophile à col blanc","Semillero Rabadilla Canela",2021.01,34427
+"whcsee",NA,"3","Sporophila morelleti/torqueola","Morelet's/Cinnamon-rumped Seedeater","Sporophile de Morelet ou S. à col blanc","Semillero Semillero de Collar/Rabadilla Canela",2021.01,34430
+"grasal2",NA,"1","Saltator grandis","Cinnamon-bellied Saltator","Saltator du Mexique","Saltador Gris Mesoamericano",2021.01,34654
+"passer1",NA,"1","Passeriformes sp.","passerine sp.","Passereau sp.","Pájaro sp.",2021.01,34699
