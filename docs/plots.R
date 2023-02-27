@@ -10,7 +10,7 @@ filtered_data <-  data |>
   dplyr::filter(species_code == 'norcar') |> # user input
   dplyr::filter(max(date) > date) |> 
   dplyr::filter(date > min(date)) |> 
-  dplyr::count(loc_id, latitude, longitude) |> 
+  dplyr::count(loc_id, latitude, longitude) |> # 1 row = 1 observation
   arrange(desc(n))
 
 
@@ -36,8 +36,8 @@ leaflet::leaflet() |>
 plotly::ggplotly(
   data |> 
     dplyr::filter(species_code == 'norcar') |> # User input
-    dplyr::group_by(subnational1_code) |> 
-    dplyr::count(subnational1_code, date) |> 
+    dplyr::group_by(subnational1_code, date) |> 
+    dplyr::summarize(n = n()) |> 
     dplyr::mutate(cumsum = cumsum(n)) |> 
     ggplot2::ggplot(aes(x = as.Date(date),
                         y = cumsum,

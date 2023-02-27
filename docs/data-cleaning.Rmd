@@ -45,7 +45,7 @@ The species code data was extracted from the official webpage of [Feederwatch pr
 - population_atleast (`*_atleast`)
 - count_area_size_sq_m_atleast (`*_atleast`)
 - housing_density
-- minim number of tress and other vegetation (`*_atleast`)
+- minimum number of tress and other vegetation (`*_atleast`)
 - `yard_`
 
 **feeders**
@@ -64,33 +64,16 @@ The species code data was extracted from the official webpage of [Feederwatch pr
 ```{r download-data}
 
 library(readr)
+library(here)
 
 feederwatch <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-10/PFW_2021_public.csv')
 
 site_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-01-10/PFW_count_site_data_public_2021.csv')
 
-species_code_data <- readr::read_csv('data/PFW-species-translation-table.csv')
+species_code_data <- readr::read_csv(here('data', 'PFW-species-translation-table.csv'))
 
 
 ```
-
-## Data summary
-
-```{r summary}
-
-summary(data)
-
-```
-
-
-```{r sps-number}
-
-# I have too many species!
-unique(data$species_code)
-
-```
-
-
 
 ## Data wrangling and saving the file
 
@@ -115,10 +98,28 @@ data <-  dplyr::left_join(feederwatch,
                                       '%m/%d/%Y'))   # Change data format
          
 
-write.csv(data, 'data/data.csv')
+write.csv(data, here('data', 'data.csv'))
 
 
 ```
+
+## Data summary
+
+```{r summary}
+
+summary(data)
+
+```
+
+
+```{r sps-number}
+
+# I have too many species!
+unique(data$species_code)
+
+```
+
+
 
 ## Data validation
 
@@ -126,11 +127,12 @@ write.csv(data, 'data/data.csv')
 
 ## Point overlapping
 data |> 
-  count(loc_id, species_code, latitude) |> 
+  dplyr::count(loc_id,
+               species_code,
+               latitude,
+               longitude) |> 
   filter(species_code == 'norcar') |> 
   arrange(desc(n))
-
-
 
 
 ```
