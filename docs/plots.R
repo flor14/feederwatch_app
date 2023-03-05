@@ -32,27 +32,36 @@ leaflet::leaflet() |>
 
 
 ## LINEPLOT
+library(zoo)
 
-plotly::ggplotly(
-  data |> 
-    dplyr::filter(species_code == 'norcar') |> # User input
-    dplyr::group_by(subnational1_code, date) |> 
-    dplyr::summarize(n = n()) |> 
-    dplyr::mutate(cumsum = cumsum(n)) |> 
-    ggplot2::ggplot(aes(x = as.Date(date),
-                        y = cumsum,
-                        color = subnational1_code)) +
-    ggplot2::geom_line(size = 0.5) +
-    ggplot2::geom_point(alpha = 0.5) +
-    ggplot2::scale_x_date(date_breaks = "1 month", 
-                          date_labels =  "%b %Y") + 
-    ggplot2::scale_color_brewer(palette = "Set2") +
-    ggplot2::labs(title = paste('Period', min(data$date),
-                                "-",
-                                max(data$date)),
-                  x = 'date',
-                  y = 'observations') 
-)
+    plotly::ggplotly(
+    data |> 
+    dplyr::filter(species_code == 'norcar',
+                    subnational1_code %in% c('CA-QC',
+                                             'CA-ON')) |> # User input
+      dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
+      dplyr::group_by(yearmon, subnational1_code) |> 
+      dplyr::summarize(n = dplyr::n()) |> 
+      ungroup() |> 
+      group_by(subnational1_code) |> 
+      dplyr::mutate(cumsum = cumsum(n)) |> 
+      ggplot2::ggplot(aes(x = as.Date(yearmon),
+                          y = cumsum,
+                          color = subnational1_code)) +
+      ggplot2::geom_line(size = 0.5,
+                         alpha = 0.5) +
+      ggplot2::geom_point(alpha = 0.5) +
+      ggplot2::scale_x_date(date_breaks = "1 month", 
+                            date_labels =  "%b %Y") + 
+      #   ggplot2::scale_color_brewer(palette = "Set2") +
+      ggplot2::labs(title = paste('Period', min(data$date),
+                                  "to",
+                                  max(data$date)),
+                    x = 'date',
+                    y = 'observations') 
+  )
+
+
 
 ## BARPLOT (not included in the app)
 

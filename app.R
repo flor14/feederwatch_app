@@ -6,6 +6,7 @@ library(ggplot2)
 library(plotly)
 library(thematic)
 library(forcats)
+library(zoo)
 
 # I am only using Canadian data
 data <- read.csv("data/data.csv")
@@ -37,7 +38,11 @@ ui <- navbarPage('FeederWatch App',
                               selectInput(inputId = 'species2',
                                           label = 'select the specie:',
                                           choices = unique(data$species_code),
-                                          selected = 'sonspa')
+                                          selected = 'sonspa'),
+                             checkboxGroupInput(inputId = 'provinces',
+                                          label = 'select the province:',
+                                          choices = unique(data$subnational1_code),
+                                          selected = 'CA-BC')
                             ),
                             mainPanel(
                               tabsetPanel(
@@ -54,32 +59,48 @@ ui <- navbarPage('FeederWatch App',
 
 server <- function(input, output, session) {
   
+  data_acc_sps <-  reactive({
+    data |> 
+      dplyr::filter(species_code == input$species2) })
+  
+  observeEvent(data_acc_sps(), {
+    choices <- unique(data_acc_sps()$subnational1_code)
+    updateCheckboxGroupInput(inputId = "provinces",
+                      choices = choices)
+  })
+  
+    
+
+  
   ## LINEPLOT
   output$lineplot <- plotly::renderPlotly({ 
     
+    req(input$provinces) # trigger the execution with the user selection
+    
     thematic::thematic_shiny()
     
-    plotly::ggplotly(
-    data |> 
-      dplyr::filter(species_code == input$species2) |> # User input
-      dplyr::group_by(subnational1_code, date) |> 
-      dplyr::summarize(n = n()) |> 
+    data_acc_sps() |> 
+    dplyr::filter(subnational1_code %in% input$provinces) |> 
+      dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
+      dplyr::group_by(yearmon, subnational1_code) |> 
+      dplyr::summarize(n = dplyr::n()) |> 
+      dplyr::ungroup() |> 
+      dplyr::group_by(subnational1_code) |> 
       dplyr::mutate(cumsum = cumsum(n)) |> 
-      ggplot2::ggplot(aes(x = as.Date(date),
-                 y = cumsum,
-                 color = subnational1_code)) +
-      ggplot2::geom_line(size = 0.5) +
+      ggplot2::ggplot(aes(x = as.Date(yearmon),
+                          y = cumsum,
+                          color = subnational1_code)) +
+      ggplot2::geom_line(size = 0.5,
+                         alpha = 0.5) +
       ggplot2::geom_point(alpha = 0.5) +
-      ?ggplot2::scale_x_date(date_breaks = "1 month", 
+      ggplot2::scale_x_date(date_breaks = "1 month", 
                             date_labels =  "%b %Y") + 
-      ggplot2::scale_color_brewer(palette = "Set2") +
-      ggplot2::labs(title = paste('Period',
-                                  min(data$date),
-                         "-",
-                         max(data$date)),
-           x = 'date',
-           y = 'observations') 
-      )
+      #   ggplot2::scale_color_brewer(palette = "Set2") +
+      ggplot2::labs(title = paste('Period', min(data$date),
+                                  "to",
+                                  max(data$date)),
+                    x = 'date',
+                    y = 'observations') 
   })
   
   filtered_data <-reactive({ 
