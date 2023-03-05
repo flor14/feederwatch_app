@@ -42,7 +42,8 @@ ui <- navbarPage('FeederWatch App',
                              checkboxGroupInput(inputId = 'provinces',
                                           label = 'select the province:',
                                           choices = unique(data$subnational1_code),
-                                          selected = 'CA-BC')
+                                          selected = 'CA-BC'),
+                             downloadButton('download1')
                             ),
                             mainPanel(
                               tabsetPanel(
@@ -59,6 +60,7 @@ ui <- navbarPage('FeederWatch App',
 
 server <- function(input, output, session) {
   
+  ## DYNAMIC UI - FILTERING SECOND TAB 'by provinces"
   data_acc_sps <-  reactive({
     data |> 
       dplyr::filter(species_code == input$species2) })
@@ -69,24 +71,28 @@ server <- function(input, output, session) {
                       choices = choices)
   })
   
-    
-
   
-  ## LINEPLOT
+  data_acc_sps_prov <- reactive({ 
+    
+    data_acc_sps() |> 
+    dplyr::filter(subnational1_code %in% input$provinces) |> 
+    dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
+    dplyr::group_by(yearmon, subnational1_code) |> 
+    dplyr::summarize(n = dplyr::n()) |> 
+    dplyr::ungroup() |> 
+    dplyr::group_by(subnational1_code) |> 
+    dplyr::mutate(cumsum = cumsum(n)) 
+    
+    })
+    
+  ## LINEPLOT - SECOND TAB
   output$lineplot <- plotly::renderPlotly({ 
     
     req(input$provinces) # trigger the execution with the user selection
     
     thematic::thematic_shiny()
     
-    data_acc_sps() |> 
-    dplyr::filter(subnational1_code %in% input$provinces) |> 
-      dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
-      dplyr::group_by(yearmon, subnational1_code) |> 
-      dplyr::summarize(n = dplyr::n()) |> 
-      dplyr::ungroup() |> 
-      dplyr::group_by(subnational1_code) |> 
-      dplyr::mutate(cumsum = cumsum(n)) |> 
+    data_acc_sps_prov() |> 
       ggplot2::ggplot(aes(x = as.Date(yearmon),
                           y = cumsum,
                           color = subnational1_code)) +
@@ -103,6 +109,18 @@ server <- function(input, output, session) {
                     y = 'observations') 
   })
   
+
+  ## DOWNLOAD BUTTON
+  output$download1 <- downloadHandler(
+    filename = function() {
+      paste0(input$species2, ".csv")
+    },
+    content = function(file) {
+      write.csv(data_acc_sps_prov(), file)
+    }
+  )
+  
+  ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
     data |> 
@@ -114,7 +132,6 @@ server <- function(input, output, session) {
   }) 
   
   ## DT TABLE
-  
   output$table <-  renderDT({
     
     # read the documentation for the arguments  
@@ -129,8 +146,7 @@ server <- function(input, output, session) {
   
   
   ## LEAFLET MAP
-  
-  output$map <- leaflet::renderLeaflet({
+   output$map <- leaflet::renderLeaflet({
     
     # print(input$daterange)
     # str(input$daterange)
