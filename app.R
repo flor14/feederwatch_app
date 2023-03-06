@@ -5,11 +5,17 @@ library(DT)
 library(ggplot2)
 library(plotly)
 library(thematic)
-library(forcats)
 library(zoo)
+library(sf)
+library(rnaturalearth)
+library(crosstalk)
 
 # I am only using Canadian data
 data <- read.csv("data/data.csv")
+
+# reading geografic data
+poly_canada <- rnaturalearth::ne_states(country = 'canada',
+                                        returnclass = c( "sf")) 
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
@@ -33,6 +39,9 @@ ui <- navbarPage('FeederWatch App',
                                    )
                  ),
                  tabPanel('by Province',
+                          fluidRow(column(6, 
+                                          plotlyOutput('plotly_map'),
+                                          offset = 0)),
                           sidebarLayout(
                             sidebarPanel(
                               selectInput(inputId = 'species2',
@@ -96,7 +105,7 @@ server <- function(input, output, session) {
       ggplot2::ggplot(aes(x = as.Date(yearmon),
                           y = cumsum,
                           color = subnational1_code)) +
-      ggplot2::geom_line(size = 0.5,
+      ggplot2::geom_line(linewidth = 0.5,
                          alpha = 0.5) +
       ggplot2::geom_point(alpha = 0.5) +
       ggplot2::scale_x_date(date_breaks = "1 month", 
@@ -123,35 +132,84 @@ server <- function(input, output, session) {
   ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
-    data |> 
-    dplyr::filter(species_code == input$species) |> 
-    dplyr::filter(input$daterange[2] > date) |> 
-    dplyr::filter (date > input$daterange[1]) |> 
-    dplyr::count(loc_id, latitude, longitude)
-    
+    SharedData$new(
+      data |> 
+        dplyr::filter(species_code == input$species) |> 
+        dplyr::filter(input$daterange[2] > date) |> 
+        dplyr::filter (date > input$daterange[1]) |> 
+        dplyr::count(loc_id, latitude, longitude)
+    )
   }) 
+  
+
+  
+  ## PLOTLY MAP
+  
+  output$plotly_map <-  renderPlotly({
+  diversity <- data |> 
+    dplyr::group_by(subnational1_code) |> 
+    dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
+              sum_effort_hrs_atleast = sum(round(effort_hrs_atleast,
+                                                 digits = 0),
+                                           na.rm=TRUE)) |> 
+    dplyr::arrange(nr_sps) 
+  
+  poly_can_div <-  poly_canada |>
+    dplyr::left_join(diversity, by = c('iso_3166_2' = 'subnational1_code'))
+  
+  #ggplotly(
+  #  ggplot(poly_can_div) +
+  #    geom_sf(aes(fill = nr_sps))
+  #)
+  
+  plot_ly(poly_can_div,
+          split= ~woe_name,
+          color = ~nr_sps,
+          text = ~paste(nr_sps,
+                        "sps. were recognized in at least",
+                        sum_effort_hrs_atleast, 
+                        "hours of effort"),
+          hoveron = "fills",
+          hoverinfo = "text",
+          showlegend = FALSE
+  ) 
+  })
   
   ## DT TABLE
   output$table <-  renderDT({
     
-    # read the documentation for the arguments  
-    datatable(filtered_data(),
+     datatable(filtered_data(),
               caption = 'Table: Observations by location.',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
                            scroller = TRUE))
-    
-  })
+     
+  }, server = FALSE)
   
+  
+  # observeEvent(input$map_marker_click, {
+  #   
+  #   leaflet_data <- shared_data |> 
+  #     dplyr::filter(latitude == input$map_marker_click$lat,
+  #                   longitude == input$map_marker_click$lng)|> 
+  #     datatable(caption = 'Table: Observations by location.',
+  #               extensions = 'Scroller',
+  #               options=list(deferRender = TRUE,
+  #                            scrollY = 200,
+  #                            scroller = TRUE))
+  #   
+  #   
+  # })
   
   ## LEAFLET MAP
    output$map <- leaflet::renderLeaflet({
     
-    # print(input$daterange)
-    # str(input$daterange)
-    # print(input$table_rows_selected)
-    
+    # print(filtered_data())
+     print(input$map_marker_click)
+     # print(input$table_rows_selected)
+  
+     
     ## color palette
     pal <- leaflet::colorNumeric('viridis', 
                                  domain = filtered_data()$n)
@@ -168,6 +226,8 @@ server <- function(input, output, session) {
                                               filtered_data()$loc_id),
                                 color = ~pal(n),
                                 options = popupOptions(closeButton = FALSE))
+  
+    
   })
 }
 

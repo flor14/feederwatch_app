@@ -87,5 +87,42 @@ tooltip = "nro"
 )
 
 
+## PLOTLY MAP
+
+library(ggplot2)
+library(sf)
+library(plotly)
+library(rnaturalearth)
+
+poly_canada <- rnaturalearth::ne_states(country = 'canada',
+                                        returnclass = c( "sf")) 
+class(poly_canada)
+plot(poly_canada)
+
+diversity <- data |> 
+  group_by(subnational1_code) |> 
+  summarize(nr_sps = n_distinct(species_code),
+            sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                               digits = 0),
+                                         na.rm=TRUE)) |>  
+  arrange(nr_sps) 
+
+poly_can_div <-  poly_canada |>
+                     left_join(diversity, 
+                               by = c('iso_3166_2' = 'subnational1_code'))
+
+#ggplotly(
+#  ggplot(poly_can_div) +
+#    geom_sf(aes(fill = nr_sps))
+#)
+
+plot_ly(poly_can_div,
+        split= ~woe_name,
+        color = ~nr_sps,
+        text = ~paste(nr_sps, "sps. were recognized in at least", sum_effort_hrs_atleast, "hours of effort"),
+        hoveron = "fills",
+        hoverinfo = "text",
+        showlegend = FALSE
+) 
 
 
