@@ -8,7 +8,6 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rnaturalearth)
-library(crosstalk)
 
 # I am only using Canadian data
 data <- read.csv("data/data.csv")
@@ -33,7 +32,8 @@ ui <- navbarPage('FeederWatch App',
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
                           fluidRow(column(6,
-                                      leaflet::leafletOutput(outputId = 'map')),
+                                      leaflet::leafletOutput(outputId = 'map'),
+                                      verbatimTextOutput('coord')),
                                    column(6,
                                       DT::DTOutput(outputId = 'table'))
                                    )
@@ -132,37 +132,38 @@ server <- function(input, output, session) {
   ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
-    SharedData$new(
+
       data |> 
         dplyr::filter(species_code == input$species) |> 
         dplyr::filter(input$daterange[2] > date) |> 
         dplyr::filter (date > input$daterange[1]) |> 
         dplyr::count(loc_id, latitude, longitude)
-    )
+    
   }) 
   
 
   
   ## PLOTLY MAP
   
+
+  poly_can_data <- reactive({ 
+    
+    diversity <- data |> 
+      dplyr::group_by(subnational1_code) |> 
+      dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
+                sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                                   digits = 0),
+                                             na.rm=TRUE)) 
+    
+      poly_canada |>
+          dplyr::left_join(diversity, 
+                by = c('iso_3166_2' = 'subnational1_code'))
+    
+  })
+  
   output$plotly_map <-  renderPlotly({
-  diversity <- data |> 
-    dplyr::group_by(subnational1_code) |> 
-    dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
-              sum_effort_hrs_atleast = sum(round(effort_hrs_atleast,
-                                                 digits = 0),
-                                           na.rm=TRUE)) |> 
-    dplyr::arrange(nr_sps) 
-  
-  poly_can_div <-  poly_canada |>
-    dplyr::left_join(diversity, by = c('iso_3166_2' = 'subnational1_code'))
-  
-  #ggplotly(
-  #  ggplot(poly_can_div) +
-  #    geom_sf(aes(fill = nr_sps))
-  #)
-  
-  plot_ly(poly_can_div,
+
+  plot_ly(poly_can_data(),
           split= ~woe_name,
           color = ~nr_sps,
           text = ~paste(nr_sps,
@@ -172,7 +173,10 @@ server <- function(input, output, session) {
           hoveron = "fills",
           hoverinfo = "text",
           showlegend = FALSE
-  ) 
+  )  |>  
+    colorbar(title = 'Different species') |> 
+    layout(title = "Diversity of birds observed by province")
+  
   })
   
   ## DT TABLE
@@ -187,21 +191,14 @@ server <- function(input, output, session) {
      
   }, server = FALSE)
   
+  ## LAT LONG
   
-  # observeEvent(input$map_marker_click, {
-  #   
-  #   leaflet_data <- shared_data |> 
-  #     dplyr::filter(latitude == input$map_marker_click$lat,
-  #                   longitude == input$map_marker_click$lng)|> 
-  #     datatable(caption = 'Table: Observations by location.',
-  #               extensions = 'Scroller',
-  #               options=list(deferRender = TRUE,
-  #                            scrollY = 200,
-  #                            scroller = TRUE))
-  #   
-  #   
-  # })
-  
+  output$coord <- renderPrint({
+    
+    print(paste("Lat: ", input$map_marker_click$lat,
+                "Long: ", input$map_marker_click$lng))
+  })
+
   ## LEAFLET MAP
    output$map <- leaflet::renderLeaflet({
     
