@@ -176,7 +176,6 @@ server <- function(input, output, session) {
   )  |>  
     colorbar(title = 'Different species') |> 
     layout(title = "Diversity of birds observed by province")
-  
   })
   
   ## DT TABLE
