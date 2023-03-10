@@ -8,6 +8,7 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rnaturalearth)
+library(shinytest2)
 
 # I am only using Canadian data
 all_data <- read.csv("data/data.csv")
