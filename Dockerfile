@@ -19,10 +19,14 @@ RUN install2.r --error --skipinstalled --ncpus -1 \
     thematic \
     zoo \
     rnaturalearth \
-    rnaturalearthhires \
     sf \
+    devtools \
     rgdal \
+    shinytest2 \
     && rm -rf /tmp/downloaded_packages
+    
+
+RUN "Rscript -e devtools::install_github('ropensci/rnaturalearthhires')"
     
 RUN addgroup --system app \
     && adduser --system --ingroup app app
