@@ -10,14 +10,30 @@ library(zoo)
 library(rnaturalearth)
 
 # I am only using Canadian data
-data <- read.csv("data/data.csv")
+all_data <- read.csv("data/data.csv")
+
+rare_sps <- all_data |> 
+  dplyr::group_by(species_code) |> 
+  dplyr::summarize(n = dplyr::n()) |> 
+  dplyr::arrange(n) |> 
+  dplyr::filter(n < 3)
+
+freq_sps <- all_data |> 
+  dplyr::group_by(species_code) |> 
+  dplyr::summarize(n = dplyr::n()) |> 
+  dplyr::arrange(n) |> 
+  dplyr::filter(n > 3)
+
+data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
+rare_data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
 
-ui <- navbarPage('FeederWatch App',
+ui <- navbarPage(title = 'FeederWatch App',
+                 id = 'navbar',
                  theme = bs_theme(bootswatch = 'lux'),
-                 tabPanel('Data Exploration',
+                 tabPanel(title = 'Data Exploration',
                           fluidRow(selectInput(inputId = 'species',
                                                label = 'select the specie:',
                                                choices = unique(data$species_code),
@@ -34,7 +50,7 @@ ui <- navbarPage('FeederWatch App',
                                       DT::DTOutput(outputId = 'table'))
                                    )
                  ),
-                 tabPanel('by Province',
+                 tabPanel(title = 'by Province',
                           sidebarLayout(
                             sidebarPanel(
                               selectInput(inputId = 'species2',
@@ -50,23 +66,28 @@ ui <- navbarPage('FeederWatch App',
                             ),
                             mainPanel(
                               tabsetPanel(
-                                tabPanel('lineplot',
+                                tabPanel('Annual data',
                                          plotlyOutput(outputId = 'lineplot')
                                         ),
-                                tabPanel('more...',
+                                tabPanel('Montly data',
+                                         plotlyOutput(outputId = 'boxplot')
                                          )
                               )
                             )
                           )),
-                 tabPanel('Diversity', 
-                          fluidRow(radioButtons('radio',
+                 tabPanel(title = 'Diversity', 
+                          sidebarLayout(
+                            sidebarPanel(radioButtons('radio',
                                                'Select:',
                                                choices = c('region' = 'region_sub',
                                                            'province' = 'name_en'),
-                                               selected = c('province' = 'name_en'),
-                                               inline = TRUE)),
-                          plotlyOutput('map_plotly')),
-                 tabPanel('About',
+                                               selected = c('province' = 'name_en')),
+                                         width = 2),
+                          mainPanel(plotlyOutput('map_plotly'),
+                                    width = 10))),
+                 tabPanel(title = 'Rare species', 
+                          ),
+                 tabPanel(title = 'About',
                           "..")
   
 )
@@ -90,14 +111,26 @@ server <- function(input, output, session) {
     
     data_acc_sps() |> 
     dplyr::filter(subnational1_code %in% input$provinces) |> 
-    dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
-    dplyr::group_by(yearmon, subnational1_code) |> 
-    dplyr::summarize(n = dplyr::n()) |> 
-    dplyr::ungroup() |> 
-    dplyr::group_by(subnational1_code) |> 
-    dplyr::mutate(cumsum = cumsum(n)) 
+    dplyr::mutate(yearmon = as.yearmon(as.Date(date))) 
     
     })
+  
+  output$boxplot <- renderPlotly({
+    
+    
+    data_acc_sps_prov() |> 
+      mutate(month = factor(format(yearmon, "%b"),
+                            levels = c("Jan", "Feb", "Mar",
+                                       "Apr", "May", "Jun",
+                                       "Jul", "Aug", "Sep", 
+                                       "Oct", "Nov", "Dec"))) |> 
+      ggplot(aes(month, how_many)) +
+      geom_jitter(aes(color = subnational1_code),
+                  alpha = 0.3) +
+      geom_boxplot(alpha = 0.7)
+
+    
+  })
     
   ## LINEPLOT - SECOND TAB
   output$lineplot <- plotly::renderPlotly({ 
@@ -107,10 +140,15 @@ server <- function(input, output, session) {
     thematic::thematic_shiny()
     
     data_acc_sps_prov() |> 
+      dplyr::group_by(yearmon, subnational1_code) |> 
+      dplyr::summarize(n = dplyr::n()) |> 
+      dplyr::ungroup() |> 
+      dplyr::group_by(subnational1_code) |> 
+      dplyr::mutate(cumsum = cumsum(n)) |> 
       ggplot2::ggplot(aes(x = as.Date(yearmon),
                           y = cumsum,
                           color = subnational1_code)) +
-      ggplot2::geom_line(size = 0.5,
+      ggplot2::geom_line(linewidth = 0.5,
                          alpha = 0.5) +
       ggplot2::geom_point(alpha = 0.5) +
       ggplot2::scale_x_date(date_breaks = "1 month", 
@@ -137,11 +175,10 @@ server <- function(input, output, session) {
   ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
-    data |> 
+    all_data |> 
     dplyr::filter(species_code == input$species) |> 
     dplyr::filter(input$daterange[2] > date) |> 
-    dplyr::filter (date > input$daterange[1]) |> 
-    dplyr::count(loc_id, latitude, longitude)
+    dplyr::filter (date > input$daterange[1]) 
     
   }) 
   
@@ -178,16 +215,19 @@ server <- function(input, output, session) {
     pal <- leaflet::colorNumeric('viridis', 
                                  domain = filtered_data()$n)
     
-    filtered_data() |> 
+    birds <- filtered_data() |> 
+      dplyr::count(loc_id, latitude, longitude) 
+    
+    birds |> 
       leaflet::leaflet() |> 
       leaflet::addProviderTiles(providers$CartoDB.Positron) |> 
       leaflet::addCircleMarkers(
                                lat = ~latitude,
                                lng = ~longitude,
                                radius = ~n,
-                               popup = paste(filtered_data()$n,
+                               popup = paste(birds$n,
                                               "bird/s in",
-                                              filtered_data()$loc_id),
+                                              birds$loc_id),
                                 color = ~pal(n),
                                 options = popupOptions(closeButton = FALSE))
   })
@@ -199,7 +239,7 @@ server <- function(input, output, session) {
      
      poly_canada <- rnaturalearth::ne_states(country = 'canada',
                               returnclass = c( "sf")) 
-     diversity <- data |> 
+     diversity <- all_data |> 
        dplyr::group_by(subnational1_code) |> 
        dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
                         sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
@@ -214,7 +254,6 @@ server <- function(input, output, session) {
    })
    
    decide <- reactive({ 
-     print(poly_can_data())
      
      if(input$radio == 'name_en'){
        poly_can_data()
@@ -229,8 +268,6 @@ server <- function(input, output, session) {
    }) 
    
    output$map_plotly <- renderPlotly({
-   
- print(decide())
    
    plot_ly(decide(),
            split = ~get(input$radio),
@@ -247,10 +284,6 @@ server <- function(input, output, session) {
      layout(title = paste("Diversity of species in relation to hs. of sampling effort"))
    
    })
-   
-   
-
-
    
    
 }
