@@ -9,16 +9,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN install2.r --error --skipinstalled --ncpus -1 \
-    shiny=1.7.* \
+    shiny \
     bslib \
     forcats \
     plotly \
     ggplot2 \
-    leaflet=2.* \
+    leaflet \
     DT \
     thematic \
     zoo \
-    rnaturalearth=0.3.* \
+    rnaturalearth \
     rnaturalearthhires \
     sf \
     rgdal \
