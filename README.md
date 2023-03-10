@@ -1,4 +1,4 @@
-# feederwatch_app
+# Feederwatch App
 
 
 ## Run FeederWatch App in your computer using a Dockerfile

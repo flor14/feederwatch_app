@@ -124,6 +124,7 @@ library(plotly)
 library(rnaturalearth)
 library(dplyr)
 
+<<<<<<< HEAD
 
 poly_canada <- rnaturalearth::ne_states(country = 'canada',
                                         returnclass = c( "sf")) 
@@ -162,12 +163,15 @@ library(plotly)
 library(rnaturalearth)
 library(dplyr)
 
+=======
+>>>>>>> d17b066b529f58ced8d315665b531474b0a3fb55
 poly_canada <- rnaturalearth::ne_states(country = 'canada',
                                         returnclass = c( "sf")) 
 class(poly_canada)
 # plot(poly_canada)
 
 
+<<<<<<< HEAD
 diversity <- data |> 
   dplyr::group_by(subnational1_code) |> 
   dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
@@ -250,5 +254,43 @@ rare_data <- filter(all_data, species_code %in% freq_sps$species_code)
 
 
 
+=======
+
+
+diversity <- data |> 
+  group_by(subnational1_code) |> 
+  summarize(nr_sps = n_distinct(species_code),
+            sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                               digits = 0),
+                                         na.rm=TRUE)) |>  
+  arrange(nr_sps) 
+
+poly_can_div <-  poly_canada |>
+                     left_join(diversity, 
+                               by = c('iso_3166_2' = 'subnational1_code'))
+
+
+
+
+## option 1
+ggplotly(
+ ggplot(poly_can_div) +
+   geom_sf(aes(fill = nr_sps))
+)
+
+## option 2
+plot_ly(poly_can_div,
+        split= ~woe_name,
+        color = ~nr_sps,
+         text = ~paste(nr_sps, "sps. were recognized in at least", 
+                       sum_effort_hrs_atleast, "hours of effort"),
+         hoveron = "fills",
+         hoverinfo = "text",
+        # hovertemplate = see docs
+         showlegend = FALSE
+) |>  
+  colorbar(title = 'Different species') |> 
+  layout(title = "Diversity of birds observed by province")
+>>>>>>> d17b066b529f58ced8d315665b531474b0a3fb55
 
 

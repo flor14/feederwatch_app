@@ -121,7 +121,9 @@ unique(data$species_code)
 
 
 
-## Data validation
+## Data exploration
+
+#### Is there more than one observation by location?
 
 ```{r}
 
@@ -137,6 +139,18 @@ data |>
 
 ```
 
+## What provinces/territories the species have been seen?
+
+```{r}
+
+library(dplyr)
+
+data |> 
+  group_by(species_code) |> 
+  summarize(n = n(), 
+            provs = paste(subnational1_code, collapse = ", "))
+
+```
 
 
 ## References

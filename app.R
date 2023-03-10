@@ -5,8 +5,8 @@ library(DT)
 library(ggplot2)
 library(plotly)
 library(thematic)
-library(forcats)
 library(zoo)
+library(sf)
 library(rnaturalearth)
 
 # I am only using Canadian data
@@ -26,6 +26,10 @@ freq_sps <- all_data |>
 
 data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 rare_data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
+
+# reading geografic data
+poly_canada <- rnaturalearth::ne_states(country = 'canada',
+                                        returnclass = c( "sf")) 
 
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
@@ -175,27 +179,72 @@ server <- function(input, output, session) {
   ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
+
     all_data |> 
     dplyr::filter(species_code == input$species) |> 
     dplyr::filter(input$daterange[2] > date) |> 
     dplyr::filter (date > input$daterange[1]) 
+
     
   }) 
+  
+
+  
+  ## PLOTLY MAP
+  
+
+  poly_can_data <- reactive({ 
+    
+    diversity <- data |> 
+      dplyr::group_by(subnational1_code) |> 
+      dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
+                sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                                   digits = 0),
+                                             na.rm=TRUE)) 
+    
+      poly_canada |>
+          dplyr::left_join(diversity, 
+                by = c('iso_3166_2' = 'subnational1_code'))
+    
+  })
+  
+  output$plotly_map <-  renderPlotly({
+
+  plot_ly(poly_can_data(),
+          split= ~woe_name,
+          color = ~nr_sps,
+          text = ~paste(nr_sps,
+                        "sps. were recognized in at least",
+                        sum_effort_hrs_atleast, 
+                        "hours of effort"),
+          hoveron = "fills",
+          hoverinfo = "text",
+          showlegend = FALSE
+  )  |>  
+    colorbar(title = 'Different species') |> 
+    layout(title = "Diversity of birds observed by province")
+  })
   
   ## DT TABLE
   output$table <-  renderDT({
     
-    # read the documentation for the arguments  
-    datatable(filtered_data(),
+     datatable(filtered_data(),
               caption = 'Table: Observations by location.',
               extensions = 'Scroller',
               options=list(deferRender = TRUE,
                            scrollY = 200,
                            scroller = TRUE))
+     
+  }, server = FALSE)
+  
+  ## LAT LONG
+  
+  output$coord <- renderPrint({
     
+    print(paste("Lat: ", input$map_marker_click$lat,
+                "Long: ", input$map_marker_click$lng))
   })
-  
-  
+
   output$coord <- renderPrint({
     
    req(input$map_marker_click)
@@ -207,10 +256,7 @@ server <- function(input, output, session) {
   
   ## LEAFLET MAP
    output$map <- leaflet::renderLeaflet({
-    
-  
-   
-    
+
     ## color palette
     pal <- leaflet::colorNumeric('viridis', 
                                  domain = filtered_data()$n)
@@ -230,6 +276,8 @@ server <- function(input, output, session) {
                                               birds$loc_id),
                                 color = ~pal(n),
                                 options = popupOptions(closeButton = FALSE))
+  
+    
   })
    
    

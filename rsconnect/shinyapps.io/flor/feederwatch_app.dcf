@@ -1,0 +1,14 @@
+name: feederwatch_app
+title: feederwatch_app
+username:
+account: flor
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8419176
+bundleId: 6918184
+url: https://flor.shinyapps.io/feederwatch_app/
+when: 1678038119.46642
+lastSyncTime: 1678038119.46643
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/PFW-species-translation-table.csv|docs/data-cleaning.Rmd|docs/plots.R|docs/references.bib|LICENSE|README.md
