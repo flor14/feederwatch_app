@@ -7,6 +7,7 @@ library(plotly)
 library(thematic)
 library(forcats)
 library(zoo)
+library(rnaturalearth)
 
 # I am only using Canadian data
 data <- read.csv("data/data.csv")
@@ -27,7 +28,8 @@ ui <- navbarPage('FeederWatch App',
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
                           fluidRow(column(6,
-                                      leaflet::leafletOutput(outputId = 'map')),
+                                      leaflet::leafletOutput(outputId = 'map'),
+                                      verbatimTextOutput('coord')),
                                    column(6,
                                       DT::DTOutput(outputId = 'table'))
                                    )
@@ -38,11 +40,12 @@ ui <- navbarPage('FeederWatch App',
                               selectInput(inputId = 'species2',
                                           label = 'select the specie:',
                                           choices = unique(data$species_code),
-                                          selected = 'sonspa'),
-                             checkboxGroupInput(inputId = 'provinces',
+                                          selected = 'norcar'),
+                             selectInput(inputId = 'provinces',
                                           label = 'select the province:',
                                           choices = unique(data$subnational1_code),
-                                          selected = 'CA-BC'),
+                                          selected = 'CA-BC',
+                                          multiple = TRUE),
                              downloadButton('download1')
                             ),
                             mainPanel(
@@ -51,10 +54,20 @@ ui <- navbarPage('FeederWatch App',
                                          plotlyOutput(outputId = 'lineplot')
                                         ),
                                 tabPanel('more...',
-                                         'tbd')
+                                         )
                               )
                             )
-                          ))
+                          )),
+                 tabPanel('Diversity', 
+                          fluidRow(radioButtons('radio',
+                                               'Select:',
+                                               choices = c('region' = 'region_sub',
+                                                           'province' = 'name_en'),
+                                               selected = c('province' = 'name_en'),
+                                               inline = TRUE)),
+                          plotlyOutput('map_plotly')),
+                 tabPanel('About',
+                          "..")
   
 )
 
@@ -67,8 +80,9 @@ server <- function(input, output, session) {
   
   observeEvent(data_acc_sps(), {
     choices <- unique(data_acc_sps()$subnational1_code)
-    updateCheckboxGroupInput(inputId = "provinces",
-                      choices = choices)
+    updateSelectInput(inputId = "provinces",
+                      choices = choices,
+                      selected = unique(data_acc_sps()$subnational1_code))
   })
   
   
@@ -145,12 +159,20 @@ server <- function(input, output, session) {
   })
   
   
+  output$coord <- renderPrint({
+    
+   req(input$map_marker_click)
+   print(paste("Lat:", 
+               input$map_marker_click$lat,
+               'Long:',
+               input$map_marker_click$lng))
+  })
+  
   ## LEAFLET MAP
    output$map <- leaflet::renderLeaflet({
     
-    # print(input$daterange)
-    # str(input$daterange)
-    # print(input$table_rows_selected)
+  
+   
     
     ## color palette
     pal <- leaflet::colorNumeric('viridis', 
@@ -169,6 +191,68 @@ server <- function(input, output, session) {
                                 color = ~pal(n),
                                 options = popupOptions(closeButton = FALSE))
   })
+   
+   
+   ## PLOTLY MAP
+   
+   poly_can_data <- reactive({
+     
+     poly_canada <- rnaturalearth::ne_states(country = 'canada',
+                              returnclass = c( "sf")) 
+     diversity <- data |> 
+       dplyr::group_by(subnational1_code) |> 
+       dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
+                        sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                                           digits = 0),
+                                                     na.rm=TRUE)) |>  
+       arrange(nr_sps) 
+     
+     poly_canada |>
+       dplyr::left_join(diversity, 
+                        by = c('iso_3166_2' = 'subnational1_code'))
+    
+   })
+   
+   decide <- reactive({ 
+     print(poly_can_data())
+     
+     if(input$radio == 'name_en'){
+       poly_can_data()
+     }else{ 
+       poly_can_data()  |> 
+         group_by(region_sub) |> 
+         dplyr::summarize(nr_sps = sum(nr_sps,
+                                       na.rm = TRUE),
+                          sum_effort_hrs_atleast = sum(round(sum_effort_hrs_atleast, 
+                                                             digits = 0),
+                                                       na.rm=TRUE)) }                                                                 
+   }) 
+   
+   output$map_plotly <- renderPlotly({
+   
+ print(decide())
+   
+   plot_ly(decide(),
+           split = ~get(input$radio),
+           color = ~nr_sps,
+           showlegend = FALSE,
+           text = ~paste(nr_sps, 
+                         "sps. observed in at least",
+                         sum_effort_hrs_atleast,
+                         "hs. of effort"
+           ),
+           hoverinfo = 'text',
+           hoveron = 'fills')  |>  
+     colorbar(title = 'Nr. of birds species') |> 
+     layout(title = paste("Diversity of species in relation to hs. of sampling effort"))
+   
+   })
+   
+   
+
+
+   
+   
 }
 
 shinyApp(ui, server)
