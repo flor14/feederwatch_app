@@ -20,16 +20,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     
 
 RUN install2.r --error --skipinstalled --ncpus -1 \
-    shiny=1.7.4 \
-    bslib=0.4.0 \
-    plotly=4.10.1 \
-    ggplot2=3.4.0 \
-    leaflet=2.1.1 \
-    DT=0.27 \
-    thematic=0.1.2.1 \
-    zoo=1.8-11 \
-    rnaturalearth=0.3.2 \
-    sf=1.0-9 \
+    shiny@1 \
+    bslib@0 \
+    plotly@4 \
+    ggplot2@3 \
+    leaflet@2 \
+    DT@0 \
+    thematic@0 \
+    zoo@1 \
+    rnaturalearth@0 \
+    sf@1 \
     && rm -rf /tmp/downloaded_packages
     
 
