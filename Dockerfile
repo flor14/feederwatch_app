@@ -2,6 +2,7 @@ FROM rocker/r-base:latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     make libssl-dev \
+    libfontconfig1-dev \
     libxml2-dev \
     libcurl4-openssl-dev\
     libudunits2-dev \
@@ -22,7 +23,6 @@ RUN install2.r --error --skipinstalled --ncpus -1 \
     sf \
     devtools \
     rgdal \
-    shinytest2 \
     && rm -rf /tmp/downloaded_packages
     
 
