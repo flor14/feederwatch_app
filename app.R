@@ -7,10 +7,12 @@ library(plotly)
 library(thematic)
 library(zoo)
 library(sf)
-library(rnaturalearth)
 library(rmarkdown)
-remotes::install_github("ropensci/rnaturalearthhires")
-library(rnaturalearthhires)
+library(remotes)
+
+
+# Reading .shp file
+poly_canada <- sf::read_sf("data/poly_canada.shp")
 
 # I am only using Canadian data
 all_data <- read.csv("data/data.csv")
@@ -289,8 +291,8 @@ server <- function(input, output, session) {
    
    poly_can_data <- reactive({
      
-     poly_canada <- rnaturalearth::ne_states(country = 'canada',
-                              returnclass = c( "sf")) 
+
+     
      diversity <- all_data |> 
        dplyr::group_by(subnational1_code) |> 
        dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),

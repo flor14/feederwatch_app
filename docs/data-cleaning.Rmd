@@ -152,6 +152,11 @@ data |>
 
 ```
 
+```{r}
+     poly_canada <- rnaturalearth::ne_states(country = 'canada',
+                              returnclass = c( "sf")) 
+     sf::write_sf(poly_canada, "data/poly_canada.shp")
+```
 
 ## References
 
