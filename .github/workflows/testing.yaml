@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main, master]
 
-name: Test app w/ {renv}
+name: test app w/ {renv}
 
 jobs:
   test-app:
@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: ubuntu-latest, r: latest}
+          - {os: ubuntu-latest, r: release}
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -26,12 +26,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: ${{ matrix.config.r }}
-          use-public-rspm: true
-
+      - name: Build the Docker image
+        run: docker build -t feederwatchapp .
+      - name: Docker Run Action
+        run: docker run --rm -v /github/workspace/fig/:/home/graphs/:rw feederwatchapp
       - uses: rstudio/shinytest2/actions/test-app@v1
         with:
           app-dir: "."
