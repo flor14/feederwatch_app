@@ -8,7 +8,6 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rmarkdown)
-library(remotes)
 
 
 # Reading .shp file

@@ -1027,6 +1027,14 @@
         "tibble"
       ]
     },
+    "remotes": {
+      "Package": "remotes",
+      "Version": "2.4.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "227045be9aee47e6dda9bb38ac870d67",
+      "Requirements": []
+    },
     "renv": {
       "Package": "renv",
       "Version": "0.15.5",
@@ -1072,21 +1080,6 @@
         "httr",
         "jsonlite",
         "sf",
-        "sp"
-      ]
-    },
-    "rnaturalearthhires": {
-      "Package": "rnaturalearthhires",
-      "Version": "0.2.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "rnaturalearthhires",
-      "RemoteUsername": "ropensci",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "2ed7a937f3cca4f44b157098c472f6b3ae8cd9f3",
-      "Hash": "628a0e4dd1bfeafba781442e9ee5db02",
-      "Requirements": [
         "sp"
       ]
     },
