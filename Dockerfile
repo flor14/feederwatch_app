@@ -28,7 +28,6 @@ RUN install2.r --error --skipinstalled --ncpus -1 \
     DT \
     thematic \
     zoo \
-    rnaturalearth \
     sf \
     && rm -rf /tmp/downloaded_packages
     
