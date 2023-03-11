@@ -9,6 +9,7 @@ library(zoo)
 library(sf)
 library(rnaturalearth)
 library(rmarkdown)
+library(rnaturalearthhires)
 
 # I am only using Canadian data
 all_data <- read.csv("data/data.csv")

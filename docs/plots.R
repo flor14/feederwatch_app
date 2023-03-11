@@ -116,44 +116,6 @@ tooltip = "nro"
 )
 
 
-## PLOTLY MAP
-
-library(ggplot2)
-library(sf)
-library(plotly)
-library(rnaturalearth)
-library(dplyr)
-
-<<<<<<< HEAD
-
-poly_canada <- rnaturalearth::ne_states(country = 'canada',
-                                        returnclass = c( "sf")) 
-diversity <- data |> 
-  group_by(subnational1_code) |> 
-  summarize(nr_sps = n_distinct(species_code),
-            sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
-                                               digits = 0),
-                                         na.rm=TRUE)) |>  
-  arrange(nr_sps) 
-
-poly_can_div <-  poly_canada |>
-  dplyr::left_join(diversity, 
-            by = c('iso_3166_2' = 'subnational1_code'))
-
-
-plot_ly(poly_can_div,
-        split = ~woe_name,
-        color = ~nr_sps,
-        showlegend = FALSE,
-        text = ~paste(nr_sps, 
-                      "sps. observed in",
-                      sum_effort_hrs_atleast,
-                      "hs"
-                      ),
-        hoverinfo = 'text',
-        hoveron = 'fills')
-
-
 
 ## PLOTLY MAP
 
@@ -163,15 +125,13 @@ library(plotly)
 library(rnaturalearth)
 library(dplyr)
 
-=======
->>>>>>> d17b066b529f58ced8d315665b531474b0a3fb55
+
 poly_canada <- rnaturalearth::ne_states(country = 'canada',
                                         returnclass = c( "sf")) 
 class(poly_canada)
 # plot(poly_canada)
 
 
-<<<<<<< HEAD
 diversity <- data |> 
   dplyr::group_by(subnational1_code) |> 
   dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
@@ -254,9 +214,6 @@ rare_data <- filter(all_data, species_code %in% freq_sps$species_code)
 
 
 
-=======
-
-
 diversity <- data |> 
   group_by(subnational1_code) |> 
   summarize(nr_sps = n_distinct(species_code),
@@ -291,6 +248,6 @@ plot_ly(poly_can_div,
 ) |>  
   colorbar(title = 'Different species') |> 
   layout(title = "Diversity of birds observed by province")
->>>>>>> d17b066b529f58ced8d315665b531474b0a3fb55
+
 
 
