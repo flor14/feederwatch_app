@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main, master]
 
-name: test app w/ {renv}
+name: test app w/ Docker
 
 jobs:
   test-app:
@@ -29,7 +29,7 @@ jobs:
       - name: Build the Docker image
         run: docker build -t feederwatchapp .
       - name: Docker Run Action
-        run: docker run --rm -v /github/workspace/fig/:/home/graphs/:rw feederwatchapp
+        run: docker run --rm -p 3838:3838 feederwatchapp
       - uses: rstudio/shinytest2/actions/test-app@v1
         with:
           app-dir: "."
