@@ -28,8 +28,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the Docker image
         run: docker build -t feederwatchapp .
-      - name: Docker Run Action
-        run: docker run --rm -p 3838:3838 feederwatchapp
+     # - name: Docker Run Action
+     #   run: docker run --rm -p 3838:3838 feederwatchapp
       - uses: rstudio/shinytest2/actions/test-app@v1
         with:
           app-dir: "."
