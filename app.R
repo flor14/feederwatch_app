@@ -8,7 +8,7 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rnaturalearth)
-library(shinytest2)
+library(rmarkdown)
 
 # I am only using Canadian data
 all_data <- read.csv("data/data.csv")
@@ -67,7 +67,8 @@ ui <- navbarPage(title = 'FeederWatch App',
                                           choices = unique(data$subnational1_code),
                                           selected = 'CA-BC',
                                           multiple = TRUE),
-                             downloadButton('download1')
+                             downloadButton('download1', 'Download .CSV'),
+                             downloadButton("report", "Generate report")
                             ),
                             mainPanel(
                               tabsetPanel(
@@ -334,7 +335,35 @@ server <- function(input, output, session) {
    
    })
    
+   ## REPORT
+   provs <- reactive({
+     input$province
+   })
    
+   output$report <- downloadHandler(
+     # For PDF output, change this to "report.pdf"
+     filename = "report.html",
+     content = function(file) {
+       # Copy the report file to a temporary directory before processing it, in
+       # case we don't have write permissions to the current working dir (which
+       # can happen when deployed).
+       tempReport <- file.path(tempdir(), "report.Rmd")
+       file.copy("report.Rmd", tempReport, overwrite = TRUE)
+       
+       # Set up parameters to pass to Rmd document
+       params <- list(species_code = input$species2,
+                      provinces = provs())
+       
+       # Knit the document, passing in the `params` list, and eval it in a
+       # child of the global environment (this isolates the code in the document
+       # from the code in this app).
+       rmarkdown::render(tempReport, output_file = file,
+                         params = params,
+                         envir = new.env(parent = globalenv())
+       )
+     }
+   )
+
 }
 
 shinyApp(ui, server)
