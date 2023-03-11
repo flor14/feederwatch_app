@@ -29,8 +29,8 @@ jobs:
       - name: Authorize and deploy app
         env: 
           # Provide your app name, account name, and server to be deployed below
-          APPNAME: your-app-name
-          ACCOUNT: your-account-name
+          APPNAME: feederwatch_app
+          ACCOUNT: flor
           SERVER: shinyapps.io # server to deploy
         run: |
           rsconnect::setAccountInfo("${{ secrets.RSCONNECT_USER }}", "${{ secrets.RSCONNECT_TOKEN }}", "${{ secrets.RSCONNECT_SECRET }}")
