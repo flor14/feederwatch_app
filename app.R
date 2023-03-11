@@ -9,6 +9,7 @@ library(zoo)
 library(sf)
 library(rnaturalearth)
 library(rmarkdown)
+remotes::install_github("ropensci/rnaturalearthhires")
 library(rnaturalearthhires)
 
 # I am only using Canadian data
