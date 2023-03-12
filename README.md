@@ -1,6 +1,6 @@
 # Feederwatch App
 
-[![shiny-deploy](https://github.com/flor14/feederwatch_app/actions/workflows/deploy-app.yaml/badge.svg)](https://github.com/flor14/feederwatch_app/actions/workflows/deploy-app.yaml)
+[![shiny-deploy](https://github.com/flor14/feederwatch_app/actions/workflows/deploy-app.yaml/badge.svg)](https://github.com/flor14/feederwatch_app/actions/workflows/deploy-app.yaml) [![Test app w/ {renv}](https://github.com/flor14/feederwatch_app/actions/workflows/testing.yaml/badge.svg)](https://github.com/flor14/feederwatch_app/actions/workflows/testing.yaml)
 
 ## Run FeederWatch App in your computer using a Dockerfile
 
