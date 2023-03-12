@@ -8,6 +8,7 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rmarkdown)
+library(shinycssloaders)
 
 
 # Reading .shp file
@@ -48,10 +49,18 @@ ui <- navbarPage(title = 'FeederWatch App',
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
                           fluidRow(column(6,
+                                          shinycssloaders::withSpinner( 
                                       leaflet::leafletOutput(outputId = 'map'),
+                                      type = 2,
+                                      color = 'lightgrey',
+                                      color.background = 'white'),
                                       verbatimTextOutput('coord')),
                                    column(6,
-                                      DT::DTOutput(outputId = 'table'))
+                                          shinycssloaders::withSpinner( 
+                                      DT::DTOutput(outputId = 'table'),
+                                      type = 2,
+                                      color = 'lightgrey',
+                                      color.background = 'white'))
                                    )
                  ),
                  tabPanel(title = 'by Province',
@@ -72,14 +81,21 @@ ui <- navbarPage(title = 'FeederWatch App',
                             mainPanel(
                               tabsetPanel(
                                 tabPanel('Annual data',
-                                         plotlyOutput(outputId = 'lineplot')
+                                         shinycssloaders::withSpinner( 
+                                         plotlyOutput(outputId = 'lineplot'),
+                                         type = 2,
+                                         color = 'lightgrey',
+                                         color.background = 'white')
                                         ),
                                 tabPanel('Montly data',
-                                         plotlyOutput(outputId = 'boxplot')
-                                         )
+                                         shinycssloaders::withSpinner( 
+                                         plotlyOutput(outputId = 'boxplot'),
+                                         type = 2,
+                                         color = 'lightgrey',
+                                         color.background = 'white')
                               )
                             )
-                          )),
+                          ))),
                  tabPanel(title = 'Diversity', 
                           sidebarLayout(
                             sidebarPanel(radioButtons('radio',
@@ -88,7 +104,12 @@ ui <- navbarPage(title = 'FeederWatch App',
                                                            'province' = 'name_en'),
                                                selected = c('province' = 'name_en')),
                                          width = 2),
-                          mainPanel(plotlyOutput('map_plotly'),
+                          mainPanel(
+                            shinycssloaders::withSpinner( 
+                              plotlyOutput('map_plotly'),
+                                              type = 2,
+                                              color = 'lightgrey',
+                                              color.background = 'white'),
                                     width = 10))),
                  tabPanel(title = 'Rare species', 
                           ),
@@ -166,6 +187,17 @@ server <- function(input, output, session) {
                     y = 'observations') 
   })
   
+  ## Notification
+  observeEvent(input$download1,{
+    id <- showNotification("Your download has started", 
+                           duration = 10,
+                           closeButton = TRUE,
+                           type = "message")
+    
+    on.exit(removeNotification(id), 
+            add = TRUE)
+  
+  })
 
   ## DOWNLOAD BUTTON
   output$download1 <- downloadHandler(
@@ -180,20 +212,16 @@ server <- function(input, output, session) {
   ## FILTERING - FIRST TAB "data exploration"
   filtered_data <-reactive({ 
     
-
     all_data |> 
     dplyr::filter(species_code == input$species) |> 
     dplyr::filter(input$daterange[2] > date) |> 
     dplyr::filter (date > input$daterange[1]) 
 
-    
   }) 
   
 
   
   ## PLOTLY MAP
-  
-
   poly_can_data <- reactive({ 
     
     diversity <- data |> 
@@ -285,10 +313,7 @@ server <- function(input, output, session) {
    ## PLOTLY MAP
    
    poly_can_data <- reactive({
-     
-
-     
-     diversity <- all_data |> 
+      diversity <- all_data |> 
        dplyr::group_by(subnational1_code) |> 
        dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
                         sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
