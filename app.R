@@ -31,10 +31,6 @@ freq_sps <- all_data |>
 data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 rare_data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 
-# reading geografic data
-poly_canada <- rnaturalearth::ne_states(country = 'canada',
-                                        returnclass = c( "sf")) 
-
 # Reload when saving the app
 options(shiny.autoreload = TRUE)
 
