@@ -6,11 +6,7 @@ on:
   pull_request:
     branches: [main, master]
 
-<<<<<<< HEAD
 name: Test app w/ {renv}
-=======
-name: test app w/ Docker
->>>>>>> f84fb081ab2e9cd09486a9daf4d9a65ab706d7e7
 
 jobs:
   test-app:
