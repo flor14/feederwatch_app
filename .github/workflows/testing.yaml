@@ -55,7 +55,7 @@ jobs:
           r-version: ${{ matrix.config.r }}
           use-public-rspm: true
           
-# You need a renv.lock in your repo to can run this successfully
+# You need a renv.lock in your repo install all the R packages here with this action
       - uses: r-lib/actions/setup-renv@v2
 
       - uses: rstudio/shinytest2/actions/test-app@v1
