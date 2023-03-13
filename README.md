@@ -6,13 +6,13 @@
 
 ```bash
 git clone https://github.com/flor14/feederwatch_app.git
-cd feederwatch-app
+cd feederwatch_app
 ```
 
 ```bash
-docker build -t feederwatch-app .
+docker build -t feederwatch_app .
 ```
 
 ```bash
-docker run --rm -p 3838:3838 feederwatch-app
+docker run --rm -p 3838:3838 feederwatch_app
 ```
