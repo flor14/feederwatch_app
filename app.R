@@ -16,6 +16,7 @@ data <- read.csv("data/data.csv")
 options(shiny.autoreload = TRUE)
 
 ui <- navbarPage('FeederWatch App',
+                 id = 'navbar',
                  theme = bs_theme(bootswatch = 'lux'),
                  tabPanel('Data Exploration',
                           fluidRow(selectInput(inputId = 'species',
@@ -50,6 +51,7 @@ ui <- navbarPage('FeederWatch App',
                             ),
                             mainPanel(
                               tabsetPanel(
+                                id = 'tabs',
                                 tabPanel('lineplot',
                                          plotlyOutput(outputId = 'lineplot')
                                         ),
