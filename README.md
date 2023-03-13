@@ -5,7 +5,7 @@
 ## Run FeederWatch App in your computer using a Dockerfile
 
 ```bash
-git clone https://github.com/flor14/feederwatch_app.git
+git clone git@github.com:flor14/feederwatch_app.git
 cd feederwatch_app
 ```
 
