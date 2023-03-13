@@ -8,7 +8,8 @@ library(renv)
 renv::snapshot()
 # Install only one package
 # renv::install('shinycssloaders')
-
+# Remove packages!
+# renv::remove('here')
 
 # dockerfile generator ----------------------------------------------------
 
