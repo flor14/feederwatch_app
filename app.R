@@ -9,13 +9,14 @@ library(zoo)
 library(sf)
 library(rmarkdown)
 library(shinycssloaders)
+library(here)
 
 
 # Reading .shp file
-poly_canada <- sf::read_sf("data/poly_canada.shp")
+poly_canada <- sf::read_sf(here("data", "poly_canada.shp"))
 
 # I am only using Canadian data
-all_data <- read.csv("data/data.csv")
+all_data <- read.csv(here("data","data.csv"))
 
 rare_sps <- all_data |> 
   dplyr::group_by(species_code) |> 
@@ -163,8 +164,9 @@ server <- function(input, output, session) {
                                        "Oct", "Nov", "Dec"))) |> 
       ggplot(aes(month, how_many)) +
       geom_jitter(aes(color = subnational1_code),
-                  alpha = 0.3) +
-      geom_boxplot(alpha = 0.7)
+                  alpha = 0.3,
+                  width = 0.25) +
+      geom_violin(alpha = 0.7)
 
     
   })
@@ -390,13 +392,10 @@ server <- function(input, output, session) {
    })
    
    ## REPORT
-   provs <- reactive({
-     input$province
-   })
-   
+
    output$report <- downloadHandler(
      # For PDF output, change this to "report.pdf"
-     filename = "report.html",
+     filename = "report_feederwatch-app.html",
      content = function(file) {
        # Copy the report file to a temporary directory before processing it, in
        # case we don't have write permissions to the current working dir (which
@@ -406,15 +405,17 @@ server <- function(input, output, session) {
        
        # Set up parameters to pass to Rmd document
        params <- list(species_code = input$species2,
-                      provinces = provs())
+                      provinces = input$provinces)
        
        # Knit the document, passing in the `params` list, and eval it in a
        # child of the global environment (this isolates the code in the document
        # from the code in this app).
-       rmarkdown::render(tempReport, output_file = file,
+       rmarkdown::render(tempReport, 
+                         output_file = file,
                          params = params,
                          envir = new.env(parent = globalenv())
        )
+
      }
    )
 
