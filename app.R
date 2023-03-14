@@ -375,10 +375,12 @@ server <- function(input, output, session) {
            split = ~get(input$radio),
            color = ~nr_sps,
            showlegend = FALSE,
-           text = ~paste(nr_sps, 
+           text = ~ifelse(is.na(nr_sps), 
+                         "No data available",
+                         paste(nr_sps, 
                          "sps. observed in at least",
                          sum_effort_hrs_atleast,
-                         "hs. of effort"
+                         "hs. of effort")
            ),
            hoverinfo = 'text',
            hoveron = 'fills')  |>  
