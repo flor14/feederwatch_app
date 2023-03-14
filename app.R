@@ -24,6 +24,11 @@ american_names <- unique(all_data$american_english_name) |>
   replace_na("No name")
 names(species_code) <- american_names
 
+# subnational1_code <- as.list(unique(all_data$subnational1_code))
+# american_names <- unique(all_data$) |> 
+#   replace_na("No name")
+# names(species_code) <- american_names
+
 rare_sps <- all_data |> 
   dplyr::group_by(species_code) |> 
   dplyr::summarize(n = dplyr::n()) |> 
@@ -56,7 +61,7 @@ ui <- navbarPage(title = 'FeederWatch App',
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
                           fluidRow(column(6,
-                                          shinycssloaders::withSpinner( 
+                                      shinycssloaders::withSpinner( 
                                       leaflet::leafletOutput(outputId = 'map'),
                                       type = 2,
                                       color = 'lightgrey',
@@ -67,9 +72,8 @@ ui <- navbarPage(title = 'FeederWatch App',
                                       DT::DTOutput(outputId = 'table'),
                                       type = 2,
                                       color = 'lightgrey',
-                                      color.background = 'white'))
-                                   )
-                 ),
+                                      color.background = 'white')))),
+                          
                  tabPanel(title = 'by Province',
                           sidebarLayout(
                             sidebarPanel(
@@ -82,8 +86,10 @@ ui <- navbarPage(title = 'FeederWatch App',
                                           choices = unique(data$subnational1_code),
                                           selected = 'CA-BC',
                                           multiple = TRUE),
-                             downloadButton('download1', 'Download .CSV'),
-                             downloadButton("report", "Generate report")
+                             downloadButton('download1',
+                                            'Download .CSV'),
+                             downloadButton("report",
+                                            "Generate report")
                             ),
                             mainPanel(
                               tabsetPanel(
@@ -113,13 +119,15 @@ ui <- navbarPage(title = 'FeederWatch App',
                                          width = 2),
                           mainPanel(
                             shinycssloaders::withSpinner( 
-                              plotlyOutput('map_plotly'),
+                              plotlyOutput('map_plotly',
+                                           width = "600px", 
+                                           height = "600px"),
                                               type = 2,
                                               color = 'lightgrey',
-                                              color.background = 'white'),
-                                    width = 10))),
+                                              color.background = 'white')
+                                   ))),
                  tabPanel(title = 'Rare species', 
-                          ),
+                          "..."),
                  tabPanel(title = 'About',
                           "..")
   
@@ -141,6 +149,7 @@ server <- function(input, output, session) {
     data |> 
       dplyr::filter(species_code == input$species2) })
   
+  
   observeEvent(data_acc_sps(), {
     choices <- unique(data_acc_sps()$subnational1_code)
     updateSelectInput(inputId = "provinces",
@@ -150,8 +159,6 @@ server <- function(input, output, session) {
   
   
   data_acc_sps_prov <- reactive({ 
-    
- 
     
     data_acc_sps() |> 
     dplyr::filter(subnational1_code %in% input$provinces) |> 
@@ -215,6 +222,9 @@ server <- function(input, output, session) {
     
     on.exit(removeNotification(id), 
             add = TRUE)
+    
+    
+
   
   })
 
@@ -224,6 +234,14 @@ server <- function(input, output, session) {
       paste0(input$species2, ".csv")
     },
     content = function(file) {
+      
+      id <- showNotification(
+        "Downloading data...", 
+        duration = 10, 
+        closeButton = FALSE
+      )
+      on.exit(removeNotification(id), add = TRUE)
+      
       write.csv(data_acc_sps_prov(), file)
     }
   )
@@ -258,7 +276,7 @@ server <- function(input, output, session) {
           showlegend = FALSE
   )  |>  
     colorbar(title = 'Different species') |> 
-    layout(title = "Diversity of birds observed by province")
+    layout(title = 'Diversity of birds observed by province')
   })
   
   
@@ -289,13 +307,19 @@ server <- function(input, output, session) {
   
   ## DT TABLE
   output$table <-  renderDT({
-    print(filtered_data())
-     datatable(filtered_data(),
+ 
+    table_data <-  filtered_data() |>
+       select(-latitude, -longitude, -subnational1_code,
+              -X, -entry_technique, -sub_id, -PROJ_PERIOD_ID,
+              -species_code) 
+    
+     datatable(table_data,
               caption = 'Table: Observations by location.',
-              extensions = 'Scroller',
               options=list(deferRender = TRUE,
-                           scrollY = 200,
-                           scroller = TRUE))
+                           autoWidth = TRUE,
+                           paging = TRUE,
+                           pageLength = 7),
+              fillContainer = TRUE) 
      
   }, server = FALSE)
   
@@ -319,9 +343,6 @@ server <- function(input, output, session) {
   ## LEAFLET MAP
    output$map <- leaflet::renderLeaflet({
 
-     
-   
-     
     ## color palette
     pal <- leaflet::colorNumeric('viridis', 
                                  domain = filtered_data()$n)
@@ -393,7 +414,8 @@ server <- function(input, output, session) {
            hoverinfo = 'text',
            hoveron = 'fills')  |>  
      colorbar(title = 'Nr. of birds species') |> 
-     layout(title = paste("Diversity of species in relation to hs. of sampling effort"))
+     layout(title = paste("Diversity of species in relation to hs. of sampling effort"),
+            legend = list(font = list(size = 5)))
    
    })
    
@@ -412,6 +434,13 @@ server <- function(input, output, session) {
        # Set up parameters to pass to Rmd document
        params <- list(species_code = input$species2,
                       provinces = input$provinces)
+       
+       id <- showNotification(
+         "Rendering report...", 
+         duration = NULL, 
+         closeButton = FALSE
+       )
+       on.exit(removeNotification(id), add = TRUE)
        
        # Knit the document, passing in the `params` list, and eval it in a
        # child of the global environment (this isolates the code in the document

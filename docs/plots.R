@@ -175,7 +175,9 @@ plot_ly(poly_canada_div,
         showlegend = FALSE
 ) |>  
   colorbar(title = 'Different species') |> 
-  layout(title = "Diversity of birds observed by province")
+  #layout(title = "Diversity of birds observed by province") |> 
+  layout(title = paste("Diversity of species in relation to hs. of sampling effort"),
+         legend = list(font = list(size = 5)))
 
 
 
