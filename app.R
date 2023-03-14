@@ -12,11 +12,17 @@ library(shinycssloaders)
 library(here)
 
 
+
 # Reading .shp file
 poly_canada <- sf::read_sf(here("data", "poly_canada.shp"))
 
 # I am only using Canadian data
 all_data <- read.csv(here("data","data.csv"))
+
+species_code <- as.list(unique(all_data$species_code))
+american_names <- unique(all_data$american_english_name) |> 
+  replace_na("No name")
+names(species_code) <- american_names
 
 rare_sps <- all_data |> 
   dplyr::group_by(species_code) |> 
@@ -42,7 +48,7 @@ ui <- navbarPage(title = 'FeederWatch App',
                  tabPanel(title = 'Data Exploration',
                           fluidRow(selectInput(inputId = 'species',
                                                label = 'select the specie:',
-                                               choices = unique(data$species_code),
+                                               choices = species_code,
                                                selected = 'norcar'),
                                    dateRangeInput(inputId = 'daterange',
                                                   label = 'Select a range of dates',
@@ -68,11 +74,11 @@ ui <- navbarPage(title = 'FeederWatch App',
                           sidebarLayout(
                             sidebarPanel(
                               selectInput(inputId = 'species2',
-                                          label = 'select the specie:',
-                                          choices = unique(data$species_code),
+                                          label = 'Select the species:',
+                                          choices = species_code,
                                           selected = 'norcar'),
                              selectInput(inputId = 'provinces',
-                                          label = 'select the province:',
+                                          label = 'Select the province or territory:',
                                           choices = unique(data$subnational1_code),
                                           selected = 'CA-BC',
                                           multiple = TRUE),
