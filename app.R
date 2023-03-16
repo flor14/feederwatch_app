@@ -13,7 +13,6 @@ library(shinycssloaders)
 library(here)
 
 
-
 # Reading .shp file
 poly_canada <- sf::read_sf(here("data", "poly_canada.shp"))
 

@@ -9,6 +9,10 @@ params:
   provinces: !r c('CA-QC', 'CA-ON')
 ---
 
+**Bird species code**: `r params$species_code`
+**Provinces code**: `r params$provinces`
+
+
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE)
@@ -41,20 +45,20 @@ rare_data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 
 ```
 
+## Annual observations accumulated by month
 
-```{r}
-# The `params` object is available in the document.
-print(params$provinces)
+
+```{r message=FALSE, warning=FALSE}
+
 data_acc_sps_prov <- data |> 
   dplyr::filter(species_code == params$species_code,
-                subnational1_code %in% params$provinces) |> # User input
+                subnational1_code %in% params$provinces) |> 
   dplyr::mutate(yearmon = as.yearmon(as.Date(date))) |> 
   dplyr::group_by(yearmon, subnational1_code) |> 
   dplyr::summarize(n = dplyr::n()) |> 
   ungroup() |> 
   group_by(subnational1_code) |> 
   dplyr::mutate(cumsum = cumsum(n))
-
 
 
 ## LINEPLOT
@@ -76,11 +80,17 @@ data_acc_sps_prov <- data |>
                     y = 'observations')
   )
 
-params$provinces
+
 ```
 
-```{r}
+
+## Monthly observations accumulated by month
+
+
+```{r message=FALSE, warning=FALSE}
 ## BOXPLOT
+
+ggplotly( 
  data |> 
   dplyr::filter(species_code == params$species_code,
                 subnational1_code %in% params$provinces) |> # User input
@@ -91,11 +101,15 @@ params$provinces
   tidyr::pivot_longer(starts_with("fed_in"),
                values_to = 'fed_in_val' ,
                names_to= 'fed_in_names' ) |> 
-  ggplot(aes(month, how_many)) +
-  geom_boxplot()+
-  geom_jitter(aes(color = subnational1_code))
-
-params$provinces
+      ggplot(aes(month, how_many)) +
+      geom_jitter(aes(color = subnational1_code),
+                  alpha = 0.3,
+                  width = 0.25) +
+      geom_violin(alpha = 0.7,
+                  draw_quantiles = c(0.25, 
+                                     0.5,
+                                     0.75))
+)
 
 ```
 
