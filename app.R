@@ -17,17 +17,18 @@ library(here)
 poly_canada <- sf::read_sf(here("data", "poly_canada.shp"))
 
 # I am only using Canadian data
-all_data <- read.csv(here("data","data.csv"))
+all_data <- read.csv(here("data","data.csv")) 
 
+# Connect names of species with species code for dropdown menu
 species_code <- as.list(unique(all_data$species_code))
 american_names <- unique(all_data$american_english_name) |> 
   replace_na("No name")
 names(species_code) <- american_names
 
-# subnational1_code <- as.list(unique(all_data$subnational1_code))
-# american_names <- unique(all_data$) |> 
-#   replace_na("No name")
-# names(species_code) <- american_names
+# Connect names of provinces with code for dropdown menu
+subnational1_code <- as.list(dplyr::left_join(poly_canada, all_data)$iso_3166_2)
+provinces <- dplyr::left_join(poly_canada, all_data)$name 
+names(subnational1_code) <- provinces
 
 rare_sps <- all_data |> 
   dplyr::group_by(species_code) |> 
@@ -52,11 +53,11 @@ ui <- navbarPage(title = 'FeederWatch App',
                  theme = bs_theme(bootswatch = 'lux'),
                  tabPanel(title = 'Data Exploration',
                           fluidRow(selectInput(inputId = 'species',
-                                               label = 'select the specie:',
+                                               label = 'Select the species:',
                                                choices = species_code,
                                                selected = 'norcar'),
                                    dateRangeInput(inputId = 'daterange',
-                                                  label = 'Select a range of dates',
+                                                  label = 'Select a range of dates:',
                                                   start  = min(data$date),
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
@@ -83,8 +84,7 @@ ui <- navbarPage(title = 'FeederWatch App',
                                           selected = 'norcar'),
                               selectInput(inputId = 'provinces',
                                           label = 'Select the province or territory:',
-                                          choices = unique(data$subnational1_code),
-                                          selected = 'CA-BC',
+                                          choices = subnational1_code,
                                           multiple = TRUE),
                               downloadButton('download1',
                                              'Download .CSV'),
@@ -235,9 +235,8 @@ server <- function(input, output, session) {
   
   # Update the province available by species selection 
   observeEvent(data_acc_sps(), {
-    choices <- unique(data_acc_sps()$subnational1_code)
     updateSelectInput(inputId = "provinces",
-                      choices = choices,
+                      choices = subnational1_code,
                       selected = unique(data_acc_sps()$subnational1_code))
   })
   
@@ -268,7 +267,8 @@ server <- function(input, output, session) {
       geom_violin(alpha = 0.7,
                   draw_quantiles = c(0.25, 
                                      0.5,
-                                     0.75))
+                                     0.75)) 
+
   })
   
   ## Lineplot - accumulated number of birds by year
@@ -277,6 +277,7 @@ server <- function(input, output, session) {
     req(input$provinces) # trigger the execution with the user selection
     
     thematic::thematic_shiny()
+
     
     data_acc_sps_prov() |> 
       dplyr::group_by(yearmon, subnational1_code) |> 
