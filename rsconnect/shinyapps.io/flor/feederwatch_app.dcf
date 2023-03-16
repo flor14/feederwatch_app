@@ -5,9 +5,10 @@ account: flor
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8419176
-bundleId: 6949446
+bundleId: 6966998
 url: https://flor.shinyapps.io/feederwatch_app/
-when: 1678659411.93335
-lastSyncTime: 1678659411.93338
+when: 1678983378.79064
+lastSyncTime: 1678983378.79065
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: crosstalk-example.R|Dockerfile|dockerfiler.R

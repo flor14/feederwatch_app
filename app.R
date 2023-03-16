@@ -327,7 +327,7 @@ server <- function(input, output, session) {
       # Copy the report file to a temporary directory before processing it
       tempReport <- file.path(tempdir(), 
                               'report.Rmd')
-      file.copy(from = here::here('docs', 'report.Rmd'),
+      file.copy(from = 'docs/report.Rmd',
                 to = tempReport, 
                 overwrite = TRUE)
       
