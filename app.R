@@ -8,6 +8,7 @@ library(thematic)
 library(zoo)
 library(sf)
 library(rmarkdown)
+library(tidyr)
 library(shinycssloaders)
 library(here)
 
@@ -61,95 +62,178 @@ ui <- navbarPage(title = 'FeederWatch App',
                                                   end = max(data$date),
                                                   format = "mm/dd/yyyy")),
                           fluidRow(column(6,
-                                      shinycssloaders::withSpinner( 
-                                      leaflet::leafletOutput(outputId = 'map'),
-                                      type = 2,
-                                      color = 'lightgrey',
-                                      color.background = 'white'),
-                                      verbatimTextOutput('coord')),
+                                          shinycssloaders::withSpinner( 
+                                            leaflet::leafletOutput(outputId = 'map'),
+                                            type = 2,
+                                            color = 'lightgrey',
+                                            color.background = 'white'),
+                                          verbatimTextOutput('coord')),
                                    column(6,
                                           shinycssloaders::withSpinner( 
-                                      DT::DTOutput(outputId = 'table'),
-                                      type = 2,
-                                      color = 'lightgrey',
-                                      color.background = 'white')))),
-                          
-                 tabPanel(title = 'by Province',
+                                            DT::DTOutput(outputId = 'table'),
+                                            type = 2,
+                                            color = 'lightgrey',
+                                            color.background = 'white')))),
+                 
+                 tabPanel(title = 'Temporal Distribution',
                           sidebarLayout(
                             sidebarPanel(
                               selectInput(inputId = 'species2',
                                           label = 'Select the species:',
                                           choices = species_code,
                                           selected = 'norcar'),
-                             selectInput(inputId = 'provinces',
+                              selectInput(inputId = 'provinces',
                                           label = 'Select the province or territory:',
                                           choices = unique(data$subnational1_code),
                                           selected = 'CA-BC',
                                           multiple = TRUE),
-                             downloadButton('download1',
-                                            'Download .CSV'),
-                             downloadButton("report",
-                                            "Generate report")
+                              downloadButton('download1',
+                                             'Download .CSV'),
+                              downloadButton("report",
+                                             "Generate report")
                             ),
                             mainPanel(
                               tabsetPanel(
-                                tabPanel('Annual data',
+                                tabPanel('Annual trend',
                                          shinycssloaders::withSpinner( 
-                                         plotlyOutput(outputId = 'lineplot'),
-                                         type = 2,
-                                         color = 'lightgrey',
-                                         color.background = 'white')
-                                        ),
+                                           plotlyOutput(outputId = 'lineplot'),
+                                           type = 2,
+                                           color = 'lightgrey',
+                                           color.background = 'white')
+                                ),
                                 tabPanel('Montly data',
                                          shinycssloaders::withSpinner( 
-                                         plotlyOutput(outputId = 'boxplot'),
-                                         type = 2,
-                                         color = 'lightgrey',
-                                         color.background = 'white')
+                                           plotlyOutput(outputId = 'boxplot'),
+                                           type = 2,
+                                           color = 'lightgrey',
+                                           color.background = 'white')
+                                )
                               )
-                            )
-                          ))),
+                            ))),
                  tabPanel(title = 'Diversity', 
                           sidebarLayout(
                             sidebarPanel(radioButtons('radio',
-                                               'Select:',
-                                               choices = c('region' = 'region_sub',
-                                                           'province' = 'name_en'),
-                                               selected = c('province' = 'name_en')),
+                                                      'Select:',
+                                                      choices = c('region' = 'region_sub',
+                                                                  'province' = 'name_en'),
+                                                      selected = c('province' = 'name_en')),
                                          width = 2),
-                          mainPanel(
-                            shinycssloaders::withSpinner( 
-                              plotlyOutput('map_plotly',
-                                           width = "600px", 
-                                           height = "600px"),
-                                              type = 2,
-                                              color = 'lightgrey',
-                                              color.background = 'white')
-                                   ))),
+                            mainPanel(
+                              shinycssloaders::withSpinner( 
+                                plotlyOutput('map_plotly',
+                                             width = "600px", 
+                                             height = "600px"),
+                                type = 2,
+                                color = 'lightgrey',
+                                color.background = 'white')
+                            ))),
                  tabPanel(title = 'Rare species', 
                           "..."),
                  tabPanel(title = 'About',
                           "..")
-  
+                 
 )
 
 server <- function(input, output, session) {
   
-  ## DYNAMIC UI - FILTERING SECOND TAB 'by provinces"
-  data_acc_sps <-  reactive({
+  
+  # Tab Data Exploration ----------------------------------------------------
+  
+  filtered_data <-reactive({ 
     
+    first_filter <-  all_data |> 
+      dplyr::filter(species_code == input$species) |> 
+      dplyr::filter(input$daterange[2] > date) |> 
+      dplyr::filter (date > input$daterange[1]) 
     
-    # HERE
-    print(input$species2)
+    # Show text to the user if the filtering returns a 0 row dataset   
     validate(
-      need(input$species2 != "",
-           "There are not records in the database for this period. Please, select new dates")
+      missing_values(first_filter)
     )
+    
+    first_filter
+    
+  })   
+  
+  missing_values <- function(input_data) {
+    if ( nrow(input_data) == 0 ) {
+      "There are not values in the dataset for these dates. Please, select a new period"
+    } else {
+      NULL
+    }
+  }
+  
+  ## DT Table
+  output$table <-  renderDT({
+    
+    table_data <-  filtered_data() |>
+      select(-latitude, -longitude, -subnational1_code,
+             -X, -entry_technique, -sub_id, -PROJ_PERIOD_ID,
+             -species_code) 
+    
+    datatable(table_data,
+              caption = 'Table: Observations by location.',
+              options=list(deferRender = TRUE,
+                           autoWidth = TRUE,
+                           paging = TRUE,
+                           pageLength = 7),
+              fillContainer = TRUE) 
+    
+  }, server = FALSE)
+  
+  
+  # Latitude and longitude 
+  
+  output$coord <- renderPrint({
+    
+    print(paste("Lat: ", input$map_marker_click$lat,
+                "Long: ", input$map_marker_click$lng))
+  })
+  
+  output$coord <- renderPrint({
+    
+    req(input$map_marker_click)
+    print(paste("Lat:", 
+                input$map_marker_click$lat,
+                'Long:',
+                input$map_marker_click$lng))
+  })
+  
+  # Leaflet map
+  output$map <- leaflet::renderLeaflet({
+    
+    ## color palette
+    pal <- leaflet::colorNumeric('viridis', 
+                                 domain = filtered_data()$n)
+    
+    birds <- filtered_data() |> 
+      dplyr::count(loc_id, latitude, longitude) 
+    
+    birds |> 
+      leaflet::leaflet() |> 
+      leaflet::addProviderTiles(providers$CartoDB.Positron) |> 
+      leaflet::addCircleMarkers(
+        lat = ~latitude,
+        lng = ~longitude,
+        radius = ~n,
+        popup = paste(birds$n,
+                      "bird/s in",
+                      birds$loc_id),
+        color = ~pal(n),
+        options = popupOptions(closeButton = FALSE))
+    
+    
+  })
+  
+  # Tab Temporal distribution ------------------------------------------------------------
+  
+  ## Dynamic UI
+  data_acc_sps <-  reactive({
     
     data |> 
       dplyr::filter(species_code == input$species2) })
   
-  
+  # Update the province available by species selection 
   observeEvent(data_acc_sps(), {
     choices <- unique(data_acc_sps()$subnational1_code)
     updateSelectInput(inputId = "provinces",
@@ -161,11 +245,13 @@ server <- function(input, output, session) {
   data_acc_sps_prov <- reactive({ 
     
     data_acc_sps() |> 
-    dplyr::filter(subnational1_code %in% input$provinces) |> 
-    dplyr::mutate(yearmon = as.yearmon(as.Date(date))) 
+      dplyr::filter(subnational1_code %in% input$provinces) |> 
+      dplyr::mutate(yearmon = as.yearmon(as.Date(date))) 
     
-    })
+  })
   
+  
+  # Boxplot - Number of birds by observation for each month and province
   output$boxplot <- renderPlotly({
     
     
@@ -179,12 +265,13 @@ server <- function(input, output, session) {
       geom_jitter(aes(color = subnational1_code),
                   alpha = 0.3,
                   width = 0.25) +
-      geom_violin(alpha = 0.7)
-
-    
+      geom_violin(alpha = 0.7,
+                  draw_quantiles = c(0.25, 
+                                     0.5,
+                                     0.75))
   })
-    
-  ## LINEPLOT - SECOND TAB
+  
+  ## Lineplot - accumulated number of birds by year
   output$lineplot <- plotly::renderPlotly({ 
     
     req(input$provinces) # trigger the execution with the user selection
@@ -205,7 +292,6 @@ server <- function(input, output, session) {
       ggplot2::geom_point(alpha = 0.5) +
       ggplot2::scale_x_date(date_breaks = "1 month", 
                             date_labels =  "%b %Y") + 
-      #   ggplot2::scale_color_brewer(palette = "Set2") +
       ggplot2::labs(title = paste('Period', min(data$date),
                                   "to",
                                   max(data$date)),
@@ -213,22 +299,8 @@ server <- function(input, output, session) {
                     y = 'observations') 
   })
   
-  ## Notification
-  observeEvent(input$download1,{
-    id <- showNotification("Your download has started", 
-                           duration = 10,
-                           closeButton = TRUE,
-                           type = "message")
-    
-    on.exit(removeNotification(id), 
-            add = TRUE)
-    
-    
-
   
-  })
-
-  ## DOWNLOAD BUTTON
+  # Download .csv button
   output$download1 <- downloadHandler(
     filename = function() {
       paste0(input$species2, ".csv")
@@ -246,214 +318,100 @@ server <- function(input, output, session) {
     }
   )
   
-  ## PLOTLY MAP
-  poly_can_data <- reactive({ 
-    
-    diversity <- data |> 
+  
+  # Report ------------------------------------------------------------------
+  
+  output$report <- downloadHandler(
+    # For PDF output, change this to "report.pdf"
+    filename = "report_feederwatch-app.html",
+    content = function(file) {
+      # Copy the report file to a temporary directory before processing it
+      tempReport <- file.path(tempdir(), 
+                              'report.Rmd')
+      file.copy(from = here::here('docs', 'report.Rmd'),
+                to = tempReport, 
+                overwrite = TRUE)
+      
+      # Set up parameters to pass to Rmd document
+      params <- list(species_code = input$species2,
+                     provinces = input$provinces)
+      
+      # Notification
+      id <- showNotification(
+        "Rendering report...", 
+        duration = NULL, 
+        closeButton = FALSE
+      )
+      on.exit(removeNotification(id))
+      
+      rmarkdown::render(tempReport, 
+                        output_file = file,
+                        params = params,
+                        envir = new.env(parent = globalenv())
+      )
+      
+    }
+  )
+  
+  
+  # Tab Diversity: Plotly map Canada ----------------------------------------
+  
+  # Data processing 
+  poly_can_data <- reactive({
+    diversity <- all_data |> 
       dplyr::group_by(subnational1_code) |> 
       dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
-                sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
-                                                   digits = 0),
-                                             na.rm=TRUE)) 
+                       sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
+                                                          digits = 0),
+                                                    na.rm=TRUE)) |>  
+      arrange(nr_sps) 
     
-      poly_canada |>
-          dplyr::left_join(diversity, 
-                by = c('iso_3166_2' = 'subnational1_code'))
+    poly_canada |>
+      dplyr::left_join(diversity, 
+                       by = c('iso_3166_2' = 'subnational1_code'))
+    
+  })
+  
+  # Plot region or Province
+  decide <- reactive({ 
+    
+    if(input$radio == 'name_en'){
+      poly_can_data()
+    }else{ 
+      poly_can_data()  |> 
+        group_by(region_sub) |> 
+        dplyr::summarize(nr_sps = sum(nr_sps,
+                                      na.rm = TRUE),
+                         sum_effort_hrs_atleast = sum(round(sum_effort_hrs_atleast, 
+                                                            digits = 0),
+                                                      na.rm=TRUE)) }                                                                 
+  }) 
+  
+  
+  
+  output$map_plotly <- renderPlotly({
+    
+    plot_ly(decide(),
+            split = ~get(input$radio),
+            color = ~nr_sps,
+            showlegend = FALSE,
+            text = ~ifelse(is.na(nr_sps), 
+                           "No data available",
+                           paste(nr_sps, 
+                                 "sps. observed in at least",
+                                 sum_effort_hrs_atleast,
+                                 "hs. of effort")
+            ),
+            hoverinfo = 'text',
+            hoveron = 'fills')  |>  
+      colorbar(title = 'Nr. of birds species') |> 
+      layout(title = paste("Diversity of species in relation to hs. of sampling effort"),
+             legend = list(font = list(size = 5)))
     
   })
   
-  output$plotly_map <-  renderPlotly({
-
-  plot_ly(poly_can_data(),
-          split= ~woe_name,
-          color = ~nr_sps,
-          text = ~paste(nr_sps,
-                        "sps. were recognized in at least",
-                        sum_effort_hrs_atleast, 
-                        "hours of effort"),
-          hoveron = "fills",
-          hoverinfo = "text",
-          showlegend = FALSE
-  )  |>  
-    colorbar(title = 'Different species') |> 
-    layout(title = 'Diversity of birds observed by province')
-  })
   
   
-  ## FILTERING - FIRST TAB "data exploration"
-  
-  filtered_data <-reactive({ 
-    
-   first_filter <-  all_data |> 
-      dplyr::filter(species_code == input$species) |> 
-      dplyr::filter(input$daterange[2] > date) |> 
-      dplyr::filter (date > input$daterange[1]) 
-    
-   validate(
-     missing_values(first_filter)
-   )
-   
-   first_filter
-   
-  })   
-  
-  missing_values <- function(input_data) {
-    if ( nrow(input_data) == 0 ) {
-      "There are not values in the dataset for these dates. Please, select a new period"
-    } else {
-      NULL
-    }
-  }
-  
-  ## DT TABLE
-  output$table <-  renderDT({
- 
-    table_data <-  filtered_data() |>
-       select(-latitude, -longitude, -subnational1_code,
-              -X, -entry_technique, -sub_id, -PROJ_PERIOD_ID,
-              -species_code) 
-    
-     datatable(table_data,
-              caption = 'Table: Observations by location.',
-              options=list(deferRender = TRUE,
-                           autoWidth = TRUE,
-                           paging = TRUE,
-                           pageLength = 7),
-              fillContainer = TRUE) 
-     
-  }, server = FALSE)
-  
-  ## LAT LONG
-  
-  output$coord <- renderPrint({
-    
-    print(paste("Lat: ", input$map_marker_click$lat,
-                "Long: ", input$map_marker_click$lng))
-  })
-
-  output$coord <- renderPrint({
-    
-   req(input$map_marker_click)
-   print(paste("Lat:", 
-               input$map_marker_click$lat,
-               'Long:',
-               input$map_marker_click$lng))
-  })
-  
-  ## LEAFLET MAP
-   output$map <- leaflet::renderLeaflet({
-
-    ## color palette
-    pal <- leaflet::colorNumeric('viridis', 
-                                 domain = filtered_data()$n)
-    
-    birds <- filtered_data() |> 
-      dplyr::count(loc_id, latitude, longitude) 
-    
-    birds |> 
-      leaflet::leaflet() |> 
-      leaflet::addProviderTiles(providers$CartoDB.Positron) |> 
-      leaflet::addCircleMarkers(
-                               lat = ~latitude,
-                               lng = ~longitude,
-                               radius = ~n,
-                               popup = paste(birds$n,
-                                              "bird/s in",
-                                              birds$loc_id),
-                                color = ~pal(n),
-                                options = popupOptions(closeButton = FALSE))
-  
-    
-  })
-   
-   
-   ## PLOTLY MAP
-   
-   poly_can_data <- reactive({
-      diversity <- all_data |> 
-       dplyr::group_by(subnational1_code) |> 
-       dplyr::summarize(nr_sps = dplyr::n_distinct(species_code),
-                        sum_effort_hrs_atleast = sum(round(effort_hrs_atleast, 
-                                                           digits = 0),
-                                                     na.rm=TRUE)) |>  
-       arrange(nr_sps) 
-     
-     poly_canada |>
-       dplyr::left_join(diversity, 
-                        by = c('iso_3166_2' = 'subnational1_code'))
-    
-   })
-   
-   decide <- reactive({ 
-     
-     if(input$radio == 'name_en'){
-       poly_can_data()
-     }else{ 
-       poly_can_data()  |> 
-         group_by(region_sub) |> 
-         dplyr::summarize(nr_sps = sum(nr_sps,
-                                       na.rm = TRUE),
-                          sum_effort_hrs_atleast = sum(round(sum_effort_hrs_atleast, 
-                                                             digits = 0),
-                                                       na.rm=TRUE)) }                                                                 
-   }) 
-   
-   output$map_plotly <- renderPlotly({
-   
-   plot_ly(decide(),
-           split = ~get(input$radio),
-           color = ~nr_sps,
-           showlegend = FALSE,
-           text = ~ifelse(is.na(nr_sps), 
-                         "No data available",
-                         paste(nr_sps, 
-                         "sps. observed in at least",
-                         sum_effort_hrs_atleast,
-                         "hs. of effort")
-           ),
-           hoverinfo = 'text',
-           hoveron = 'fills')  |>  
-     colorbar(title = 'Nr. of birds species') |> 
-     layout(title = paste("Diversity of species in relation to hs. of sampling effort"),
-            legend = list(font = list(size = 5)))
-   
-   })
-   
-   ## REPORT
-
-   output$report <- downloadHandler(
-     # For PDF output, change this to "report.pdf"
-     filename = "report_feederwatch-app.html",
-     content = function(file) {
-       # Copy the report file to a temporary directory before processing it, in
-       # case we don't have write permissions to the current working dir (which
-       # can happen when deployed).
-       tempReport <- file.path(tempdir(), "report.Rmd")
-       file.copy("report.Rmd", tempReport, overwrite = TRUE)
-       
-       # Set up parameters to pass to Rmd document
-       params <- list(species_code = input$species2,
-                      provinces = input$provinces)
-       
-       id <- showNotification(
-         "Rendering report...", 
-         duration = NULL, 
-         closeButton = FALSE
-       )
-       on.exit(removeNotification(id), add = TRUE)
-       
-       # Knit the document, passing in the `params` list, and eval it in a
-       # child of the global environment (this isolates the code in the document
-       # from the code in this app).
-       rmarkdown::render(tempReport, 
-                         output_file = file,
-                         params = params,
-                         envir = new.env(parent = globalenv())
-       )
-
-     }
-   )
-
 }
 
 shinyApp(ui, server)
