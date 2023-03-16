@@ -88,6 +88,7 @@ ui <- navbarPage(title = 'FeederWatch App',
                                           multiple = TRUE),
                               downloadButton('download1',
                                              'Download .CSV'),
+                              tags$hr(),
                               downloadButton("report",
                                              "Generate report")
                             ),

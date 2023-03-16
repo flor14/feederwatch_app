@@ -45,7 +45,7 @@ rare_data <- dplyr::filter(all_data, species_code %in% freq_sps$species_code)
 
 ```
 
-## Annual observations accumulated by month
+## Annual trend: observations accumulated by month
 
 
 ```{r message=FALSE, warning=FALSE}
@@ -84,7 +84,7 @@ data_acc_sps_prov <- data |>
 ```
 
 
-## Monthly observations accumulated by month
+## Monthly observations by species and province
 
 
 ```{r message=FALSE, warning=FALSE}
